@@ -1,0 +1,46 @@
+version: '3'
+services:
+
+    mysqldb:
+        image: mysql:5.7
+        container_name: ${MYSQL_HOST}
+        networks:
+            - wp-driver
+        restart: always
+        env_file:
+            - ".env"
+        environment:
+            - MYSQL_DATABASE=${MYSQL_DATABASE}
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+            - MYSQL_USER=${MYSQL_USER}
+            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+        ports:
+            - "8989:3306"
+        volumes:
+            - "${MYSQL_DATA_SRC}:/var/lib/mysql"
+
+
+    wp-nginx:
+        image: nginx:latest
+        networks:
+            - wp-driver
+        ports:
+            - 8080:80
+        volumes:
+            - ./../wordpress:/code
+            - ./config/site.conf:/etc/nginx/conf.d/default.conf
+        links:
+            - php
+            - mysqldb
+
+
+    php:
+        image: php:5.6-fpm
+        networks:
+            - wp-driver
+        volumes:
+            - ./../wordpress:/code
+
+
+networks:
+    wp-driver:
