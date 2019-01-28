@@ -22,5 +22,6 @@ phases:
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
       - printf '[{"name":"%s","imageUri":"%s"}]' $AWS_PROJECT_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"%s","imageUri":"%s"}]' $AWS_PROJECT_ADMIN_NAME $REPOSITORY_URI:$IMAGE_TAG > adminimagedefinitions.json
 artifacts:
     files: imagedefinitions.json
