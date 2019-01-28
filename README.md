@@ -13,4 +13,4 @@ RUN chmod 777 /usr/local/bin/docker-entrypoint.sh
 
 AWS_ECR_URI
 
-AWS_PROJECT_NAME
+TASK_DEFINITION
