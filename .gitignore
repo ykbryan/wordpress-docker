@@ -1,3 +1,4 @@
+docker-mysql/*
 /tmp
 /tmp/*
 .DS_Store
