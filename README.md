@@ -12,4 +12,5 @@ RUN chmod 777 /usr/local/bin/docker-entrypoint.sh
 # Define in CodePipeline
 
 AWS_ECR_URI
+
 AWS_PROJECT_NAME
