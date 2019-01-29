@@ -42,9 +42,7 @@ RUN { \
 RUN a2enmod rewrite expires
 
 ADD wordpress /var/www/html
-# RUN chown -R www-data:www-data /usr/src/wordpress
-# RUN chmod 777 -R /usr/src/wordpress
-# WORKDIR /usr/src/wordpress
+RUN chown -R www-data:www-data /var/www/html
 
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod 777 /usr/local/bin/docker-entrypoint.sh
