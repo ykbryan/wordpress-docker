@@ -39,6 +39,8 @@ RUN { \
   echo 'opcache.enable_cli=1'; \
   } > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
 RUN a2enmod rewrite && service apache2 restart
 
 ADD wordpress /var/www/html
