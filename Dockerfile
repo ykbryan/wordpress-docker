@@ -39,11 +39,10 @@ RUN { \
   echo 'opcache.enable_cli=1'; \
   } > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
-RUN a2enmod rewrite
-
-RUN sudo service apache2 restart
+RUN a2enmod rewrite && service apache2 restart
 
 ADD wordpress /var/www/html
+RUN chown -R www-data:www-data /var/www/html
 
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod 777 /usr/local/bin/docker-entrypoint.sh
