@@ -45,6 +45,10 @@ RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/Allo
 
 RUN a2enmod rewrite && service apache2 restart
 
+RUN pecl install -o -f redis && docker-php-ext-enable redis
+
+RUN echo $REDIS_URL
+
 ADD wordpress /var/www/html
 RUN chown -R www-data:www-data /var/www/html
 
