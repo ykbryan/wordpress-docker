@@ -55,6 +55,8 @@ RUN { \
   echo 'session.save_path = tcp://$REDIS_URL:6379'; \
   } >> /usr/local/etc/php/conf.d/docker-php-ext-redis.ini
 
+RUN cat /usr/local/etc/php/conf.d/docker-php-ext-redis.ini
+
 RUN a2enmod rewrite && service apache2 restart
 
 ADD wordpress /var/www/html
