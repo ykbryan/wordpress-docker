@@ -1,5 +1,8 @@
 FROM php:7.2-apache
 
+# to be replaced by environment variable from buildspec
+ENV REDIS_URL redis
+
 # install the PHP extensions we need
 RUN set -ex; \
   \
@@ -43,11 +46,14 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
 
-RUN a2enmod rewrite && service apache2 restart
-
 RUN pecl install -o -f redis && docker-php-ext-enable redis
 
-RUN echo $REDIS_URL
+RUN { \
+  echo 'session.save_handler = redis'; \
+  echo 'session.save_path = tcp://$REDIS_URL:6379'; \
+  } >> /usr/local/etc/php/conf.d/docker-php-ext-redis.ini
+
+RUN a2enmod rewrite && service apache2 restart
 
 ADD wordpress /var/www/html
 RUN chown -R www-data:www-data /var/www/html
