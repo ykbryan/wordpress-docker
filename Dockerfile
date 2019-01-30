@@ -41,6 +41,8 @@ RUN { \
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
+RUN RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
+
 RUN a2enmod rewrite && service apache2 restart
 
 ADD wordpress /var/www/html
