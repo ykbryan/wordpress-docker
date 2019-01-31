@@ -30,3 +30,10 @@ services:
             - WORDPRESS_DB_PASSWORD=${MYSQL_PASSWORD}
         ports:
             - 8080:80
+
+    Redis:
+        image: redis
+        container_name: redis
+        ports:
+            - "6379:6379"
+        restart: always

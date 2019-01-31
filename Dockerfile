@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM php:7.3.1-apache
 
 # to be replaced by environment variable from buildspec
 ENV REDIS_URL redis
@@ -12,6 +12,7 @@ RUN set -ex; \
   apt-get install -y --no-install-recommends \
   libjpeg-dev \
   libpng-dev \
+  libzip-dev \
   ; \
   \
   docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; \
