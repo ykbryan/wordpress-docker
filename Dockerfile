@@ -53,10 +53,8 @@ RUN echo $REDIS_URL
 
 RUN { \
   echo 'session.save_handler=redis'; \
-  echo 'session.save_path=tcp://'$REDIS_URL':6379?database=4'; \
+  echo 'session.save_path=tcp://'$REDIS_URL':6379'; \
   } >> /usr/local/etc/php/conf.d/docker-php-ext-redis.ini
-
-RUN cat /usr/local/etc/php/conf.d/docker-php-ext-redis.ini
 
 RUN a2enmod rewrite && service apache2 restart
 
