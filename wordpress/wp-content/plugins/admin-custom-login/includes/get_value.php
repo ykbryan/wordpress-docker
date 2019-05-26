@@ -69,9 +69,18 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	// Get value of Text and Color page
 	$text_and_color_page = unserialize(get_option('Admin_custome_login_text'));
 	$heading_font_color = $text_and_color_page['heading_font_color'];
+	// $social_link_new_window = $text_and_color_page['social_link_new_window'];
 	$input_font_color = $text_and_color_page['input_font_color'];
 	$link_color = $text_and_color_page['link_color'];
 	$button_color = $text_and_color_page['button_color'];
+	if(isset($text_and_color_page['login_button_font_color'])){
+		echo "hello";
+	$login_button_font_color = $text_and_color_page['login_button_font_color'];
+     }  
+     else {
+     $login_button_font_color="#ffffff";
+
+     }
 	$heading_font_size = $text_and_color_page['heading_font_size'];
 	$input_font_size = $text_and_color_page['input_font_size'];
 	$link_size = $text_and_color_page['link_size'];
@@ -98,7 +107,12 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	$g_page = unserialize(get_option('Admin_custome_login_gcaptcha'));
 	$site_key = $g_page['site_key'];
 	$secret_key = $g_page['secret_key'];
+	$site_key_v3 = isset( $g_page['site_key_v3'] ) ? $g_page['site_key_v3'] : '';
+	$secret_key_v3 = isset( $g_page['secret_key_v3'] ) ? $g_page['secret_key_v3'] : '';
 	$login_enable_gcaptcha = $g_page['login_enable_gcaptcha'];
+
+	$login_v_gcaptcha = isset( $g_page['login_v_gcaptcha'] ) ? $g_page['login_v_gcaptcha'] : 'v2';
+
 	if(isset($g_page['acl_gcaptcha_theme'])){ $acl_gcaptcha_theme = $g_page['acl_gcaptcha_theme']; } else { $acl_gcaptcha_theme="yes" ;}
 
 	// Get value of Slidshow image
@@ -121,6 +135,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	$enable_social_icon			=$Social_page['enable_social_icon'];
 	$social_icon_size			=$Social_page['social_icon_size'];
 	$social_icon_layout			=$Social_page['social_icon_layout'];
+	// $social_link_new_window	    =$Social_page['social_link_new_window'];
 	$social_icon_color			=$Social_page['social_icon_color'];
 	$social_icon_color_onhover	=$Social_page['social_icon_color_onhover'];
 	$social_icon_bg				=$Social_page['social_icon_bg'];

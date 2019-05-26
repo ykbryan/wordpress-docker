@@ -90,8 +90,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				<div id="postbox-container-2" class="postbox-container">
 					<div id="advanced" class="meta-box-sortables">
 						<div id="gallery_bank_get_started" class="postbox" >
-							<div class="handlediv" data-target="ux_recommendation" title="Click to toggle" data-toggle="collapse"><br></div>
-							<h2 class="hndle"><span>Get More Free WordPess Plguins From Weblizar</span></h3>
+							<div class="handlediv" data-target="ux_recommendation" title="Click to toggle" data-toggle="collapse"><br>
+							</div>
+							<h2 class="hndle"><span>Get More Free WordPess Plguins From Weblizar</span></h2>
 							<div class="inside">
 								<div id="ux_recommendation" class="gallery_bank_layout">
 									
@@ -297,13 +298,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			</div>
 		</div>
 	</form>
-				</td>
-			</tr>
-		</table>
-	</div>
-</div>
-	
-   
-	
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>	 	
 </div>
 <!-- /row -->

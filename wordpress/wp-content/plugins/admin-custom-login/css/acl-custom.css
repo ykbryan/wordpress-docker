@@ -88,4 +88,9 @@ body.login div#login h1 a,#login_error{
 	 margin-left: 1px; 
 	}
 }
-.pro-features-list{	margin-bottom:30px !important;	}	
+.pro-features-list{	margin-bottom:30px !important;	}
+
+#login form p.submit {
+    margin: 10px 0 20px;
+    padding: 5px;
+}	

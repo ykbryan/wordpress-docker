@@ -1,10 +1,10 @@
-=== Admin Custom Login ===
+﻿=== Admin Custom Login ===
 Contributors: weblizar
 Donate link: https://www.weblizar.com/
 Tags: custom login page, custom admin login, custom login, customize wordpress login page, design wordpress login
 Requires at least: 4.0
-Tested up to: 5.0.2
-Stable tag: 2.7.9
+Tested up to: 5.2
+Stable tag: 2.9.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -129,7 +129,6 @@ Guys please send us your login screenshots at `lizarweb[at]gmail[dot]com`.
 * **Username:** userdemo
 * **Password:** userdemo
 
-
 ### Translations By Our Plugin Users:
 
 * Italian Translation(it_IT) by [Giovanni Caputo](http://giovannicaputo.netsons.org)
@@ -171,6 +170,58 @@ If you have any question contact us at here: [Plugin Support Forum ](http://word
 == Changelog ==
 
 For more information, see [Weblizar](http://www.weblizar.com/)
+
+= 2.9.2 =
+* Login Button font Color setting option added
+
+= 2.9.1 =
+* login_headertitle issue fixed
+* version update + Compatible with wordpress 5.2
+
+= 2.9.0 =
+* Minor issue fixed
+* header already send  issue fixed
+
+= 2.8.9 =
+* Added separate settings for reCaptcha v3
+
+= 2.8.8 =
+* Google reCaptcha version3, minor issue fixed
+* Some other minor issue fixed
+
+= 2.8.7 =
+* CSS File updated for RTL language
+* Import Export Custom Login Data issue fixed
+* Google captcha 3 API added and issue fixed
+
+= 2.8.6 =
+* LetestFont Awesome 5.8.1 Updated
+* Minor issue is fixed
+
+= 2.8.5 =
+* Minor issue fixed
+* version update + Compatible with wordpress 5.1.1
+* Compatible with php7 
+
+= 2.8.4 =
+* Minor issue fixed
+
+= 2.8.3 =
+* translate file update.
+
+= 2.8.2 =
+* update background image url input field issue 
+* Minor issue fixed
+
+= 2.8.1 =
+* Add preview option for login page
+* Readme file text update 
+* Social media open new tan option added
+
+= 2.8.0 =
+* Version update + Compatible with wordpress 5.1
+* Readme file text update 
+* Minor issue fixed
 
 = 2.7.9 =
 * Readme file text update

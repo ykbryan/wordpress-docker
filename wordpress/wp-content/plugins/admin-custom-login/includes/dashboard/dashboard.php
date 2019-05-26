@@ -22,8 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		</div>
 	</div>
 	
-	
-
 	<div class="panel panel-primary panel-default content-panel">
 		<div class="panel-body">
 			<table class="form-table">
@@ -31,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 					<th scope="row" ><?php _e('Admin Custom Login Status', WEBLIZAR_ACL); ?></th>
 					<td></td>
 				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
+				<tr class="radio-span">
 					<td>
 						<span>
 							<input type="radio" name="dashboard_status" value="disable" id="dashboard_status1" <?php if($dashboard_status == "disable") echo "checked"; ?> />&nbsp;<?php _e('Disable', WEBLIZAR_ACL)?><br>
@@ -52,11 +50,15 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 					<th scope="row" ><?php _e('View Login Page', WEBLIZAR_ACL); ?></th>
 					<td></td>
 				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
+				<tr class="radio-span">
 					<td>
 						<h4><?php _e('Copy below link and open in another browser where you are not logged in', WEBLIZAR_ACL)?></h4>
 						<br>
-						<pre><span style="color:#ef4238"><?php echo wp_login_url(); ?></span></pre>
+						<pre><span id="login_form_image" style="color:#ef4238"><?php echo wp_login_url(); ?></span></pre>
+							
+						<a style="color: #555;" href="javascript:void(0);" onclick="window.open('<?php echo wp_login_url(); ?>')">
+                            <button type="button" class="preview_btn_custom" id="preview_btn_custom">Preview</button>
+                        </a>				
 					</td>
 				</tr>
 			</table>
@@ -84,8 +86,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		</div>
 	</div>-->
 
-	<button data-dialog="somedialog" class="dialog-button" style="display:none">Open Dialog</button>
-	<div id="somedialog" class="dialog" style="position: fixed; z-index: 9999;">
+	<button data-dialog="somedialog" class="dialog-button">Open Dialog</button>
+	<div id="somedialog" class="dialog">
 		<div class="dialog__overlay"></div>
 		<div class="dialog__content">
 			<div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
@@ -99,8 +101,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		</div>
 	</div>
 	
-	<button data-dialog7="somedialog7" class="dialog-button7" style="display:none">Open Dialog</button>
-	<div id="somedialog7" class="dialog" style="position: fixed; z-index: 9999;">
+	<button data-dialog7="somedialog7" class="dialog-button7">Open Dialog</button>
+	<div id="somedialog7" class="dialog">
 		<div class="dialog__overlay"></div>
 		<div class="dialog__content">
 			<div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
@@ -125,6 +127,20 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	</div>
 </div>
 <!-- /row -->
+<style type="text/css">
+	 
+	.radio-span{
+		border-bottom:none;
+
+	}	
+	.dialog-button,.dialog-button7{
+       display:none;
+	}
+	.dialog{
+       position: fixed; z-index: 9999;
+	}
+
+</style>
 <script>
 function Custom_login_dashboard(Action, id) {
 	if(Action == "dashboardSave") {
@@ -244,6 +260,11 @@ function Custom_login_dashboard(Action, id) {
 			}
 		});
 	}
+}
+
+function Acl_show_login_form_Image() {
+	var img_src= document.getElementById("login_form_image").value;
+	jQuery("#top_form_img_prev").attr('src',img_src);
 }	
 </script>
 <?php

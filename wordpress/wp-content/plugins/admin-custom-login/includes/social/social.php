@@ -153,6 +153,31 @@ jQuery(document).ready(function(){
 		<div class="panel-body">
 			<table class="form-table">
 				<tr>
+					<th scope="row" ><?php _e('Enable To Open Social Link In New Window', WEBLIZAR_ACL)?></th>
+					<td></td>
+				</tr>
+				
+				<tr class="radio-span" style="border-bottom:none;">
+					<td>
+						<?php 
+		                    $Social_page = unserialize(get_option('Admin_custome_login_Social'));
+		                    $social_link_new_window = @$Social_page['social_link_new_window'];
+		                    ?>
+						<span>
+							<input type="radio" name="social_link_new_window" value="yes" id="social_link_new_window1" <?php if($social_link_new_window=="yes")echo "checked"; ?> <?php if(empty($social_link_new_window))echo "checked"; ?> />&nbsp;<?php _e('Yes', WEBLIZAR_ACL)?><br>
+						</span>
+						<span>
+							<input type="radio" name="social_link_new_window" value="no" id="social_link_new_window2" <?php if($social_link_new_window=="no")echo "checked"; ?> />&nbsp;<?php _e('No', WEBLIZAR_ACL)?><br>
+						</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="panel panel-primary panel-default content-panel">
+		<div class="panel-body">
+			<table class="form-table">
+				<tr>
 					<th scope="row" ><?php _e('Social Profiles',WEBLIZAR_ACL)?></th>
 					<td></td>
 				</tr>
@@ -263,6 +288,11 @@ function Custom_login_social(Action, id){
 		} else {
 			var social_icon_layout = document.getElementById('social_layout2').value;
 		}
+		if (document.getElementById('social_link_new_window1').checked) {
+			var social_link_new_window = document.getElementById('social_link_new_window1').value;
+		} else {
+			var social_link_new_window = document.getElementById('social_link_new_window2').value;
+		}
 		var social_icon_color = jQuery("#social-icon-color").val();
 		var social_icon_color_onhover = jQuery("#social-icon-color-onhover").val();
 		var social_icon_bg = jQuery("#social-bg-color").val();
@@ -283,7 +313,9 @@ function Custom_login_social(Action, id){
 		var social_telegram_link = encodeURIComponent(jQuery("#telegram-link").val());
 		var social_whatsapp_link = encodeURIComponent(jQuery("#whatsapp-link").val());
 
-		var PostData = "Action=" + Action + "&enable_social_icon=" + enable_social_icon + "&social_icon_size=" + social_icon_size + "&social_icon_layout=" + social_icon_layout + "&social_icon_color=" + social_icon_color + "&social_icon_color_onhover=" + social_icon_color_onhover + "&social_icon_bg=" + social_icon_bg  + "&social_icon_bg_onhover=" + social_icon_bg_onhover + "&social_facebook_link=" + social_facebook_link + "&social_twitter_link=" + social_twitter_link + "&social_linkedin_link=" + social_linkedin_link + "&social_google_plus_link=" + social_google_plus_link + "&social_pinterest_link=" + social_pinterest_link + "&social_digg_link=" + social_digg_link + "&social_youtube_link=" + social_youtube_link + "&social_flickr_link=" + social_flickr_link + "&social_tumblr_link=" + social_tumblr_link + "&social_skype_link=" + social_skype_link + "&social_instagram_link=" + social_instagram_link + "&social_telegram_link=" + social_telegram_link + "&social_whatsapp_link=" + social_whatsapp_link;
+		//console.log(social_link_new_window);
+
+		var PostData = "Action=" + Action + "&enable_social_icon=" + enable_social_icon + "&social_icon_size=" + social_icon_size + "&social_icon_layout=" + social_icon_layout + "&social_link_new_window=" + social_link_new_window + "&social_icon_color=" + social_icon_color + "&social_icon_color_onhover=" + social_icon_color_onhover + "&social_icon_bg=" + social_icon_bg  + "&social_icon_bg_onhover=" + social_icon_bg_onhover + "&social_facebook_link=" + social_facebook_link + "&social_twitter_link=" + social_twitter_link + "&social_linkedin_link=" + social_linkedin_link + "&social_google_plus_link=" + social_google_plus_link + "&social_pinterest_link=" + social_pinterest_link + "&social_digg_link=" + social_digg_link + "&social_youtube_link=" + social_youtube_link + "&social_flickr_link=" + social_flickr_link + "&social_tumblr_link=" + social_tumblr_link + "&social_skype_link=" + social_skype_link + "&social_instagram_link=" + social_instagram_link + "&social_telegram_link=" + social_telegram_link + "&social_whatsapp_link=" + social_whatsapp_link;
 		jQuery.ajax({
 			dataType : 'html',
 			type: 'POST',
@@ -393,11 +425,14 @@ function Custom_login_social(Action, id){
 <?php
 if(isset($_POST['Action'])) {
 	$Action = $_POST['Action'];
+		//var_dump( $_POST['social_link_new_window']);
 	//Save
 	if($Action == "socialSave") {
+
 		$enable_social_icon = sanitize_option('enable_social_icon', $_POST['enable_social_icon']);
 		$social_icon_size = sanitize_option('social_icon_size', $_POST['social_icon_size']);
 		$social_icon_layout = sanitize_option('social_icon_layout', $_POST['social_icon_layout']);
+		$social_link_new_window = sanitize_option('social_link_new_window', $_POST['social_link_new_window']);
 		$social_icon_color = sanitize_option('social_icon_color', $_POST['social_icon_color']);
 		$social_icon_color_onhover = sanitize_option('social_icon_color_onhover', $_POST['social_icon_color_onhover']);
 		$social_icon_bg = sanitize_option('social_icon_bg', $_POST['social_icon_bg']);
@@ -423,6 +458,7 @@ if(isset($_POST['Action'])) {
 		'enable_social_icon'=> $enable_social_icon ,
 		'social_icon_size'=> $social_icon_size ,
 		'social_icon_layout'=> $social_icon_layout ,
+		'social_link_new_window'=> $social_link_new_window ,
 		'social_icon_color'=> $social_icon_color ,
 		'social_icon_color_onhover'=> $social_icon_color_onhover ,
 		'social_icon_bg'=> $social_icon_bg,
@@ -449,6 +485,7 @@ if(isset($_POST['Action'])) {
 			'enable_social_icon'=> 'outer' ,
 			'social_icon_size'=> 'mediam' ,
 			'social_icon_layout'=> 'rectangle' ,
+			'social_link_new_window'=> 'yes' ,
 			'social_icon_color'=> '#ffffff' ,
 			'social_icon_color_onhover'=> '#1e73be' ,
 			'social_icon_bg'=> '#1e73be',

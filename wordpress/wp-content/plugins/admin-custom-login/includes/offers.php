@@ -16,7 +16,7 @@
                         </div>
                     </div>
                 </div>
-            <div class="col-md-10  product-main-cont">
+            <div class="col-md-12  product-main-cont">
                 <ul class="nav nav-tabs product-tbs">
                     <li class="active"><a data-toggle="tab" href="#themesd"> Themes </a></li>
                     <li><a data-toggle="tab" href="#pluginsd">Plugins</a></li>
@@ -35,7 +35,61 @@
                             <div class="row p_plugin blog_gallery">
                                 <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
                                     <div class="img-thumbnail">
-                                        <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/BeautySpa.jpg'; ?>" class="img-responsive" alt="img"/>
+                                        <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'images/nineteen-premium.jpg'; ?>" class="img-responsive" alt="img"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
+                                    <div class="row p-box">
+                                        <h2><a href="">Nineteen Premium Theme</a></h2>
+                                        <p><strong>Tags: </strong>Customize Front Page, Multilingual, Complete Documentation, Theme Option Panel, Unlimited Color Skins, Multiple Background Patterns, Multiple Theme Templates, Portfolio Layout, Page Layout and many more.</p>
+                                        <div>
+                                            <p><strong>Description: </strong> Whether you’re new to running a business or a seasoned business owner, a mentor can help you refine your business strategy, map out the direction that your business should be taking and assist in setting goals for your business to succeed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
+                                    <div class="price">
+                                        <span class="currency">USD</span>
+                                        <span class="price-number">$<span>20</span></span>
+                                    </div>
+                                    <div class="btn-group-vertical">
+                                        <a class="btn btn-primary btn-lg" href="https://weblizar.com/themes/nineteen-premium-theme-for-business/">Demo</a>
+                                        <a class="btn btn-success btn-lg" href="https://weblizar.com/themes/nineteen-premium-theme-for-business/">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row p_plugin blog_gallery">
+                                <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
+                                    <div class="img-thumbnail">
+                                        <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'images/construction-pro.jpg'; ?>" class="img-responsive" alt="img"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
+                                    <div class="row p-box">
+                                        <h2><a href="">Construction Premium Theme</a></h2>
+                                        <p><strong>Tags: </strong>Customize Front Page, Multilingual, Complete Documentation, Theme Option Panel, Unlimited Color Skins, Multiple Background Patterns, Multiple Theme Templates, Portfolio Layout, Page Layout and many more.</p>
+                                        <div>
+                                            <p><strong>Description: </strong> Construction is a WordPress theme specially style for construction agency, real state agency, design house and overall construction and assets sites. For a construction company, it’s extremely important that they showcase their service during a very pleasant and distinct thanks to letting their current shoppers be updated and attract additional valuable customers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
+                                    <div class="price">
+                                        <span class="currency">USD</span>
+                                        <span class="price-number">$<span>19</span></span>
+                                    </div>
+                                    <div class="btn-group-vertical">
+                                        <a class="btn btn-primary btn-lg" href="http://demo.weblizar.com/construction-pro/">Demo</a>
+                                        <a class="btn btn-success btn-lg" href="https://weblizar.com/themes/construction-premium-wordpress-theme/">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row p_plugin blog_gallery">
+                                <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
+                                    <div class="img-thumbnail">
+                                        <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'images/BeautySpa.jpg'; ?>" class="img-responsive" alt="img"/>
                                   
                                     </div>
                                 </div>
@@ -59,39 +113,10 @@
                                     </div>
                                 </div>
                             </div>
-
-							
-				
-							
                             <div class="row p_plugin blog_gallery">
                                 <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
                                     <div class="img-thumbnail">
-                                          <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/personal.jpg'; ?>" class="img-responsive" alt="img"/>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
-                                    <div class="row p-box">
-                                        <h2><a href="">Personal Premium Theme </a></h2>
-                                        <p><strong>Tags: </strong>clean, responsive, portfolio, blog, e-commerce, Business, WordPress, dark, real estate, shop, restaurant, ele…</p>
-                                        <div>
-                                            <p><strong>Description: </strong> Personal Premium is a powerful and flexible, customizable and extensively developed, wonderfully lightweight and mobile friendly, easy to use and intuitively structured. Personal Premium is a highly customizable and SEO friendly responsive WordPress theme you have access to unlimited color variations, multiple different layout options, shortcode modules, and much more. </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
-                                    <div class="price">
-                                        <span class="currency">USD</span>
-                                        <span class="price-number">$<span>17</span></span>
-                                    </div>
-                                    <div class="btn-group-vertical">
-                                        <a class="btn btn-primary btn-lg" href="https://weblizar.com/themes/personal-premium/">Demo</a>
-                                        <a class="btn btn-success btn-lg" href="https://weblizar.com/themes/personal-premium">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row p_plugin blog_gallery">
-                                <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
-                                    <div class="img-thumbnail">
-                                        <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/explora.jpg'; ?>" class="img-responsive" alt="img"/>
+                                        <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'images/explora.jpg'; ?>" class="img-responsive" alt="img"/>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
@@ -99,7 +124,7 @@
                                         <h2><a href="">Explora- Ultimate Multi-Purpose WordPress Theme</a></h2>
                                         <p><strong>Tags: </strong>clean, responsive, portfolio, blog, e-commerce, Business, WordPress, Corporate, dark, real estate, shop, restaurant, ele…</p>
                                         <div>
-                                            <p><strong>Description: </strong> Explora Premium is a multi-purpose responsive theme coded & designed with a lot of care and love. You can use it for your business, portfolio, blogging or any type of site. </div>
+                                        <p><strong>Description: </strong> Explora Premium is a multi-purpose responsive theme coded & designed with a lot of care and love. You can use it for your business, portfolio, blogging or any type of site. </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
@@ -116,35 +141,7 @@
                             <div class="row p_plugin blog_gallery">
                                 <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
                                     <div class="img-thumbnail">
-                                     <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/Guardian.jpg'; ?>" class="img-responsive" alt="img"/>
-
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
-                                    <div class="row p-box">
-                                        <h2><a href="">Guardian- Corporate Business Theme</a></h2>
-                                        <p><strong>Tags: </strong>Multiple Background Patterns, Rich color changer, Boxed/wide layout styles, Additional Page, WPML & Woo Commerce.</p>
-                                        <div>
-                                            <p><strong>Description: </strong> Guardian Premium Theme is a super professional one page WordPress theme for modern businesses. Ideal for creative agencies, startups, small businesses, and freelancers and best of all it is so easy to use that you can have your website up in minutes.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
-                                    <div class="price">
-                                        <span class="currency">USD</span>
-                                        <span class="price-number">$<span>39</span></span>
-                                    </div>
-                                    <div class="btn-group-vertical">
-                                        <a class="btn btn-primary btn-lg" href="https://weblizar.com/themes/guardian-premium-theme/">Detail</a>
-                                        <a class="btn btn-success btn-lg" href="https://weblizar.com/themes/guardian-premium-theme/">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row p_plugin blog_gallery">
-                                <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
-                                    <div class="img-thumbnail">
-                                      <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/Enigma.jpg'; ?>" class="img-responsive" alt="img"/>
-
+                                        <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'images/Enigma.jpg'; ?>" class="img-responsive" alt="img"/>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
@@ -168,22 +165,52 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <!----Plugin----->
 
                     <div id="pluginsd" class="tab-pane fade">
-                        <div class="p_head theme">
-                          
-                                <h1 class="section-title">WordPress Plugins</h1>
-                           
+                        <div class="p_head theme">                        
+                            <h1 class="section-title">WordPress Plugins</h1>                           
                         </div>
 						<div class="row p_plugin blog_gallery">
                             <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
                                 <div class="img-thumbnail">
-                                     <img src="https://weblizar.com/wp-content/uploads/2018/10/Twitter-Tweets-Pro.jpg" class="img-responsive" alt="img"/>
-                               
+                                    <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'images/institute-management-pro.jpg'; ?>" class="img-responsive" alt="img"/>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
+                                <div class="row p-box">
+                                    <h2><a href="">Multi-Institute Management Pro</a></h2>
+                                    <p><strong>Features: </strong>
+                                        <ul type="1">
+                                            <li>Multi-Institute Management</li>
+                                            <li>Course, Batch,Inquiry, Management</li>
+                                            <li> Attendance  Management</li>
+                                            <li> Study Material </li>
+                                            <li>Fee Management</li>
+                                            <li>Staff Management</li>
+                                            <li>Student Dashboard</li>
+                                            <li>Export records to excel....etc many more.</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
+                                <div class="price">
+                                    <span class="currency">USD</span>
+                                    <span class="price-number"><span>$15</span></span>
+                                </div>
+                                <div class="btn-group-vertical">
+                                    <a target="_blank" class="btn btn-primary btn-lg" href="http://demo.weblizar.com/institute-management-pro">Demo</a>
+                                    <a class="btn btn-success btn-lg" href="https://weblizar.com/plugins/institute-management-pro/">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p_plugin blog_gallery">
+                            <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
+                                <div class="img-thumbnail">
+                                    <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'images/Twitter-Tweets-Pro.jpg'; ?>" class="img-responsive" alt="img"/>
                                </div>
                             </div>
                             <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
@@ -192,12 +219,12 @@
                                     <p><strong>Features: </strong>
                                         <ul>
                                             <li>Twitter Tweets Widget</li>
-                                            <li>Multiple Twitter feeds with no limitations</li>
                                             <li>Feeds of multiple users, hashtags or search terms</li>
                                             <li>Display Tweets in Slider</li>
-                                            <li>Configurable number of tweets to display</li>
-                                            <li>Leave Management Module</li>
-											<li>Load more Tweets...etc many more.</li>
+                                            <li>Load more Tweets</li>
+                                            <li>Style Settings</li>
+                                            <li>SGoogle Fonts</li>
+                                            <li>Tweet Actions (reply, retweet, like)....etc many more.</li>
                                         </ul>
                                     </p>
                                 </div>
@@ -208,15 +235,15 @@
                                     <span class="price-number"><span>$19</span></span>
                                 </div>
                                 <div class="btn-group-vertical">
-                                    <a target="_blank" class="btn btn-primary btn-lg" href="https://weblizar.com/plugins/twitter-tweets-pro/">Demo</a>
+                                    <a target="_blank" class="btn btn-primary btn-lg" href="http://demo.weblizar.com/twitter-tweets-pro/">Demo</a>
                                     <a class="btn btn-success btn-lg" href="https://weblizar.com/plugins/twitter-tweets-pro/">Buy Now</a>
                                 </div>
                             </div>
                         </div>
-						<div class="row p_plugin blog_gallery">
+                        <div class="row p_plugin blog_gallery">
                             <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
                                 <div class="img-thumbnail">
-                                     <img src="https://weblizar.com/wp-content/uploads/2018/09/Advanced-Google-Maps.jpg" class="img-responsive" alt="img"/>
+                                     <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'images/Advanced-Google-Maps.jpg'; ?>" class="img-responsive" alt="img"/>
                                
                                </div>
                             </div>
@@ -230,8 +257,8 @@
                                             <li>Interactive Map</li>
                                             <li>Route Direction Maps</li>
                                             <li>Custom Markers</li>
-                                            <li>Map Theme</li>
-											<li>Google Map Widget...etc many more.</li>
+                                            <li>Google Map Widget</li>
+                                            <li>Centralized Dashboard....etc many more.</li>
                                         </ul>
                                     </p>
                                 </div>
@@ -242,30 +269,31 @@
                                     <span class="price-number"><span>$11</span></span>
                                 </div>
                                 <div class="btn-group-vertical">
-                                    <a target="_blank" class="btn btn-primary btn-lg" href="https://weblizar.com/plugins/advanced-google-maps/">Demo</a>
+                                    <a target="_blank" class="btn btn-primary btn-lg" href="http://demo.weblizar.com/advanced-google-maps/">Demo</a>
                                     <a class="btn btn-success btn-lg" href="https://weblizar.com/plugins/advanced-google-maps/">Buy Now</a>
                                 </div>
                             </div>
                         </div>
-						<div class="row p_plugin blog_gallery">
+                        
+                        <div class="row p_plugin blog_gallery">
                             <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
                                 <div class="img-thumbnail">
-                                     <img src="https://weblizar.com/wp-content/uploads/2018/08/institute-management-pro-details.jpg" class="img-responsive" alt="img"/>
+                                     <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'images/Admin-Custom-Login-Pro.jpg'; ?>" class="img-responsive" alt="img"/>
                                
                                </div>
                             </div>
                             <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
                                 <div class="row p-box">
-                                    <h2><a href="">Institute Management Pro</a></h2>
+                                    <h2><a href="">Admin Custom Login Pro</a></h2>
                                     <p><strong>Features: </strong>
                                         <ul>
-                                            <li>Course Management</li>
-                                            <li>Batch Management</li>
-                                            <li>Enquiry Management</li>
-                                            <li>Student Management</li>
-                                            <li>Fee Management</li>
-                                            <li>Staff Management</li>
-											<li>Access Control...etc many more.</li>
+                                            <li>Best Admin Page Customizer</li>
+                                            <li>Max Login Retry</li>
+                                            <li>Social Media Login</li>
+                                            <li>Login Restriction By User Roles</li>
+                                            <li>Ban User(s) Login Access</li>
+                                            <li>Max User Access Management</li>
+                                            <li>Google Fonts....etc many more.</li>
                                         </ul>
                                     </p>
                                 </div>
@@ -273,19 +301,20 @@
                             <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
                                 <div class="price">
                                     <span class="currency">USD</span>
-                                    <span class="price-number"><span>$15</span></span>
+                                    <span class="price-number"><span>$25</span></span>
                                 </div>
                                 <div class="btn-group-vertical">
-                                    <a target="_blank" class="btn btn-primary btn-lg" href="https://weblizar.com/plugins/institute-management-pro/">Demo</a>
-                                    <a class="btn btn-success btn-lg" href="https://weblizar.com/plugins/institute-management-pro/">Buy Now</a>
+                                    <a target="_blank" class="btn btn-primary btn-lg" href="http://demo.weblizar.com/admin-custom-login-pro/wp-login.php">Demo</a>
+                                    <a class="btn btn-success btn-lg" href="https://weblizar.com/plugins/admin-custom-login-pro/">Buy Now</a>
                                 </div>
                             </div>
                         </div>
-
-						<div class="row p_plugin blog_gallery">
+                        
+                        
+                        <div class="row p_plugin blog_gallery">
                             <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
                                 <div class="img-thumbnail">
-                                     <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/Clockin-Pro.jpg'; ?>" class="img-responsive" alt="img"/>
+                                     <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'images/Clockin-Pro.jpg'; ?>" class="img-responsive" alt="img"/>
                                
                                </div>
                             </div>
@@ -300,7 +329,7 @@
                                             <li>Shift Management</li>
                                             <li>Holiday Listing</li>
                                             <li>Leave Management Module</li>
-											<li>Event Management Module....etc many more.</li>
+                                            <li>Event Management Module....etc many more.</li>
                                         </ul>
                                     </p>
                                 </div>
@@ -321,7 +350,7 @@
                             <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
                                 <div class="img-thumbnail">
                                      <div class="img-thumbnail">
-                                        <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/facebook-feed.jpg'; ?>" class="img-responsive" alt="img"/>
+                                        <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'images/facebook-feed.jpg'; ?>" class="img-responsive" alt="img"/>
                                     </div>
                                 </div>
                             </div>
@@ -351,192 +380,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row p_plugin blog_gallery">
-                            <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
-                                <div class="img-thumbnail">
-                                     <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/Pinterest-Feed.jpg'; ?>" class="img-responsive" alt="img"/>
-                               </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
-                                <div class="row p-box">
-                                    <h2><a href="">Pinterest Feed Pro</a></h2>
-                                    <p><strong>Features: </strong>
-                                        <ul>
-                                            <li>Pinterest Feed Shortcode</li>
-                                            <li>Responsive Pinterest Plugin</li>
-                                            <li>Pinterest Feed Widget</li>
-                                            <li>Pinterest Profile</li>
-                                            <li>Pinterest Pin Slider</li>
-                                            <li>Setting Panel</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
-                                <div class="price">
-                                    <span class="currency">USD</span>
-                                    <span class="price-number"><span>$18</span></span>
-                                </div>
-                                <div class="btn-group-vertical">
-                                    <a target="_blank" class="btn btn-primary btn-lg" href="https://weblizar.com/plugins/pinterest-feed-pro/">Demo</a>
-                                    <a class="btn btn-success btn-lg" href="https://weblizar.com/plugins/pinterest-feed-pro/">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row p_plugin blog_gallery">
-                            <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
-                                <div class="img-thumbnail">
-                                     <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/Search-Engine-Optimizer-new.jpg'; ?>" class="img-responsive" alt="img"/>
-                                  </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
-                                <div class="row p-box">
-                                    <h2><a href="">SEO Image Optimizer Pro </a></h2>
-                                    <p><strong>Features: </strong>
-                                        <ul>
-                                            <li>WooCommerce Product Images SEO</li>
-                                            <li>Auto Fill Title & Alt Tag</li>
-                                            <li>Custom Title & Alt Tag</li>
-                                            <li>Featured Images SEO</li>
-                                            <li>Magical Reset</li>
-                                            <li>Delimiter Removal</li>
-                                            <li>Image Compression</li>
-                                            <li>Site Speed Up</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
-                                <div class="price">
-                                    <span class="currency">USD</span>
-                                    <span class="price-number"><span>$11</span></span>
-                                </div>
-                                <div class="btn-group-vertical">
-                                    <a target="_blank" class="btn btn-primary btn-lg" href="https://weblizar.com/seo-image-optimizer-pro">Demo</a>
-                                    <a class="btn btn-success btn-lg" href="https://weblizar.com/seo-image-optimizer-pro/">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row p_plugin blog_gallery">
-                            <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
-                                <div class="img-thumbnail">
-                                     <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/newsletter.png'; ?>" class="img-responsive" alt="img"/>
-                               </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
-                                <div class="row p-box">
-                                    <h2><a href="">Newsletter Subscription Form Pro </a></h2>
-                                    <p><strong>Features: </strong>
-                                        <ul>
-                                            <li>Multiple Pro Template</li>
-                                            <li>News Letter Subscription</li>
-                                            <li>Download Subscriber List</li>
-                                            <li>Auto & Manual Notification</li>
-                                            <li>Major Browser Compatible</li>
-                                            <li>Multi Site and Multilingual</li>
-                                            <li>Customized Form</li>
-                                            <li>Forms shotcode</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
-                                <div class="price">
-                                    <span class="currency">USD</span>
-                                    <span class="price-number"><span>$7</span></span>
-                                </div>
-                                <div class="btn-group-vertical">
-                                    <a target="_blank" class="btn btn-primary btn-lg" href="https://weblizar.com/newsletter-subscription-form-pro/">Demo</a>
-                                    <a class="btn btn-success btn-lg" href="https://weblizar.com/newsletter-subscription-form-pro/">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row p_plugin blog_gallery">
-                            <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
-                                <div class="img-thumbnail">
-                                       <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/Comingsoon.jpg'; ?>" class="img-responsive" alt="img"/>
-                                 </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
-                                <div class="row p-box">
-                                    <h2><a href="">Coming Soon Page & Maintenance Mode Pro </a></h2>
-                                    <p><strong>Features: </strong>
-                                        <ul>
-                                            <li>Coming Soon Mode</li>
-                                            <li>Under Construction Mode</li>
-                                            <li>Pro Templates</li>
-                                            <li>News Letter Subscriptions</li>
-                                            <li>Automatic Website Launch</li>
-                                            <li>News Letter Subscriber Forms</li>
-                                            <li>Auto & Manual Notification</li>
-                                            <li>Google Analytic Tracking</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
-                                <div class="price">
-                                    <span class="currency">USD</span>
-                                    <span class="price-number"><span>$24</span></span>
-                                </div>
-                                <div class="btn-group-vertical">
-                                    <a target="_blank" class="btn btn-primary btn-lg" href="https://weblizar.com/plugins/coming-soon-page-maintenance-mode-pro/">Demo</a>
-                                    <a class="btn btn-success btn-lg" href="https://weblizar.com/plugins/coming-soon-page-maintenance-mode-pro/">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row p_plugin blog_gallery">
-                            <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
-                                <div class="img-thumbnail">
-                                       <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/responsive-pro.jpg'; ?>" class="img-responsive" alt="img"/>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
-                                <div class="row p-box">
-                                    <h2><a href="">Responsive Portfolio Pro</a></h2>
-                                    <p><strong>Features: </strong>
-                                        <ul>
-                                            <li>Image Hover Animation</li>
-                                            <li>Number of Hover Color</li>
-                                            <li>Number of Font Style</li>
-                                            <li>Number of Lightbox Styles</li>
-                                            <li>Drag and Drop image Position</li>
-                                            <li>Multiple Image uploader and so on..
-                                                <li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
-                                <div class="price">
-                                    <span class="currency">USD</span>
-                                    <span class="price-number">$<span>19</span></span>
-                                </div>
-                                <div class="btn-group-vertical">
-                                    <a class="btn btn-primary btn-lg" href="https://weblizar.com/plugins/responsive-portfolio-pro/">Demo</a>
-                                    <a class="btn btn-success btn-lg" href="https://weblizar.com/plugins/responsive-portfolio-pro/">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
 					
 					<!--offers-->
 					     <div id="offers" class="tab-pane fade">
                         <div class="space  theme active">
-
                             <div class=" p_head theme">
                                  <h1 class="section-title">Weblizar Offers</h1>
-
                             </div>
-
                             <div class="row p_plugin blog_gallery">
                                 <div class="col-xs-12 col-sm-4 col-md-5 p_plugin_pic">
                                     <div class="img-thumbnail">
-                                        <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/offer.jpg'; ?>" class="img-responsive" alt="img"/>
-                                  
+                                        <img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/offer.jpg'; ?>" class="img-responsive" alt="img"/>                                 
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-5 col-md-5 p_plugin_desc">
@@ -545,21 +400,17 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-3 col-md-2 p_plugin_pic">
-                                 
                                     <div class="btn-group-vertical">
                                         <a class="btn btn-primary  btn-lg title_offers" href="https://weblizar.com/offers/">Visit Here</a> 
                                     </div>
                                 </div>
                             </div>
-                         </div>
-
-                    </div> 
-
-					
+                        </div>
+                    </div> 					
                 </div>
             </div>
         </div>   
-            <style>
+<style>
 .setting_page {padding: 0;margin-top: 25px;}
 
 a.button.button-primary.thickbox.eswhortcode {

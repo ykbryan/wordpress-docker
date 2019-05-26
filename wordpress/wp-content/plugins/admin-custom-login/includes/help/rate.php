@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		<div class="panel-body">
 			<table class="form-table">
 				
-				<tr class="radio-span" style="border-bottom:none;">
+				<tr class="radio-span">
 					<td>
 					<h3><?php _e('We need your feedback for improve our plugin functionality on WordPress. So, if you like our plugin then please rate us', WEBLIZAR_ACL)?></h3>	
 					</td>
@@ -39,10 +39,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 					<th scope="row" ><?php _e('Rate Us', WEBLIZAR_ACL)?></th>
 					<td></td>
 				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
+				<tr class="radio-span">
 					<td class="colcent">
 						
-						<a class="acl-rate-us" style="text-align:center; text-decoration: none;font:normal 30px/l;" href="http://wordpress.org/support/view/plugin-reviews/admin-custom-login" target="_blank">
+						<a class="acl-rate-us" href="http://wordpress.org/support/view/plugin-reviews/admin-custom-login" target="_blank">
 							<span class="dashicons dashicons-star-filled"></span>
 							<span class="dashicons dashicons-star-filled"></span>
 							<span class="dashicons dashicons-star-filled"></span>
@@ -62,7 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 					<th scope="row" ><?php _e('Donate Us', WEBLIZAR_ACL)?></th>
 					<td></td>
 				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
+				<tr class="radio-span">
 					<td class="colcent">
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 							<input type="hidden" name="cmd" value="_s-xclick">
@@ -83,4 +83,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		width:100% !important;
 		text-align: center !important;
 	}
+	.colcent .acl-rate-us{
+		text-align:center; text-decoration: none;font:normal 30px;
+		 
+	}
+	.radio-span{
+		border-bottom:none;
+
+	}
+
 </style>

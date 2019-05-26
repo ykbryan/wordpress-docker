@@ -74,6 +74,7 @@ function acl_er_login_logo() {
         return array( 'red' => $r, 'green' => $g, 'blue' => $b );
 	}
 	$btnrgba =  weblizar_hex2rgb( $text_and_color_page['button_color'] );
+	// $btnfontrgba =  weblizar_hex2rgb( $text_and_color_page['login_button_font_color'] );
     $loginbg = weblizar_hex2rgb( $login_page['login_bg_color'] );
 	//require social icon css
 	require_once('css/socialcss.php');
@@ -125,7 +126,7 @@ function acl_er_login_logo() {
 			   // create default variables and use
 			}			
 		}
-		add_filter( 'login_headertitle', 'my_login_logo_url_title' );		
+		add_filter( 'login_headertext', 'my_login_logo_url_title' );		
 	?>
     <style type="text/css">	
 		<?php echo $login_custom_css; ?>
@@ -237,6 +238,7 @@ function acl_er_login_logo() {
 
 		body.login #loginform p.submit .button-primary, body.wp-core-ui .button-primary {
 			background: <?php echo $text_and_color_page['button_color'] ?> !important;
+			color: <?php echo $text_and_color_page['login_button_font_color'] ?> !important;
 			font-size:<?php echo $text_and_color_page['button_font_size'] ?>px;
 			border: none !important;
             text-shadow: <?php echo $link_shadow_color ?>;
@@ -245,6 +247,7 @@ function acl_er_login_logo() {
 		
 		body.login #loginform p.submit .button-primary:hover, body.login #loginform p.submit .button-primary:focus, body.wp-core-ui .button-primary:hover {
 			background: rgba(<?php echo $btnrgba['red'];?>,<?php echo $btnrgba['green']?>,<?php echo $btnrgba['blue']?>, 0.9) !important;
+			/*color: rgba(<?php echo $btnrgba['red'];?>,<?php echo $btnrgba['green']?>,<?php echo $btnrgba['blue']?>, 0.9) !important;*/
 		}
 		
 		body.login div#login form .input, .login input[type="text"] {
@@ -300,12 +303,12 @@ function acl_er_login_logo() {
 	   }
 	 </style>
 	<?php	
-	// Message Above Login Form
+	/** Message Above Login Form ***/
 	function acl_login_message( $message ) {
 		$login_page = unserialize(get_option('Admin_custome_login_login'));
 	    if (!empty($login_page['log_form_above_msg']) ){
-	    	  $log_form_above_msg = $login_page['log_form_above_msg'];
-	   		  return "<p class='login-msg-above'>".html_entity_decode(stripslashes($log_form_above_msg))."</p>";
+	    	$log_form_above_msg = $login_page['log_form_above_msg'];
+			return "<p class='login-msg-above'>".html_entity_decode(stripslashes($log_form_above_msg))."</p>";
 	    } else {
 	       return $message;
 	    }

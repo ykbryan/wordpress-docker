@@ -8,6 +8,12 @@ require_once('get_value.php');
 <style>
 	#post-social-5{
 		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('<?php echo WEBLIZAR_NALF_PLUGIN_URL.'css/img/pattern-1.png'; ?>') left top repeat, url('<?php echo WEBLIZAR_NALF_PLUGIN_URL.'css/img/bg1.jpg'; ?>') center center fixed;
+	}
+	.acl-rate-us{
+		text-align:center; text-decoration: none;font:normal 30px;
+	}
+	.navbar-static-top{
+		margin-bottom: 0; background-color:#29282f;
 	}	
 </style>
 <!-- ==============================================
@@ -16,7 +22,7 @@ Fonts
 
 <div id="wrapper">
 	<!-- Navigation -->
-	<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; background-color:#29282f;">
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -27,13 +33,11 @@ Fonts
 			<a class="sidebar-toggle hidden-xs" href="javascript:void(0);"><i class="fa fa-bars fa-2x"></i></a>
 			<a class="navbar-brand coming-soon-admin-title" href="index.html" style="color:#fff;"><?php _e('Admin Custom Login', WEBLIZAR_ACL); ?></a>
 		</div>
-
 		<!-- /.navbar-header -->
 		<ul class="nav navbar-top-links navbar-right coming-soon-top">
 			 <!-- Code for prev Login page-->
 			<?php add_thickbox(); ?>
-			
-			
+						
 			<!-- /.dropdown -->
 			<li class="dropdown" style="display:none">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -47,10 +51,8 @@ Fonts
 					<i class="fa fa-info fa-fw"></i> 
 				</a>
 			</li>
-			<!-- /.dropdown -->                 
-		   
+			<!-- /.dropdown -->                 		   
 		</ul>
-
 		<!-- /.navbar-top-links -->
 		<div class="navbar-default sidebar" role="navigation">
 			<div class="sidebar-nav navbar-collapse">
@@ -61,14 +63,13 @@ Fonts
 						</span>
 											
 						<h5 style="color:#fff" class="acl-rate"><?php _e('Show Us Some Love (Rate Us)', WEBLIZAR_ACL); ?></h5>
-						<a class="acl-rate-us" style="text-align:center; text-decoration: none;font:normal 30px/l;" href="https://wordpress.org/plugins/admin-custom-login/#reviews" target="_blank">
+						<a class="acl-rate-us" style="" href="https://wordpress.org/plugins/admin-custom-login/#reviews" target="_blank">
 							<span class="dashicons dashicons-star-filled"></span>
 							<span class="dashicons dashicons-star-filled"></span>
 							<span class="dashicons dashicons-star-filled"></span>
 							<span class="dashicons dashicons-star-filled"></span>
 							<span class="dashicons dashicons-star-filled"></span>
-						</a>
-						
+						</a>						
 					</li>
 
 					<li>

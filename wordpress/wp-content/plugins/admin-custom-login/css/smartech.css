@@ -439,6 +439,7 @@ body {
 
 #wrapper {
   width: 100%;
+  direction: ltr;
 background:#29282f;
 
   }
@@ -1547,7 +1548,7 @@ box-shadow: 0 0 5px rgba(50, 50, 50, 0.3);
 margin-bottom: 12px;
 }
 .radio-span span{
-padding-bottom: 10px;
+/*padding-bottom: 10px;*/
 display: block;
 font-size:15px;
 }
@@ -1920,7 +1921,7 @@ display:block;
 }
 
 
-.save-button-block{
+/*.save-button-block{
 	position:fixed;
 	bottom:0%;
 	right:1%;
@@ -1929,6 +1930,18 @@ display:block;
 	overflow:hidden;
 	border-radius:6px;
 	z-index:1;
+}*/
+.save-button-block {
+position: fixed;
+bottom: 0%;
+/*left: 20%;*/
+text-align: center;
+width: auto;
+background: rgba(41, 40, 47, 0.78);
+overflow: hidden;
+border-radius: 6px;
+z-index: 1000;
+direction: ltr;
 }
 .save-button-block .btn-info{
 	margin-right:15px;

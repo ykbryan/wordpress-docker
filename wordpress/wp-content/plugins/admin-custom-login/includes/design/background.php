@@ -80,6 +80,26 @@ function set_slideshow(){
 	}
 }
 </script>
+<style type="text/css">
+	 
+	.radio-span{
+		border-bottom:none;
+
+	}
+	.bg-color{
+        margin-bottom: 10px;
+	}
+	.bg-color img{
+		margin-right: auto;
+	}
+	.dialog-button1,.dialog-close-button11{
+       display:none;
+	}
+	.dialog{
+       position: fixed; z-index: 9999;
+	}
+
+</style>
 <div class="row">
 	<div class="post-social-wrapper clearfix">
 		<div class="col-md-12 post-social-item">
@@ -103,7 +123,7 @@ function set_slideshow(){
 					<th scope="row" ><?php _e('Select Background', WEBLIZAR_ACL)?></th>
 					<td></td>
 				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
+				<tr class="radio-span">
 					<td>
 						<select id="select-background" class="standard-dropdown" name="select-background" onchange='getComboid()'>
 							<option value="no-background" ><?php _e('No Background Selected', WEBLIZAR_ACL)?></option>
@@ -120,10 +140,9 @@ function set_slideshow(){
 	</div>
 
 	<div id="div-bakground-color" class="no-background">
-		<div style="margin-bottom: 10px;">
-			<img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/background-color1.png'; ?>" class="img-responsive" style="margin-right: auto;" alt="" >
+		<div class="bg-color">
+			<img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/background-color1.png'; ?>" class="img-responsive" alt="" >
 		</div>
-
 		<div class="panel panel-primary panel-default content-panel">
 			<div class="panel-body">
 				<table class="form-table">
@@ -131,7 +150,7 @@ function set_slideshow(){
 						<th scope="row" ><?php _e('Background Color', WEBLIZAR_ACL)?></th>
 						<td></td>
 					</tr>
-					<tr  style="border-bottom:none;">
+					<tr  class="radio-span">
 						<td id="td-top-background-color">
 							<input id="top-background-color" name="top-background-color" type="text" value="<?php echo $top_color; ?>" class="my-color-field" data-default-color="#000000" />
 						</td>
@@ -142,10 +161,9 @@ function set_slideshow(){
 	</div>
 
 	<div id="div-bakground-image" class="no-background">
-		<div style="margin-bottom: 10px;">
-			<img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/background-image.png'; ?>" class="img-responsive"  style="margin-right: auto;" >
+		<div class="bg-color">
+			<img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/background-image.png'; ?>" class="img-responsive">
 		</div>
-
 		<div class="panel panel-primary panel-default content-panel">
 			<div class="panel-body">
 				<table class="form-table">
@@ -153,9 +171,9 @@ function set_slideshow(){
 						<th scope="row" ><?php _e('Background Image', WEBLIZAR_ACL)?></th>
 						<td></td>
 					</tr>
-					<tr  style="border-bottom:none;">
+					<tr class="radio-span">
 						<td>
-							<input type="text" class="pro_text" id="top_image" placeholder="<?php _e('No media selected!', WEBLIZAR_ACL)?>" name="upload_image" disabled="disabled"  value="<?php echo $top_image; ?>"/>
+							<input type="text" class="pro_text" id="top_image" placeholder="<?php _e('No media selected!', WEBLIZAR_ACL)?>" name="upload_image" value="<?php echo $top_image; ?>"/>
 
 							<input type="button" value="<?php _e('Upload', WEBLIZAR_ACL)?>" id="upload-logo" class="button-primary rcsp_media_upload" />
 
@@ -196,7 +214,7 @@ function set_slideshow(){
 						<th scope="row" ><?php _e('Cover or Strech', WEBLIZAR_ACL)?></th>
 						<td></td>
 					</tr>
-					<tr  style="border-bottom:none;">
+					<tr  class="radio-span">
 						<td>
 							<input type="checkbox" value="yes" id="bg-strech" name="strech-bg"  onclick="OnChangeCheckbox(this)" style="visibility: visible;" <?php if($top_cover=="yes"){echo "checked";}?>/>&nbsp;<?php _e('Yes', WEBLIZAR_ACL)?>
 						</td>
@@ -213,7 +231,7 @@ function set_slideshow(){
 							<th scope="row" ><?php _e('Background Repeat', WEBLIZAR_ACL)?></th>
 							<td></td>
 						</tr>
-						<tr class="radio-span" style="border-bottom:none;">
+						<tr class="radio-span">
 							<td>
 								<select id="top_bg_repeat" class="standard-dropdown" name="top_bg_repeat" >
 										<option value="no-repeat" ><?php _e('No Repeat', WEBLIZAR_ACL)?></option>
@@ -234,7 +252,7 @@ function set_slideshow(){
 							<th scope="row" ><?php _e('Background Position', WEBLIZAR_ACL)?></th>
 							<td></td>
 						</tr>
-						<tr class="radio-span" style="border-bottom:none;">
+						<tr class="radio-span">
 							<td>
 								<select id="top_bg_position" class="standard-dropdown" name="top_bg_position"  >
 									<option value="left top" ><?php _e('Left Top', WEBLIZAR_ACL)?> </option>
@@ -260,7 +278,7 @@ function set_slideshow(){
 							<th scope="row" ><?php _e('Background Attachment', WEBLIZAR_ACL)?></th>
 							<td></td>
 						</tr>
-						<tr class="radio-span" style="border-bottom:none;">
+						<tr class="radio-span">
 							<td>
 								<select id="top_bg_attachment" class="standard-dropdown" name="top_bg_attachment">
 										<option value="fixed" ><?php _e('Fixed', WEBLIZAR_ACL)?> </option>
@@ -276,10 +294,9 @@ function set_slideshow(){
 	</div><!-- End of div-bakground-image -->
 
 	<div id="div-bakground-Slideshow" class="no-background">
-		<div style="margin-bottom: 10px;">
-			<img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/background-slideshow.png'; ?>" class="img-responsive"  style="margin-right: auto;" >
+		<div class="bg-color">
+			<img src="<?php echo WEBLIZAR_NALF_PLUGIN_URL.'/images/background-slideshow.png'; ?>" class="img-responsive">
 		</div>
-
 		<div class="panel panel-primary panel-default content-panel">
 			<div class="panel-body">
 				<table class="form-table">
@@ -287,7 +304,7 @@ function set_slideshow(){
 						<th scope="row" ><?php _e('No. Of Background Slideshow', WEBLIZAR_ACL)?></th>
 						<td></td>
 					</tr>
-					<tr  style="border-bottom:none;">
+					<tr class="radio-span">
 						<td>
 							<select id="top_slideshow_no" class="standard-dropdown" name="top_slideshow_no" onchange="set_slideshow()">
 									<option value="0" ><?php _e('Select Number of Slide Show', WEBLIZAR_ACL)?> </option>
@@ -310,7 +327,7 @@ function set_slideshow(){
 						<td></td>
 					</tr>
 
-					<tr  style="border-bottom:none;">
+					<tr  class="radio-span">
 						<td style="width:100% !important" id="tdslider">
 						<?php
 						$Slidshow_image = unserialize(get_option('Admin_custome_login_Slidshow'));
@@ -339,7 +356,7 @@ function set_slideshow(){
 						<th scope="row" ><?php _e('Slider Animation', WEBLIZAR_ACL)?></th>
 						<td></td>
 					</tr>
-					<tr class="radio-span" style="border-bottom:none;">
+					<tr class="radio-span">
 						<td>
 							<select id="top_bg_slider_animation" class="standard-dropdown" name="top_bg_slider_animation"  >
 
@@ -355,8 +372,8 @@ function set_slideshow(){
 		</div>
 	</div>	
 
-	<button data-dialog1="somedialog1" class="dialog-button1" style="display:none">Open Dialog</button>
-	<div id="somedialog1" class="dialog" style="position: fixed; z-index: 9999;">
+	<button data-dialog1="somedialog1" class="dialog-button1">Open Dialog</button>
+	<div id="somedialog1" class="dialog">
 		<div class="dialog__overlay"></div>
 		<div class="dialog__content" >
 			<div class="morph-shape" id="morph-shape1" data-morph-open1="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close1="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
@@ -370,8 +387,8 @@ function set_slideshow(){
 		</div>
 	</div>
 
-	<button data-dialog11="somedialog11" class="dialog-button11" style="display:none">Open Dialog</button>
-	<div id="somedialog11" class="dialog" style="position: fixed; z-index: 9999;">
+	<button data-dialog11="somedialog11" class="dialog-close-button11">Open Dialog</button>
+	<div id="somedialog11" class="dialog">
 		<div class="dialog__overlay"></div>
 		<div class="dialog__content">
 			<div class="morph-shape" id="morph-shape1" data-morph-open1="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close1="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">

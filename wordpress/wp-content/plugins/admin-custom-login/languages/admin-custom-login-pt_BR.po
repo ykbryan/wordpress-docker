@@ -1,4334 +1,1904 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: 2018-10-24 17:31+0530\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: pt_BR\n"
+"PO-Revision-Date: 2019-03-11 15:21+0000\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-KeywordsList: _e;__\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-SearchPath-0: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: pt-BR\n"
+"Project-Id-Version: Plugins - Loco Translate - Stable (latest release)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-08 18:17+0000\n"
+"Last-Translator: leaf <rodrigues@blupixel.com.br>\n"
+"Language-Team: Português do Brasil\n"
+"X-Loco-Version: 2.2.1; wp-5.1"
 
-#: admin/inc/admin_menu.php:11
-msgid "Plugin Configuration Click Here"
-msgstr "Configura��o de Plugin Clique Aqui"
+#: src/fs/FileWriter.php:184
+#, php-format
+msgid "\"%s\" is a directory, not a file"
+msgstr "%s este é um diretório, não um arquivo"
 
-#: admin/inc/admin_menu.php:12
-msgid "Buy Pro"
-msgstr "Compre Pro"
+#: tpl/admin/bundle/alias.php:11
+msgid "\"Hello Dolly\" is part of the WordPress core"
+msgstr "\"Olá Dolly\" é parte do núcleo do WordPress"
 
-#: admin/inc/admin_menu.php:13
-msgid "Admin Demo"
-msgstr "Demonstra��o de administra��o"
+#: src/api/WordPressFileSystem.php:84
+#, php-format
+msgid "%s already exists in this folder"
+msgstr "%s já existe nesta pasta"
 
-#: includes/banner.php:16
-msgid "Max Login Retry"
+#. Where %s is the type of file, e.g. "po"
+#: tpl/admin/file/info.php:24
+#, php-format
+msgid "%s file is writeable"
+msgstr "O arquivo %s é gravável"
+
+#: src/js/Strings.php:48 src/gettext/Metadata.php:200
+#, javascript-format
+msgid "%s fuzzy"
+msgstr "%s incerto"
+
+#. Where %s is the size of a file
+#: tpl/admin/init/init-pot.php:16
+#, php-format
+msgid "%s on disk"
+msgstr "%s no disco"
+
+#: src/js/Strings.php:52 src/gettext/Metadata.php:203
+#, javascript-format
+msgid "%s untranslated"
+msgstr "%s não traduzido"
+
+#: src/js/Strings.php:44 src/gettext/Metadata.php:198
+#, javascript-format
+msgid "%s%% translated"
+msgstr "%s%% traduzido"
+
+#: src/js/Strings.php:24
+#, php-format
+msgid "1 new string added"
+msgid_plural "%s new strings added"
+msgstr[0] "1 novo termo adicionado"
+msgstr[1] "%s novos termos adicionados"
+
+#: src/js/Strings.php:27
+#, php-format
+msgid "1 obsolete string removed"
+msgid_plural "%s obsolete strings removed"
+msgstr[0] "1 um termo obsoleto removido"
+msgstr[1] "%s termos obsoletos removidos"
+
+#: src/admin/init/InitPoController.php:221
+#, php-format
+msgid "1 source file will be scanned for translatable strings"
+msgid_plural "%s source files will be scanned for translatable strings"
+msgstr[0] "1 arquivo de origem será digitalizado para strings traduzíveis"
+msgstr[1] "%s arquivos de origem serão digitalizados para strings traduzíveis"
+
+#: src/js/Strings.php:40 src/gettext/Metadata.php:188
+#, php-format
+msgid "1 string"
+msgid_plural "%s strings"
+msgstr[0] "1 termo"
+msgstr[1] "%s termos"
+
+#: tpl/admin/file/info-pot.php:22
+#, php-format
+msgid "1 word"
+msgid_plural "%s words"
+msgstr[0] "1 palavra"
+msgstr[1] "%s palavras"
+
+#: tpl/admin/config/settings.php:136
+msgid "About file system access"
+msgstr "Sobre o acesso ao sistema de arquivos"
+
+#: tpl/admin/init/init-prompt.php:30 tpl/admin/init/init-pot.php:42
+msgid "About templates"
+msgstr "Sobre modelos"
+
+#: tpl/admin/errors/no-tokenizer.php:11
+msgid "About the Tokenizer"
+msgstr "Sobre o Tokenizer"
+
+#: tpl/admin/root.php:35
+msgid "Active theme:"
+msgstr "Tema ativo:"
+
+#: tpl/admin/bundle/conf.php:142
+msgid "Add set"
+msgstr "Adicionar conjunto"
+
+#: tpl/admin/config/settings.php:86
+msgid "Add UTF-8 byte order mark"
+msgstr "Adicionar marca de ordem UTF-8 byte"
+
+#: tpl/admin/bundle/view.php:28
+msgid "Additional files found"
+msgstr "Arquivos adicionais encontrados"
+
+#: src/hooks/AdminHooks.php:69
+#, php-format
+msgid ""
+"Administrators and auditors may wish to review Loco's <a href=\"%s\">plugin "
+"privacy notice</a>."
 msgstr ""
+"Administradores e auditores podem querer rever o <a href=\"%s\">aviso de "
+"privacidade do plugin da Loco</a>."
 
-#: includes/banner.php:17
-msgid "Login With Access Token"
+#: src/admin/bundle/BaseController.php:97
+msgid "Advanced"
+msgstr "Avançado"
+
+#: src/admin/bundle/ConfController.php:140 
+#: tpl/admin/bundle/setup/inc-nav.php:19 tpl/admin/bundle/setup/core.php:17
+msgid "Advanced configuration"
+msgstr "Configurações avançadas"
+
+#: src/admin/bundle/ConfController.php:55
+msgid "Advanced tab"
+msgstr "Aba avançado"
+
+#: src/mvc/AjaxRouter.php:177
+msgid "Ajax controller returned empty JSON"
+msgstr "Controle Ajax retornou JSON vazio"
+
+#: src/mvc/AjaxRouter.php:172
+#, php-format
+msgid "Ajax route not found: \"%s\""
+msgstr "Rota Ajax não encontrada: \"%s\""
+
+#: tpl/admin/config/settings.php:123
+msgid "Allow"
+msgstr "Permitir"
+
+#: tpl/admin/config/settings.php:126
+msgid "Allow (with warning)"
+msgstr "Permitir (com advertência)"
+
+#: tpl/admin/config/settings.php:147
+msgid "Allow full access to these roles"
+msgstr "Permitir acesso total a essas funções"
+
+#: src/js/Strings.php:31
+#, javascript-format
+msgid "Already up to date with %s"
+msgstr "Atualizado desde %s"
+
+#: src/js/Strings.php:34
+msgid "Already up to date with source code"
+msgstr "Já está atualizado a partir do código fonte"
+
+#: tpl/admin/file/delete.php:16
+msgid ""
+"Are you sure you want to <strong>permanently</strong> delete the following "
+"file?"
 msgstr ""
+"Tem certeza de que deseja excluir <strong>permanentemente</strong> o "
+"seguinte arquivo?"
 
-#: includes/banner.php:18
-msgid "Freeze Login Form On Brute Force Attack"
+#: src/admin/init/InitPoController.php:237
+msgid "Assign template"
+msgstr "Atribuir modelo"
+
+#: tpl/admin/bundle/setup.php:12
+msgid "Author details"
+msgstr "Detalhes do autor"
+
+#: tpl/admin/init/init-po.php:70
+msgid "Available languages"
+msgstr "Idiomas disponíveis"
+
+#: tpl/admin/errors/no-backups.php:16
+msgid ""
+"Backup files will be written when you save translations from Loco Translate "
+"editor"
 msgstr ""
+"Os arquivos de cópia de segurança serão escritos quando você salvar as "
+"traduções do editor do Tradução Loco"
 
-#: includes/banner.php:19
-msgid "Unfreeze Login Form By Admin"
+#: tpl/admin/file/info-po.php:40
+msgid "Binary file missing"
+msgstr "Arquivo binário faltando"
+
+#: tpl/admin/bundle/conf.php:128
+msgid "Blocked paths"
+msgstr "Caminhos bloqueados"
+
+#: tpl/admin/bundle/setup/meta.php:11 tpl/admin/bundle/setup/core.php:10
+msgid "Bundle auto-configured"
+msgstr "Pacote auto-configurado"
+
+#: tpl/admin/bundle/setup/saved.php:11
+msgid "Bundle configuration saved"
+msgstr "Configurações do pacote salvas"
+
+#: src/admin/bundle/DebugController.php:24
+msgid "Bundle diagnostics"
+msgstr "Diagnóstico de pacotes"
+
+#: tpl/admin/bundle/locale.php:32 tpl/admin/list/inc-table.php:11
+msgid "Bundle name"
+msgstr "Nome do pacote"
+
+#: src/admin/bundle/SetupController.php:35
+msgid "Bundle setup"
+msgstr "Configurar pacotes"
+
+#: src/admin/bundle/BaseController.php:170
+msgid ""
+"Changes to this file may be overwritten or deleted when you update WordPress"
 msgstr ""
+"As alterações feitas neste arquivo podem ser substituídas ou excluídas "
+"quando você atualiza o WordPress"
 
-#: includes/banner.php:20
-#, fuzzy
-#| msgid "Social Media Icon Color"
-msgid "Social Media Login"
-msgstr "Cor do Ícone Social"
+#: tpl/admin/bundle/setup/conf.php:12
+msgid "Check config repository"
+msgstr "Verificar o repositório de configuração"
 
-#: includes/banner.php:21
-msgid "Login Restriction By User Roles"
+#: src/js/Strings.php:58
+msgid "Check console output for debugging information"
+msgstr "Verifique a saída do console para obter informações sobre a depuração"
+
+#: src/admin/bundle/ConfController.php:95
+msgid "Child theme declares the same Text Domain as the parent theme"
+msgstr "Tema filho declara o mesmo Texto de Domínio que o tema pai"
+
+#: tpl/admin/init/init-po.php:51
+msgid "Choose a language"
+msgstr "Escolha um idioma"
+
+#: tpl/admin/init/init-po.php:96
+msgid "Choose a location"
+msgstr "Escolha uma localização"
+
+#: tpl/admin/common/inc-fsconn.php:60
+msgid "Click \"Connect\" to authenticate with the server"
+msgstr "Clique em \"Conectar\" para autenticação com o servidor"
+
+#: tpl/admin/bundle/view.php:32 tpl/admin/bundle/view.php:51
+#, php-format
+msgid ""
+"Click the <a href=\"%s\">setup</a> tab to complete the bundle configuration"
 msgstr ""
+"Clique na aba <a href=\"%s\">configuração</a> para completar a configuração "
+"do pacote"
 
-#: includes/banner.php:22
-#, fuzzy
-#| msgid "Save Changes"
-msgid "Ban User"
-msgstr "Salvar Configurações"
+#: tpl/admin/file/info-mo.php:15
+msgid "compiled"
+msgstr "compilado"
 
-#: includes/banner.php:22
-#, fuzzy
-#| msgid "Setting Save Successfully"
-msgid "Login Access"
-msgstr "Configurações Salvas com Sucesso"
+#: tpl/admin/file/info-mo.php:27
+msgid "Compiled translations"
+msgstr "Compilar traduções"
 
-#: includes/banner.php:23
-msgid "Max User Access Management"
-msgstr ""
+#: tpl/admin/config/settings.php:15 tpl/admin/config/settings.php:19
+msgid "Compiling MO files"
+msgstr "Compilando arquivos MO"
 
-#: includes/banner.php:24
-msgid "Restrict Unauthorized IP"
-msgstr ""
+#: src/admin/bundle/BaseController.php:53
+msgid "Configuration reset"
+msgstr "Redefinir configurações"
 
-#: includes/banner.php:25
-#, fuzzy
-#| msgid "import / export plugin settings"
-msgid "Import Export Settings"
-msgstr "configura��es do plugin de importa��o / exporta��o"
+#: src/admin/bundle/BaseController.php:38
+msgid "Configuration saved"
+msgstr "Configurações salvas"
 
-#: includes/banner.php:26
-#, fuzzy
-#| msgid "Login Form Position"
-msgid "Login Form Logo"
-msgstr "Largura do Formulário de Login"
+#. where %s is a plugin or theme
+#: src/admin/bundle/ConfController.php:16
+#, php-format
+msgid "Configure %s"
+msgstr "Configurar %s"
 
-#: includes/banner.php:27
-#, fuzzy
-#| msgid "Redirect Users After Login (Not Work For Admin)"
-msgid "Redirect Users After Login"
-msgstr ""
-"Redirecionar usuários após o login (não funciona para o administrador)"
+#: src/package/Debugger.php:204
+#, php-format
+msgid "Configured domain has no extractable strings"
+msgid_plural "%u configured domains have no extractable strings"
+msgstr[0] "O domínio configurado não possui strings extraíveis"
+msgstr[1] "%u domínios configurados não possuem strings extraíveis"
 
-#: includes/banner.php:28
-#, fuzzy
-#| msgid "Float Settings"
-msgid "Google reCpatcha"
-msgstr "Configurações de Flutuação"
+#: tpl/admin/file/delete.php:12
+msgid "Confirm delete"
+msgstr "Confirmar exclusão"
 
-#: includes/content.php:28 init.php:77
-msgid "Admin Custom Login"
-msgstr "Personalizar Login de Administrador"
+#: tpl/admin/common/inc-fsconn.php:65
+msgid "Connect"
+msgstr "Conectar"
 
-#: includes/content.php:63
-msgid "Show Us Some Love (Rate Us)"
-msgstr "Mostre-nos Algum Amor (Avalie-nos)"
+#: src/ajax/FsConnectController.php:86
+msgid "Connected to remote file system"
+msgstr "Conectado ao sistema de arquivos remoto"
 
-#: includes/content.php:80 includes/dashboard/dashboard.php:97
-#: includes/dashboard/dashboard.php:112
-msgid "Dashboard"
-msgstr "Painel de Controle"
+#: tpl/admin/bundle/inc-po-table.php:53 tpl/admin/bundle/locale.php:69
+msgid "Copy"
+msgstr "Copiar"
 
-#: includes/content.php:81
-#, fuzzy
-#| msgid "Application overview"
-msgid "application overview"
-msgstr "Resumo de aplicações"
+#: tpl/admin/init/init-po.php:152
+#, php-format
+msgid "Copy target translations from \"%s\""
+msgstr "Copiar destino das traduções a partir de \"%s\""
 
-#: includes/content.php:90
-msgid "Background Design"
-msgstr "Design de Fundo"
+#. Page title for core WordPress translations
+#: src/mvc/AdminRouter.php:56
+msgid "Core translations &lsaquo; Loco"
+msgstr "Tradução de núcleos &lsaquo; Loco"
 
-#: includes/content.php:91
-#, fuzzy
-#| msgid "Modify Background design here"
-msgid "modify background design here"
-msgstr "Modificar o design do fundo aqui"
+#: src/admin/init/InitPoController.php:212 
+#: src/admin/bundle/ViewController.php:127 tpl/admin/init/init-pot.php:40
+msgid "Create template"
+msgstr "Criar modelo"
 
-#: includes/content.php:101
-msgid "Login form Setting"
-msgstr "Configurações do formulário de Login"
+#: tpl/admin/init/init-po.php:13
+msgid "Create template instead"
+msgstr "Criar modelo em vez disso"
 
-#: includes/content.php:102
-#, fuzzy
-#| msgid "Modify Login design here"
-msgid "modify login design here"
-msgstr "Modificar design do Login aqui"
+#: src/admin/bundle/BaseController.php:144
+msgid "Creating this file requires permission"
+msgstr "A criação deste arquivo requer permissão"
 
-#: includes/content.php:112
-msgid "Font Setting"
-msgstr "Configurações de Fonte"
+#: tpl/admin/init/init-po.php:82
+msgid "Custom language"
+msgstr "Personalizar idioma"
 
-#: includes/content.php:113
-#, fuzzy
-#| msgid "Modify Login Form Style here"
-msgid "modify login form style here"
-msgstr "Modificar Estilo do Formulário de Login aqui"
+#: src/error/Debug.php:19 src/admin/config/BaseController.php:23 
+#: src/admin/config/DebugController.php:12 
+#: src/admin/bundle/BaseController.php:100
+msgid "Debug"
+msgstr "Depuração"
 
-#: includes/content.php:123 includes/settings/page-settings.php:50
-msgid "Logo Settings"
-msgstr "Configurações de Logotipo"
+#: src/admin/file/BaseController.php:98 tpl/admin/file/diff.php:31 
+#: tpl/admin/bundle/inc-po-table.php:59 tpl/admin/bundle/locale.php:75
+msgid "Delete"
+msgstr "Excluir"
 
-#: includes/content.php:124
-#, fuzzy
-#| msgid "Customize Logo Settings here"
-msgid "customize logo settings here"
-msgstr "Personalize as Configurações de Logotipo aqui"
+#: src/admin/file/DeleteController.php:75 
+#: src/admin/file/DeleteController.php:93
+#, php-format
+msgid "Delete %s"
+msgstr "Excluir %s"
 
-#: includes/content.php:135 includes/social/social.php:21
-msgid "Social Settings"
-msgstr "Configurações Sociais"
+#: src/admin/bundle/BaseController.php:147
+msgid "Deleting this file requires permission"
+msgstr "A exclusão deste arquivo requer permissão"
 
-#: includes/content.php:136
-#, fuzzy
-#| msgid "Connect with your social profile"
-msgid "connect with your social profile"
-msgstr "Conectar com seu perfil social"
+#. Help tip for "Project name" field in advanced bundle config
+#: tpl/admin/bundle/conf.php:35
+msgid "Descriptive name for this set of translatable strings"
+msgstr "Nome descritivo para este conjunto de strings traduzíveis"
 
-#: includes/content.php:146
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:117
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:131
-#, fuzzy
-#| msgid "Float Settings"
-msgid "Google Captcha"
-msgstr "Configurações de Flutuação"
+#: tpl/admin/file/info.php:55
+msgid "Directory doesn't exist"
+msgstr "Diretório não existe"
 
-#: includes/content.php:147
-#, fuzzy
-#| msgid "Float Settings"
-msgid "configure captcha settings"
-msgstr "Configurações de Flutuação"
+#: tpl/admin/file/info.php:69
+msgid "Directory is writeable"
+msgstr "O diretório é gravável"
 
-#: includes/content.php:157
-msgid "Export / Import"
-msgstr "Exportar / Importar"
+#: tpl/admin/config/settings.php:129
+msgid "Disallow"
+msgstr "Não permitir"
 
-#: includes/content.php:158
-msgid "import / export plugin settings"
-msgstr "configura��es do plugin de importa��o / exporta��o"
+#: src/admin/bundle/LocaleController.php:129 
+#: tpl/admin/common/inc-fsconn.php:16 tpl/admin/common/inc-fsconn.php:43 
+#: tpl/admin/errors/no-backups.php:22
+msgid "Documentation"
+msgstr "Documentação"
 
-#: includes/content.php:167
-msgid "Recommendations"
-msgstr "Recomendações"
+#: tpl/admin/bundle/conf.php:81
+msgid "Domain path"
+msgstr "Caminho de domínio"
 
-#: includes/content.php:168
-#, fuzzy
-#| msgid "Get More Free Useful Plugins"
-msgid "get more free plugins"
-msgstr "Obter Mais Plugins Úteis Gratuitos"
+#: src/mvc/AjaxRouter.php:200
+msgid "Download action not found"
+msgstr "Ação baixar não encontrada"
 
-#: includes/content.php:177 includes/help/help.php:15
-msgid "Help And Support"
-msgstr "Ajuda e Suporte"
+#: src/mvc/AjaxRouter.php:205
+msgid "Download controller returned empty output"
+msgstr "Controle de baixar retornou saída vazia"
 
-#: includes/content.php:178
-#, fuzzy
-#| msgid "Ask your query"
-msgid "ask your queries"
-msgstr "Faça sua consulta"
+#: tpl/admin/bundle/inc-po-table.php:47 tpl/admin/bundle/locale.php:63
+msgid "Edit"
+msgstr "Editar"
 
-#: includes/content.php:187 includes/offers.php:11
-msgid "Our Offers"
-msgstr "Nossas ofertas"
+#: tpl/admin/bundle/setup/saved.php:19
+msgid "Edit config"
+msgstr "Editar configurações"
 
-#: includes/content.php:188
-msgid "weblizar premium products"
-msgstr "produtos premium weblizar"
+#: src/admin/bundle/ViewController.php:119
+msgid "Edit template"
+msgstr "Editar modelo"
 
-#: includes/content.php:197
-#, fuzzy
-#| msgid "Rate Us"
-msgid "Rate & Donate Us"
-msgstr "Classifique-nos"
+#. %1$s is the file name, %2$s is the bundle name
+#: src/admin/file/EditController.php:18
+#, php-format
+msgid "Editing %1$s in %2$s"
+msgstr "Editando %1$s em %2$s"
 
-#: includes/content.php:198
-#, fuzzy
-#| msgid "If you like us"
-msgid "if you like us"
-msgstr "Se você gosta de nós"
+#: src/admin/file/BaseController.php:94
+msgid "Editor"
+msgstr "Editor"
 
-#: includes/dashboard/dashboard.php:16
-msgid "Admin Custom Login Dashboard"
-msgstr "Personalizar Painel de Controle do Login de Administrador"
+#. Where %s is the name of the language, e.g. "French translation"
+#: src/js/Strings.php:84
+#, javascript-format
+msgctxt "Editor"
+msgid "%s translation"
+msgstr "Tradução %s"
 
-#: includes/dashboard/dashboard.php:31
-msgid "Admin Custom Login Status"
-msgstr "Estado do Admin Custom Login"
+#. button for adding a new string when manually editing a POT file
+#: src/admin/file/EditController.php:159
+msgctxt "Editor"
+msgid "Add"
+msgstr "Adicionar"
 
-#: includes/dashboard/dashboard.php:37
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:83
-msgid "Disable"
-msgstr "Desabilitado"
+#. Label for the window pane for entering translator comments
+#: src/js/Strings.php:90
+msgctxt "Editor"
+msgid "Comments"
+msgstr "Comentários"
 
-#: includes/dashboard/dashboard.php:40
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:80
-msgid "Enable"
-msgstr "Habilitado"
+#. Label for the window pane holding message context
+#: src/js/Strings.php:87
+msgctxt "Editor"
+msgid "Context"
+msgstr "Contexto"
 
-#: includes/dashboard/dashboard.php:52
-msgid "View Login Page"
-msgstr "Visualizar Página de Login"
+#. Label for the context window when no translation selected
+#: src/js/Strings.php:111
+msgctxt "Editor"
+msgid "Context not loaded"
+msgstr "Contexto não carregado"
 
-#: includes/dashboard/dashboard.php:57
-msgid "Copy below link and open in another browser where you are not logged in"
-msgstr ""
-"Copiar link abaixo e abrir em outro navegador onde você não está conectado"
+#. Button for downloading a PO, MO or POT file
+#: src/admin/file/EditController.php:172
+msgctxt "Editor"
+msgid "Download"
+msgstr "Baixar"
 
-#: includes/dashboard/dashboard.php:97 includes/design/background.php:368
-#: includes/design/text_and_color.php:583
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:117
-#: includes/login-form-setting/login-form-background.php:795
-#: includes/settings/page-settings.php:168 includes/social/social.php:192
-msgid "Setting Save Successfully"
-msgstr "Configurações Salvas com Sucesso"
+#. Button that toggles a translation's Fuzzy flag
+#: src/js/Strings.php:105 src/admin/file/EditController.php:170
+msgctxt "Editor"
+msgid "Fuzzy"
+msgstr "Incerto"
 
-#: includes/dashboard/dashboard.php:97 includes/dashboard/dashboard.php:112
-#: includes/design/background.php:180 includes/design/background.php:368
-#: includes/design/background.php:383 includes/design/text_and_color.php:583
-#: includes/design/text_and_color.php:598
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:117
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:131
-#: includes/login-form-setting/login-form-background.php:363
-#: includes/login-form-setting/login-form-background.php:795
-#: includes/login-form-setting/login-form-background.php:809
-#: includes/settings/page-settings.php:84
-#: includes/settings/page-settings.php:168
-#: includes/settings/page-settings.php:182 includes/social/social.php:192
-#: includes/social/social.php:206
-msgid "Close"
-msgstr "Fechar"
+#. Label for the plural form of the original English text
+#: src/js/Strings.php:96
+msgctxt "Editor"
+msgid "Plural"
+msgstr "Plural"
 
-#: includes/dashboard/dashboard.php:112 includes/design/background.php:383
-#: includes/design/text_and_color.php:598
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:131
-#: includes/login-form-setting/login-form-background.php:809
-#: includes/settings/page-settings.php:182 includes/social/social.php:206
-msgid "Setting Reset Successfully"
-msgstr "Configurações Restauradas com Sucesso"
-
-#: includes/dashboard/dashboard.php:119 includes/design/background.php:391
-#: includes/design/text_and_color.php:606
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:138
-#: includes/login-form-setting/login-form-background.php:816
-#: includes/settings/page-settings.php:189 includes/social/social.php:213
-msgid "Save Changes"
-msgstr "Salvar Configurações"
-
-#: includes/dashboard/dashboard.php:122 includes/design/background.php:394
-#: includes/design/text_and_color.php:609
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:141
-#: includes/login-form-setting/login-form-background.php:819
-#: includes/settings/page-settings.php:192 includes/social/social.php:216
-msgid "Reset Default"
-msgstr "Restaurar Padrões"
-
-#: includes/design/background.php:91
-msgid "Background Settings"
-msgstr "Configurações de Fundo"
-
-#: includes/design/background.php:103 includes/design/background.php:110
-#: includes/login-form-setting/login-form-background.php:278
-msgid "Select Background"
-msgstr "Escolha um fundo"
-
-#: includes/design/background.php:109
-msgid "No Background Selected"
-msgstr "Nenhum fundo Selecionado"
-
-#: includes/design/background.php:111
-#: includes/login-form-setting/login-form-background.php:285
-msgid "Static Background Color"
-msgstr "Cor de fundo estática"
-
-#: includes/design/background.php:112
-#: includes/login-form-setting/login-form-background.php:286
-msgid "Static Background Image"
-msgstr "Imagem de Fundo"
-
-#: includes/design/background.php:113
-msgid "Background SlideShow"
-msgstr "Fundo em SlideShow"
-
-#: includes/design/background.php:131
-#: includes/login-form-setting/login-form-background.php:302
-msgid "Background Color"
-msgstr "Cor de Fundo"
-
-#: includes/design/background.php:153 includes/design/background.php:172
-#: includes/login-form-setting/login-form-background.php:339
-msgid "Background Image"
-msgstr "Imagem de Fundo"
-
-#: includes/design/background.php:158
-#: includes/login-form-setting/login-form-background.php:344
-#: includes/settings/page-settings.php:67
-msgid "No media selected!"
-msgstr "Nenhuma mídia selecionada!"
-
-#: includes/design/background.php:160
-#: includes/login-form-setting/login-form-background.php:345
-#: includes/settings/page-settings.php:68
-msgid "Upload"
-msgstr "Enviar"
-
-#: includes/design/background.php:162
-#: includes/login-form-setting/login-form-background.php:347
-#: includes/settings/page-settings.php:70
-msgid "Preview"
-msgstr "Pré-visualizar"
-
-#: includes/design/background.php:164
-#: includes/login-form-setting/login-form-background.php:349
+#. button for removing a string when manually editing a POT file
+#: src/admin/file/EditController.php:161
+msgctxt "Editor"
 msgid "Remove"
 msgstr "Remover"
 
-#: includes/design/background.php:196
-msgid "Cover or Strech"
-msgstr "Cobrir ou Esticar"
+#. Button that reloads current screen
+#: src/admin/file/EditController.php:168
+msgctxt "Editor"
+msgid "Revert"
+msgstr "Reverter"
 
-#: includes/design/background.php:201 includes/design/text_and_color.php:244
-#: includes/design/text_and_color.php:520
-#: includes/login-form-setting/login-form-background.php:540
-#: includes/login-form-setting/login-form-background.php:663
-msgid "Yes"
-msgstr "Sim"
+#. Button that saves translations to disk
+#: src/admin/file/EditController.php:164
+msgctxt "Editor"
+msgid "Save"
+msgstr "Salvar"
 
-#: includes/design/background.php:213
-#: includes/login-form-setting/login-form-background.php:378
-msgid "Background Repeat"
-msgstr "Repetir Fundo"
+#. Label for the singular form of the original English text
+#: src/js/Strings.php:93
+msgctxt "Editor"
+msgid "Single"
+msgstr "Singular"
 
-#: includes/design/background.php:219
-#: includes/login-form-setting/login-form-background.php:384
-msgid "No Repeat"
-msgstr "Não Repetir"
+#. Label for the window pane holding the original English text -and-
+#. List heading showing preview of English text for each item
+#: src/js/Strings.php:80
+msgctxt "Editor"
+msgid "Source text"
+msgstr "Texto de origem"
 
-#: includes/design/background.php:220
-#: includes/login-form-setting/login-form-background.php:385
-msgid "Repeat"
-msgstr "Repetir"
+#. Label for the source text window when no translation selected
+#: src/js/Strings.php:108
+msgctxt "Editor"
+msgid "Source text not loaded"
+msgstr "Texto de origem não carregado"
 
-#: includes/design/background.php:221
-#: includes/login-form-setting/login-form-background.php:386
-msgid "Repeat Horizontally"
-msgstr "Repetir Horizontalmente"
+#. Button that runs in-editor sync/operation
+#: src/admin/file/EditController.php:166
+msgctxt "Editor"
+msgid "Sync"
+msgstr "Sincronizar"
 
-#: includes/design/background.php:222
-#: includes/login-form-setting/login-form-background.php:387
-msgid "Repeat Vertically"
-msgstr "Repetir Verticalmente"
+#. Button that toggles between "code" and regular text editing modes
+#: src/admin/file/EditController.php:178
+msgctxt "Editor"
+msgid "Toggle code view"
+msgstr "Alternar visualização do código"
 
-#: includes/design/background.php:234
-#: includes/login-form-setting/login-form-background.php:398
-msgid "Background Position"
-msgstr "Posição do Fundo"
+#. Button that toggles invisible characters
+#: src/admin/file/EditController.php:176
+msgctxt "Editor"
+msgid "Toggle invisibles"
+msgstr "Alternar invisíveis"
 
-#: includes/design/background.php:240
-#: includes/login-form-setting/login-form-background.php:404
-msgid "Left Top"
-msgstr "Esquerda Topo"
+#: src/js/Strings.php:102
+msgctxt "Editor"
+msgid "Translated"
+msgstr "Traduzido"
 
-#: includes/design/background.php:241
-#: includes/login-form-setting/login-form-background.php:405
-msgid "Left Center"
-msgstr "Esquerda Centro"
+#. List heading showing preview of translated text for each item
+#: src/js/Strings.php:117
+msgctxt "Editor"
+msgid "Translation"
+msgstr "Tradução"
 
-#: includes/design/background.php:242
-#: includes/login-form-setting/login-form-background.php:406
-msgid "Left Bottom"
-msgstr "Esquerda Inferior"
+#. Label for the translation editing window when no translation selected
+#: src/js/Strings.php:114
+msgctxt "Editor"
+msgid "Translation not loaded"
+msgstr "Tradução não carregada"
 
-#: includes/design/background.php:243
-#: includes/login-form-setting/login-form-background.php:407
-msgid "Right Top"
-msgstr "Direita Topo"
+#: src/js/Strings.php:99
+msgctxt "Editor"
+msgid "Untranslated"
+msgstr "Não Traduzido"
 
-#: includes/design/background.php:244
-#: includes/login-form-setting/login-form-background.php:408
-msgid "Right Center"
-msgstr "Direita Centro"
-
-#: includes/design/background.php:245
-#: includes/login-form-setting/login-form-background.php:409
-msgid "Right Bottom"
-msgstr "Direita Inferior"
-
-#: includes/design/background.php:246
-#: includes/login-form-setting/login-form-background.php:410
-msgid "Center Top"
-msgstr "Centro Topo"
-
-#: includes/design/background.php:247
-#: includes/login-form-setting/login-form-background.php:411
-msgid "Center Center"
-msgstr "Centro Centro"
-
-#: includes/design/background.php:248
-#: includes/login-form-setting/login-form-background.php:412
-msgid "Center Bottom"
-msgstr "Centro Inferior"
-
-#: includes/design/background.php:260
-msgid "Background Attachment"
-msgstr "Fundo Anexado"
-
-#: includes/design/background.php:266
-msgid "Fixed"
-msgstr "Fixo"
-
-#: includes/design/background.php:267
-msgid "Scroll"
-msgstr "Rolar"
-
-#: includes/design/background.php:268
-msgid "Inherit"
-msgstr "Herdar"
-
-#: includes/design/background.php:287 includes/design/background.php:309
-msgid "No. Of Background Slideshow"
-msgstr "Nenhum. Fundo em SlideShow"
-
-#: includes/design/background.php:293
-msgid "Select Number of Slide Show"
-msgstr "Selecione o Número de Slides"
-
-#: includes/design/background.php:294
-msgid "2"
-msgstr "2"
-
-#: includes/design/background.php:295
-msgid "3"
-msgstr "3"
-
-#: includes/design/background.php:296
-msgid "4"
-msgstr "4"
-
-#: includes/design/background.php:297
-msgid "5"
-msgstr "5"
-
-#: includes/design/background.php:298
-msgid "6"
-msgstr "6"
-
-#: includes/design/background.php:339
-msgid "Slider Animation"
-msgstr "Animação do Slide"
-
-#: includes/design/background.php:346
-msgid "Slider Animation 1"
-msgstr "Slide Animação 1"
-
-#: includes/design/background.php:347
-msgid "Slider Animation 2"
-msgstr "Slide Animação 2"
-
-#: includes/design/background.php:348
-msgid "Slider Animation 3"
-msgstr "Slide Animação 3"
-
-#: includes/design/background.php:349
-msgid "Slider Animation 4"
-msgstr "Slide Animação 4"
-
-#: includes/design/background.php:368 includes/design/background.php:383
-msgid "Top Background"
-msgstr "Fundo do Topo"
-
-#: includes/design/text_and_color.php:89
-msgid "Text And Color Settings"
-msgstr "Configurações de Texto e Cores"
-
-#: includes/design/text_and_color.php:102
-msgid "Headline Font Color"
-msgstr "Cor da Fonte do Título"
-
-#: includes/design/text_and_color.php:118
-msgid "Input Font Color"
-msgstr "Cor da Fonte de Entrada"
-
-#: includes/design/text_and_color.php:134
-msgid "Link Color"
-msgstr "Cor do Link"
-
-#: includes/design/text_and_color.php:150
-msgid "Button Color"
-msgstr "Cor do Botão"
-
-#: includes/design/text_and_color.php:166
-msgid "Headline Font size"
-msgstr "Tamanho da Fonte do Título"
-
-#: includes/design/text_and_color.php:184
-msgid "Input Font Size"
-msgstr "Tamanho da Fonte de Entrada"
-
-#: includes/design/text_and_color.php:202
-msgid "Link Font Size"
-msgstr "Tamanho da Fonte do Link"
-
-#: includes/design/text_and_color.php:220
-msgid "Button Font Size"
-msgstr "Tamanho da Fonte do Botão"
-
-#: includes/design/text_and_color.php:238
-msgid "Enable Link shadow?"
-msgstr "Habilitar sombra nos Links?"
-
-#: includes/design/text_and_color.php:247
-#: includes/design/text_and_color.php:523
-#: includes/login-form-setting/login-form-background.php:543
-#: includes/login-form-setting/login-form-background.php:664
-msgid "No"
-msgstr "Não"
-
-#: includes/design/text_and_color.php:259
-msgid "Link Shadow Color"
-msgstr "Cor da Sombra do Link"
-
-#: includes/design/text_and_color.php:275
-msgid "Headline Font Style"
-msgstr "Estilo da Fonte do Título"
-
-#: includes/design/text_and_color.php:336
-msgid "Input Font Style"
-msgstr "Estilo da Fonte de Entrada"
-
-#: includes/design/text_and_color.php:395
-msgid "Link Font Style"
-msgstr "Estilo da Fonte do Link"
-
-#: includes/design/text_and_color.php:455
-msgid "Button Font Style"
-msgstr "Estilo da Fonte do Botão"
-
-#: includes/design/text_and_color.php:514
-msgid "Enable Input Box Icon?"
-msgstr "Habilitar Ícone na Caixa de Entrada?"
-
-#: includes/design/text_and_color.php:534
-msgid "Icon For user Input Box"
-msgstr "Ícone para Usuário na Caixa de Entrada"
-
-#: includes/design/text_and_color.php:555
-msgid "Icon For Password Input Box"
-msgstr "Ícone para Senha na Caixa de Entrada"
-
-#: includes/design/text_and_color.php:583
-#: includes/design/text_and_color.php:598
-msgid "Text and Color"
-msgstr "Texto e Cores"
-
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:14
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:44
-#, fuzzy
-#| msgid "Float Settings"
-msgid "Google Captcha Settings"
-msgstr "Configurações de Flutuação"
-
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:55
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:60
-#, fuzzy
-#| msgid "More Details"
-msgid "Site Key"
-msgstr "Mais Detalhes"
-
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:64
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:69
-msgid "Secret Key"
-msgstr "Chave secreta"
-
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:74
-#, fuzzy
-#| msgid "Float Settings"
-msgid "Captcha Display"
-msgstr "Configurações de Flutuação"
-
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:90
-#, fuzzy
-#| msgid "Float Settings"
-msgid "Captcha Theme"
-msgstr "Configurações de Flutuação"
-
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:96
-#, fuzzy
-#| msgid "Right"
-msgid "Light"
-msgstr "Direita"
-
-#: includes/googlecaptcha-settings/gcaptcha-settings.php:99
-msgid "Dark"
-msgstr "Sombrio"
-
-#: includes/help/help.php:28
-msgid "View Support Docs or Open a Ticket"
-msgstr "Veja os Documentos de Apoio ou Abra um Ticket"
-
-#: includes/help/help.php:38 includes/help/rate.php:39
-msgid "Rate Us"
-msgstr "Classifique-nos"
-
-#: includes/help/help.php:44
+#: tpl/admin/errors/file-missing.php:14
 msgid ""
-"If you are enjoying using our Admin Custom Login plugin and find it useful, "
-"then please consider writing a positive feedback. Your feedback will help us "
-"to encourage and support the plugins continued development and better user "
-"support."
+"Either this file is missing or the server doesn't have permission to access "
+"it"
 msgstr ""
-"Se você está desfrutando do nosso plugin de Login Personalizado do Admin e "
-"encontrá-lo útil, então considere escrever um feedback positivo. Seu "
-"feedback nos ajudará a incentivar e apoiar o desenvolvimento contínuo dos "
-"plugins e melhor suporte ao usuário."
+"Ou este arquivo está faltando ou o servidor não tem permissão para acessá-lo"
 
-#: includes/help/help.php:62
-msgid "Share Us Your Suggestion"
-msgstr "Partilhe a Sua Sugestão"
+#: src/js/Strings.php:67 src/error/Exception.php:128
+msgid "Error"
+msgstr "Erro"
 
-#: includes/help/help.php:68
-msgid ""
-"If you have any suggestion or features in your mind then please share us. We "
-"will try our best to add them in this plugin."
-msgstr ""
-"Se você tiver qualquer sugestão ou características em sua mente, então "
-"por favor compartilhe conosco. Vamos tentar o nosso melhor para adiciona-las "
-"à este plugin."
+#: tpl/admin/bundle/conf.php:89 tpl/admin/bundle/conf.php:108
+msgid "Exclude"
+msgstr "Excluir"
 
-#: includes/help/help.php:80
-msgid "Language Contribution"
-msgstr "Contribuição de Idioma"
-
-#: includes/help/help.php:85
-msgid "Translate this plugin into your language"
-msgstr "Traduzir este plug-in para o seu idioma"
-
-#: includes/help/help.php:86
-msgid "Question : How to convert Plguin into My Language?"
-msgstr "Pergunta: Como converter o Plugin para Meu Idioma?"
-
-#: includes/help/help.php:87
-#, fuzzy
-#| msgid "here is solution"
-msgid "Here is solution"
-msgstr "aqui está a solução"
-
-#: includes/help/rate.php:15
-#, fuzzy
-#| msgid "Rate Us"
-msgid "Rate & Donate  Us"
-msgstr "Classifique-nos"
-
-#: includes/help/rate.php:29
-msgid ""
-"We need your feedback for improve our plugin functionality on WordPress. So, "
-"if you like our plugin then please rate us"
-msgstr ""
-"Precisamos de seus comentários para melhorar nossa funcionalidade do plug-"
-"in no WordPress. Então, se você gosta do nosso plug-in, por favor, avalie-"
-"nos"
-
-#: includes/help/rate.php:62
-#, fuzzy
-#| msgid "Rate Us"
-msgid "Donate Us"
-msgstr "Classifique-nos"
-
-#: includes/import-export-setting/import_export.php:13
-msgid "Export Custom Login Data"
-msgstr "Exportar Dados de Entrada Personalizados"
-
-#: includes/import-export-setting/import_export.php:18
-msgid ""
-"Export the plugin settings for this site as a .json file. This allows you to "
-"easily import the configuration into another site."
-msgstr ""
-"Exportar as configurações do plugin para este site como um arquivo .json. "
-"Isso permite que você importe facilmente as configurações para outro site."
-
-#: includes/import-export-setting/import_export.php:23
-msgid "Export"
-msgstr "Ajuda e Suporte"
-
-#: includes/import-export-setting/import_export.php:37
-msgid "Import Custom Login Data"
-msgstr "Importar Dados de Entrada Personalizados"
-
-#: includes/import-export-setting/import_export.php:42
-msgid ""
-"Import the plugin settings from a .json file. This file can be obtained by "
-"exporting the settings on another site using the form above."
-msgstr ""
-"Importar as configurações do plugin de um arquivo .json. Este arquivo pode "
-"ser obtido através da exportação das configurações em outro site usando "
-"o formulário acima."
-
-#: includes/import-export-setting/import_export.php:50
-msgid "Import"
-msgstr "Ajuda e Suporte"
-
-#: includes/login-form-setting/login-form-background.php:193
-msgid "Login Settings"
-msgstr "Configurações de Logotipo"
-
-#: includes/login-form-setting/login-form-background.php:206
-msgid "Login Form Position"
-msgstr "Largura do Formulário de Login"
-
-#: includes/login-form-setting/login-form-background.php:212
-msgid "Default"
-msgstr "Padrão"
-
-#: includes/login-form-setting/login-form-background.php:213
-msgid "Floating"
-msgstr "Flutuando"
-
-#: includes/login-form-setting/login-form-background.php:214
-msgid "Floating With Customization"
-msgstr "Etiqueta com CSS Personalizado"
-
-#: includes/login-form-setting/login-form-background.php:225
-msgid "Float Settings"
-msgstr "Configurações de Fonte"
-
-#: includes/login-form-setting/login-form-background.php:231
-msgid "Left"
-msgstr "Esquerda Topo"
-
-#: includes/login-form-setting/login-form-background.php:234
-msgid "Center"
-msgstr "Centro Topo"
-
-#: includes/login-form-setting/login-form-background.php:237
-msgid "Right"
-msgstr "Direita"
-
-#: includes/login-form-setting/login-form-background.php:247
-msgid "Floating With Customization Settings"
-msgstr "Flutuando com Configurações de Personalização"
-
-#: includes/login-form-setting/login-form-background.php:252
-msgid "Left Margin"
-msgstr "Margem esquerda"
-
-#: includes/login-form-setting/login-form-background.php:260
-msgid "Top Margin"
-msgstr "Margem Superior"
-
-#: includes/login-form-setting/login-form-background.php:268
-msgid "Note: This form position setting will be not responsive."
-msgstr "Nota: esta configura��o de posi��o do formul�rio n�o ser� responsiva."
-
-#: includes/login-form-setting/login-form-background.php:284
-msgid "Select background"
-msgstr "Escolha um fundo"
-
-#: includes/login-form-setting/login-form-background.php:317
-msgid "Login Form Opacity"
-msgstr "Largura do Formulário de Login"
-
-#: includes/login-form-setting/login-form-background.php:357
-#: includes/settings/page-settings.php:78
-msgid "Login Background Image"
-msgstr "Imagem de Fundo"
-
-#: includes/login-form-setting/login-form-background.php:424
-msgid "Background Effect"
-msgstr "Efeito de Fundo"
-
-#: includes/login-form-setting/login-form-background.php:430
-msgid "Select overlay effect"
-msgstr "Selecione efeito de sobreposição"
-
-#: includes/login-form-setting/login-form-background.php:431
-msgid "No Overlay Effect"
-msgstr "Sem Efeito de Sobreposição"
-
-#: includes/login-form-setting/login-form-background.php:432
-msgid "Overlay Effect 1"
-msgstr "Efeito de Sobreposição 1"
-
-#: includes/login-form-setting/login-form-background.php:433
-msgid "Overlay Effect 2"
-msgstr "Efeito de Sobreposição 2"
-
-#: includes/login-form-setting/login-form-background.php:434
-msgid "Overlay Effect 3"
-msgstr "Efeito de Sobreposição 3"
-
-#: includes/login-form-setting/login-form-background.php:447
-msgid "Login Form Width"
-msgstr "Largura do Formulário de Login"
-
-#: includes/login-form-setting/login-form-background.php:464
-msgid "Border Color"
-msgstr "Cor da Borda"
-
-#: includes/login-form-setting/login-form-background.php:479
-msgid "Border Radius"
-msgstr "Borda Arredondada"
-
-#: includes/login-form-setting/login-form-background.php:496
-msgid "Border Style"
-msgstr "Estilo da Borda"
-
-#: includes/login-form-setting/login-form-background.php:502
-msgid "None"
-msgstr "Nenhum"
-
-#: includes/login-form-setting/login-form-background.php:503
-msgid "Solid"
-msgstr "Sólida"
-
-#: includes/login-form-setting/login-form-background.php:504
-msgid "Dotted"
-msgstr "Pontilhada"
-
-#: includes/login-form-setting/login-form-background.php:505
-msgid "Dashed"
-msgstr "Tracejada"
-
-#: includes/login-form-setting/login-form-background.php:506
-msgid "Double"
-msgstr "Dupla"
-
-#: includes/login-form-setting/login-form-background.php:517
-msgid "Border Thickness"
-msgstr "Espessura da Borda"
-
-#: includes/login-form-setting/login-form-background.php:534
-msgid "Enable Form Shadow?"
-msgstr "Habilitar sobra do formulário?"
-
-#: includes/login-form-setting/login-form-background.php:555
-msgid "Form Shadow Color"
-msgstr "Cor da Sombra do Formulário"
-
-#: includes/login-form-setting/login-form-background.php:572
-#, fuzzy
-#| msgid "Username Label and Placeholder Text"
-msgid "Username or Email Field Label Text"
-msgstr "R�tulo do nome de usu�rio e texto de espa�o reservado"
-
-#: includes/login-form-setting/login-form-background.php:577
-#, fuzzy
-#| msgid "Username Label and Placeholder Text"
-msgid "Type username or email field label text"
-msgstr "R�tulo do nome de usu�rio e texto de espa�o reservado"
-
-#: includes/login-form-setting/login-form-background.php:589
-#, fuzzy
-#| msgid "Username Label and Placeholder Text"
-msgid "Username or Email Field Placeholder Text"
-msgstr "R�tulo do nome de usu�rio e texto de espa�o reservado"
-
-#: includes/login-form-setting/login-form-background.php:594
-#, fuzzy
-#| msgid "Username Label and Placeholder Text"
-msgid "Type username or email placeholder text"
-msgstr "R�tulo do nome de usu�rio e texto de espa�o reservado"
-
-#: includes/login-form-setting/login-form-background.php:606
-#, fuzzy
-#| msgid "Password Label and Placeholder Text"
-msgid "Password Field Label Text"
-msgstr "R�tulo de senha e texto de espa�o reservado"
-
-#: includes/login-form-setting/login-form-background.php:611
-#, fuzzy
-#| msgid "Password Label and Placeholder Text"
-msgid "Type password field label text"
-msgstr "R�tulo de senha e texto de espa�o reservado"
-
-#: includes/login-form-setting/login-form-background.php:623
-#, fuzzy
-#| msgid "Password Label and Placeholder Text"
-msgid "Password Field Placeholder Text"
-msgstr "R�tulo de senha e texto de espa�o reservado"
-
-#: includes/login-form-setting/login-form-background.php:628
-#, fuzzy
-#| msgid "Password Label and Placeholder Text"
-msgid "Type password field placeholder text"
-msgstr "R�tulo de senha e texto de espa�o reservado"
-
-#: includes/login-form-setting/login-form-background.php:640
-#, fuzzy
-#| msgid "Button Color"
-msgid "Log In Button Text"
-msgstr "Cor do Botão"
-
-#: includes/login-form-setting/login-form-background.php:645
-msgid "Type log in button text"
-msgstr ""
-
-#: includes/login-form-setting/login-form-background.php:657
-msgid "Forcefully Redirect"
-msgstr ""
-
-#: includes/login-form-setting/login-form-background.php:671
-#, fuzzy
-#| msgid "Redirect URL"
-msgid "Redirect Force URL"
-msgstr "URL de redirecionamento"
-
-#: includes/login-form-setting/login-form-background.php:672
-msgid ""
-"Enter the URL to user forcefully redirect to admin panel or another when if "
-"hit the site url."
-msgstr ""
-
-#: includes/login-form-setting/login-form-background.php:683
-msgid "Redirect Users After Login (Not Work For Admin)"
-msgstr ""
-"Redirecionar usuários após o login (não funciona para o administrador)"
-
-#: includes/login-form-setting/login-form-background.php:688
-msgid "Redirect URL"
-msgstr "URL de redirecionamento"
-
-#: includes/login-form-setting/login-form-background.php:689
-msgid ""
-"Enter the URL to redirect users after login, Setting will not work for an "
-"administrator."
-msgstr ""
-"Digite o URL para redirecionar os usu�rios ap�s o login, a configura��o n�o "
-"funcionar� para um administrador."
-
-#: includes/login-form-setting/login-form-background.php:701
-msgid "Display Note To User Above Login Form"
-msgstr "Exibir nota ao usu�rio acima do formul�rio de logon"
-
-#: includes/login-form-setting/login-form-background.php:706
-#: includes/login-form-setting/login-form-background.php:758
-msgid "Type Message"
-msgstr "Mensagem de Tipo"
-
-#: includes/login-form-setting/login-form-background.php:718
-#, fuzzy
-#| msgid "Link Font Size"
-msgid "Message Font Size"
-msgstr "Tamanho da Fonte do Link"
-
-#: includes/login-form-setting/login-form-background.php:736
-#, fuzzy
-#| msgid "Headline Font Color"
-msgid "Message Font Color"
-msgstr "Cor da Fonte do Título"
-
-#: includes/login-form-setting/login-form-background.php:753
-msgid "Tagline Message Display Below Login Form"
-msgstr "Exibi��o de mensagem de tagline abaixo do formul�rio de login"
-
-#: includes/login-form-setting/login-form-background.php:770
-#: includes/login-form-setting/login-form-background.php:775
-msgid "Custom CSS"
-msgstr "Personalizar CSS"
-
-#: includes/login-form-setting/login-form-background.php:777
-msgid "Enter any custom css you want to apply on login panel."
-msgstr ""
-"Digite qualquer css personalizado que você deseja aplicar no painel de "
-"entrada."
-
-#: includes/login-form-setting/login-form-background.php:778
-msgid "Note: Please Do Not Use"
-msgstr "Nota: Por favor não usar"
-
-#: includes/login-form-setting/login-form-background.php:778
-msgid "Tag With Custom CSS"
-msgstr "Etiqueta com CSS Personalizado"
-
-#: includes/login-form-setting/login-form-background.php:795
-#: includes/login-form-setting/login-form-background.php:809
-msgid "Login"
-msgstr "Entrar"
-
-#: includes/recommendations/recommendations.php:75
+#. Where %2$s is the size of a file
+#: tpl/admin/init/init-pot.php:24
 #, php-format
-msgid "%s rating"
-msgstr "classificação %s"
+msgid "Excludes one file over %2$s"
+msgid_plural "Excludes %s files over %2$s"
+msgstr[0] "Exclui um arquivo sobre %2$s"
+msgstr[1] "Exclui %s arquivos sobre %2$s"
 
-#: includes/settings/page-settings.php:62
-msgid "Logo Image"
-msgstr "Logotipo"
+#: tpl/admin/config/settings.php:37 tpl/admin/config/settings.php:41
+msgid "Extracting strings"
+msgstr "Extraindo strings"
 
-#: includes/settings/page-settings.php:98
-msgid "Logo Image Width"
-msgstr "Logotipo"
+#: src/fs/FileWriter.php:242
+msgid "Failed to build directory path"
+msgstr "Falha ao construir o caminho do diretório"
 
-#: includes/settings/page-settings.php:115
-msgid "Logo Image Height"
-msgstr "Logotipo"
+#: src/fs/FileWriter.php:132
+#, php-format
+msgid "Failed to chmod %s"
+msgstr "Falha ao chmod %s"
 
-#: includes/settings/page-settings.php:132
-#: includes/settings/page-settings.php:137
-#, fuzzy
-#| msgid "Logo URL"
-msgid "Logo Link URL"
-msgstr "URL do Logotipo"
+#: src/fs/FileWriter.php:52
+msgid "Failed to connect to remote server"
+msgstr "Falha ao conectar-se ao servidor remoto"
 
-#: includes/settings/page-settings.php:147
-#: includes/settings/page-settings.php:152
-msgid "Logo Image Title"
-msgstr "Logotipo"
+#: src/fs/FileWriter.php:152
+#, php-format
+msgid "Failed to copy %s to %s"
+msgstr "Falha ao copiar %s para %s"
 
-#: includes/settings/page-settings.php:168
-#: includes/settings/page-settings.php:182
-msgid "Logo"
-msgstr "Logotipo"
+#: src/ajax/SaveController.php:66
+#, php-format
+msgid ""
+"Failed to create backup file in \"%s\". Check file permissions or disable "
+"backups"
+msgstr ""
+"Falha ao criar a cópia de segurança do arquivo em \"%s\". Verifique as "
+"permissões dos arquivos ou desabilite a cópia de segurança"
 
-#: includes/social/social.php:33
-msgid "Enable Social Icons"
-msgstr "Habilitar Ícones Sociais"
+#: src/fs/FileWriter.php:235
+msgid "Failed to create directory"
+msgstr "Falha ao criar diretório"
 
-#: includes/social/social.php:39
-msgid "No Icon"
-msgstr "Sem Ícones"
+#: src/fs/FileWriter.php:168
+#, php-format
+msgid "Failed to delete %s"
+msgstr "Falha ao excluir %s"
 
-#: includes/social/social.php:40
-msgid "Inner"
-msgstr "Interno"
+#: src/fs/FileWriter.php:208
+msgid "Failed to save file"
+msgstr "Falha ao salvar o arquivo"
 
-#: includes/social/social.php:41
-msgid "Outer"
-msgstr "Externo"
+#: tpl/admin/errors/no-backups.php:18
+msgid "File backups are disabled in your plugin settings"
+msgstr ""
+"As cópias de segurança dos arquivos estão desativados em suas configurações "
+"do plug-in"
 
-#: includes/social/social.php:42
-msgid "Both"
-msgstr "Ambos"
+#: src/admin/file/DeleteController.php:56 src/admin/file/DiffController.php:61
+#, php-format
+msgid "File deleted"
+msgid_plural "%u files deleted"
+msgstr[0] "Arquivo excluído"
+msgstr[1] "%u arquivos excluídos"
 
-#: includes/social/social.php:53
-msgid "Social Media Icon Size"
-msgstr "Tamanho do Ícone Social"
+#: src/admin/file/InfoController.php:161
+msgid "File does not have a valid header"
+msgstr "O arquivo não possui um cabeçalho válido"
 
-#: includes/social/social.php:59
-msgid "Small"
-msgstr "Pequeno"
+#: tpl/admin/file/info.php:14
+msgid "File doesn't exist"
+msgstr "O arquivo não existe"
 
-#: includes/social/social.php:62
-msgid "Medium"
-msgstr "Médio"
+#: src/admin/file/BaseController.php:96 tpl/admin/file/diff.php:60 
+#: tpl/admin/bundle/inc-po-table.php:20 tpl/admin/bundle/locale.php:43
+msgid "File info"
+msgstr "Informações do arquivo"
 
-#: includes/social/social.php:65
-msgid "Large"
-msgstr "Grande"
+#: tpl/admin/errors/file-isdir.php:11
+msgid "File is a directory"
+msgstr "O arquivo é um diretório"
 
-#: includes/social/social.php:76
-msgid "Social Media Icon Layout"
-msgstr "Layout do Ícone Social"
+#: tpl/admin/file/view-mo.php:11
+msgid "File is in binary MO format"
+msgstr "O arquivo binário está no formato MO"
 
-#: includes/social/social.php:82
-msgid "Rectangle"
-msgstr "Retângulo"
+#: tpl/admin/common/inc-fsconn.php:28
+msgid "File is protected by the bundle configuration"
+msgstr "O arquivo é protegido pela configuração do pacote"
 
-#: includes/social/social.php:85
-msgid "Circle"
-msgstr "Círculo"
+#. Refers to bundled plugin or theme translation files - i.e. those supplied by the author
+#: src/fs/LocaleDirectory.php:62
+msgctxt "File location"
+msgid "Author"
+msgstr "Autor"
 
-#: includes/social/social.php:96
-msgid "Social Media Icon Color"
-msgstr "Cor do Ícone Social"
+#. Refers to translation files in Loco's custom/protected directory
+#: src/fs/LocaleDirectory.php:68
+msgctxt "File location"
+msgid "Custom"
+msgstr "Personalizar"
 
-#: includes/social/social.php:111
-msgid "Social Media Icon Color On Hover"
-msgstr "Cor do Ícone Social Sobreposto"
+#. Refers to translation files in an alternative location that isn't Author, System or Custom.
+#: src/fs/LocaleDirectory.php:71
+msgctxt "File location"
+msgid "Other"
+msgstr "Outro"
 
-#: includes/social/social.php:126
-msgid "Social Media Icon Background Color"
-msgstr "Cor de Fundo do Ícone Social"
+#. Refers to system-installed translation files - i.e. those under WP_LANG_DIR
+#: src/fs/LocaleDirectory.php:65
+msgctxt "File location"
+msgid "System"
+msgstr "Sistema"
 
-#: includes/social/social.php:141
-msgid "Social Media Background Color On Hover"
-msgstr "Cor de Fundo do Ícone Social Sobreposto"
+#: src/fs/FileWriter.php:254
+msgid "File modification is disallowed by your WordPress config"
+msgstr ""
+"A modificação do arquivo não é permitida pela configuração do WordPress"
 
-#: includes/social/social.php:156
-msgid "Social Profiles"
-msgstr "Perfis Sociais"
+#: tpl/admin/file/info-mo.php:21 tpl/admin/file/info-pot.php:15 
+#: tpl/admin/file/info-po.php:20
+msgid "File modified"
+msgstr "Arquivo modificado"
 
-#: includes/social/social.php:161
-msgid "Enter your social profiles complete url here"
-msgstr "Entre com as url's completas dos seus perfis sociais"
+#: tpl/admin/errors/file-missing.php:11
+msgid "File not found"
+msgstr "Arquivo não encontrado"
 
-#: includes/social/social.php:163
-msgid "Facebook"
-msgstr "Facebook"
+#: tpl/admin/bundle/conf.php:53
+msgid "File prefix"
+msgstr "Prefixo do arquivo"
 
-#: includes/social/social.php:164
-msgid "Twitter"
-msgstr "Twitter"
+#: src/admin/file/DiffController.php:50
+msgid "File restored"
+msgstr "Arquivo restaurado"
 
-#: includes/social/social.php:165
-msgid "Linkedin"
-msgstr "Linkedin"
+#: tpl/admin/file/info-mo.php:18 tpl/admin/file/info-pot.php:12 
+#: tpl/admin/file/info-po.php:17
+msgid "File size"
+msgstr "Tamanho do arquivo"
 
-#: includes/social/social.php:166
-msgid "Google Plus"
-msgstr "Google Plus"
+#: tpl/admin/config/settings.php:106 tpl/admin/config/settings.php:110
+msgid "File system access"
+msgstr "Acesso ao sistema de arquivos"
 
-#: includes/social/social.php:167
-msgid "Pinterest"
-msgstr "Pinterest"
+#. Help tip for "Source file paths" field in advanced bundle config
+#: tpl/admin/bundle/conf.php:113
+msgid "Files and folders within the bundle that contain localized PHP code"
+msgstr "Arquivos e pastas dentro do pacote que contém código PHP localizado"
 
-#: includes/social/social.php:168
-msgid "Digg"
-msgstr "Digg"
+#: tpl/admin/list/locales.php:22
+msgid "Files found"
+msgstr "Arquivos encontrados"
 
-#: includes/social/social.php:169
-msgid "Youtube"
-msgstr "Youtube"
+#: tpl/admin/file/info.php:110
+msgid ""
+"Files in this location can be modified or deleted by WordPress automatic "
+"updates"
+msgstr ""
+"Os arquivos neste local podem ser modificados ou excluídos pelas "
+"atualizações automáticas do WordPress"
 
-#: includes/social/social.php:170
-msgid "Flickr"
-msgstr "Flickr"
+#: src/admin/file/EditController.php:174
+msgid "Filter translations"
+msgstr "Filtrar traduções"
 
-#: includes/social/social.php:171
-msgid "Tumblr"
-msgstr "Tumblr"
+#. text field placeholder
+#: tpl/admin/common/inc-table-filter.php:6
+msgid "Filter..."
+msgstr "Filtro..."
 
-#: includes/social/social.php:172
-msgid "Skype"
-msgstr "Skype"
+#: tpl/admin/bundle/setup/conf.php:27
+msgid "Find config"
+msgstr "Localizar configuração"
 
-#: includes/social/social.php:173
-msgid "Instagram"
-msgstr "Instagram"
+#: tpl/admin/bundle/inc-po-table.php:26 tpl/admin/bundle/locale.php:49
+msgid "Folder"
+msgstr "Pasta"
 
-#: includes/social/social.php:174
-msgid "Telegram"
-msgstr "Telegram"
+#. Help tip for "Domain path" field in advanced bundle config
+#: tpl/admin/bundle/conf.php:94
+msgid "Folders within the bundle that contain author-supplied translations"
+msgstr "Pastas dentro do pacote que contêm traduções fornecidas pelo autor"
 
-#: includes/social/social.php:175
-msgid "Whatsapp"
-msgstr "Whatsapp"
+#. Help tip for "Blocked paths" field in advanced bundle config
+#: tpl/admin/bundle/conf.php:134
+msgid "Folders within the bundle that will never be searched for files"
+msgstr "Pastas dentro do pacote que nunca serão pesquisadas por arquivos"
 
-#: includes/social/social.php:192 includes/social/social.php:206
-msgid "Social"
-msgstr "Social"
+#: tpl/admin/help/tab-settings.php:9
+msgid "Full documentation"
+msgstr "Toda documentação"
 
-#: init.php:77
-#, fuzzy
-#| msgid "Login"
-msgid "AC Login"
-msgstr "Entrar"
+#: tpl/admin/config/settings.php:24
+msgid "Generate hash tables"
+msgstr "Gerar tabela de dispersão"
 
-#: init.php:83
-#, fuzzy
-#| msgid "Logo Settings"
+#: tpl/admin/bundle/setup/inc-nav.php:25
+msgid "Get help with this"
+msgstr "Obter ajuda com isto"
+
+#: tpl/admin/help/tab-support.php:6
+msgid "Getting help with Loco Translate"
+msgstr "Obter ajuda com o Tradutor Loco"
+
+#: tpl/admin/bundle/alias.php:17
+msgid "Go to WordPress Core"
+msgstr "Ir para o Núcleo do WordPress"
+
+#: tpl/admin/config/settings.php:143
+msgid "Grant access to roles"
+msgstr "Permitir acesso a funções"
+
+#: src/admin/file/EditController.php:162
+msgid "Help"
+msgstr "Ajuda"
+
+#: src/mvc/AdminController.php:46
+msgid "Help & support"
+msgstr "Ajuda e suporte"
+
+#: tpl/admin/help/side-bar.php:12
+msgid "Help and tutorials"
+msgstr "Ajuda e tutoriais"
+
+#: src/mvc/AdminRouter.php:42
+msgid "Home"
+msgstr "Início"
+
+#. Author URI of the plugin
+msgid "https://localise.biz/wordpress/plugin"
+msgstr "https://localise.biz/wordpress/plugin"
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/loco-translate/"
+msgstr "https://wordpress.org/plugins/loco-translate/"
+
+#: tpl/admin/bundle/setup.php:15
+msgid ""
+"If you have trouble translating this bundle, consider asking the author for "
+"help"
+msgstr ""
+"Se você tiver problemas para traduzir este pacote, considere pedir ajuda ao "
+"autor"
+
+#: tpl/admin/bundle/setup/conf.php:49
+msgid ""
+"If you've been given a configuration file by a developer, paste the XML code "
+"here"
+msgstr ""
+"Se você recebeu um arquivo de configuração por um desenvolvedor, cole o "
+"código XML aqui"
+
+#: tpl/admin/bundle/setup/inc-nav.php:22
+msgid "Import config from XML"
+msgstr "Importar configuração a partir do XML"
+
+#: tpl/admin/file/info-po.php:53
+msgid "In sync with template"
+msgstr "Em sincronia com o modelo"
+
+#: tpl/admin/bundle/conf.php:85 tpl/admin/bundle/conf.php:104
+msgid "Include"
+msgstr "Incluir"
+
+#: tpl/admin/config/settings.php:30
+msgid "Include Fuzzy strings"
+msgstr "Incluir Fuzzy strings"
+
+#: tpl/admin/bundle/inc-po-table.php:56 tpl/admin/bundle/locale.php:72
+msgid "Info"
+msgstr "Informações"
+
+#: src/admin/init/InitPoController.php:104
+#, php-format
+msgid "Initializing new translations in \"%s\""
+msgstr "Iniciando novas traduções em \"%s\""
+
+#: src/admin/init/InitPoController.php:108
+msgid "Initializing new translations in unknown set"
+msgstr "Iniciando novas traduções em um conjunto desconhecido"
+
+#: src/admin/bundle/LocaleController.php:115 
+#: src/admin/list/LocalesController.php:35 tpl/admin/init/init-po.php:64
+msgid "Installed languages"
+msgstr "Idiomas instalados"
+
+#: src/Locale.php:296
+msgid "Invalid locale"
+msgstr "Local inválido"
+
+#: tpl/admin/bundle/setup/none.php:15
+msgid "It needs configuring before you can do any translations"
+msgstr "Precisa ser configurado antes de poder fazer qualquer tradução"
+
+#: tpl/admin/init/init-po.php:158
+msgid "Just copy English source strings"
+msgstr "Basta copiar strings de origem em Inglês"
+
+#. relative time when something happened in the last 30 seconds
+#: src/mvc/FileParams.php:139
+msgid "Just now"
+msgstr ""
+"Agora mesmo\n"
+
+#: tpl/admin/bundle/inc-po-table.php:11
+msgid "Language"
+msgstr "Idioma"
+
+#: src/admin/file/InfoController.php:168
+#, php-format
+msgid "Language header is \"%s\" but file name contains \"%s\""
+msgstr "O cabeçalho do idioma é \"%s\" mas o nome do arquivo contém \"%s\""
+
+#: src/mvc/AdminRouter.php:59
+msgid "Languages"
+msgstr "Idiomas"
+
+#. Page title for installed languages page
+#: src/mvc/AdminRouter.php:61
+msgid "Languages &lsaquo; Loco"
+msgstr "Idiomas &lsaquo; Loco"
+
+#. Where %s is the size of a file
+#: tpl/admin/init/init-pot.php:18
+#, php-format
+msgid "largest is %s"
+msgstr "o maior é %s"
+
+#: tpl/admin/file/info-pot.php:18
+msgid "Last extracted"
+msgstr "Último extraído"
+
+#: tpl/admin/bundle/inc-po-table.php:23 tpl/admin/bundle/locale.php:46 
+#: tpl/admin/list/locales.php:19 tpl/admin/list/inc-table.php:17
+msgid "Last modified"
+msgstr "Última modificação"
+
+#: tpl/admin/file/info-mo.php:24 tpl/admin/file/info-po.php:23
+msgid "Last translation"
+msgstr "Última tradução"
+
+#: tpl/admin/bundle/setup/conf.php:55
+msgid "Load config"
+msgstr "Carregar configuração"
+
+#: tpl/admin/list/locales.php:16
+msgid "Locale code"
+msgstr "Localização do código"
+
+#: tpl/admin/list/locales.php:13
+msgid "Locale name"
+msgstr "Nome da localização"
+
+#: tpl/admin/bundle/conf.php:71 tpl/admin/common/inc-fsconn.php:12
+msgid "Locked"
+msgstr "Bloqueado"
+
+#: tpl/admin/init/init-prompt.php:22
+msgid ""
+"Loco can sync directly with the source code, but this can be slow if there "
+"are many files"
+msgstr ""
+"Loco pode sincronizar diretamente com o código fonte, mas isso pode ser "
+"lento se houver muitos arquivos"
+
+#: src/output/Buffer.php:129
+#, php-format
+msgid "Loco interrupted by output from %s:%u"
+msgstr "Loco interrompido pela saída de %s:%u"
+
+#: loco.php:135
+#, php-format
+msgid ""
+"Loco requires the \"%s\" PHP extension. Ask your hosting provider to install "
+"it"
+msgstr ""
+"Loco requer a extensão PHP \"%s\". Peça ao seu provedor de hospedagem para "
+"instalá-lo"
+
+#. change "en" in the URL to your language if it's available at http://php.net/docs.php
+#: tpl/admin/errors/no-tokenizer.php:15
+msgid ""
+"Loco requires the <a href=\"http://php.net/manual/en/book.tokenizer.php\" "
+"target=\"_blank\">Tokenizer extension</a> to scan PHP source code for "
+"translatable strings"
+msgstr ""
+"Loco requer a <a href=\"http://php.net/manual/en/book.tokenizer.php\" "
+"target=\"_blank\">extensão Tokenizer</a> para digitalizar o código-fonte PHP "
+"para strings traduzíveis"
+
+#. #-#-#-#-#  tmp-loco-translate.pot (Loco Translate 1.5.6)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: src/mvc/AdminRouter.php:37 src/hooks/AdminHooks.php:67
+msgid "Loco Translate"
+msgstr "Tradução (Loco)"
+
+#. home screen title where %s is the version number
+#: src/admin/RootController.php:23
+#, php-format
+msgid "Loco Translate %s"
+msgstr "Tradução Loco %s"
+
+#: src/mvc/AdminController.php:109
+msgid "Loco Translate is powered by"
+msgstr "Tradução Loco é desenvolvido por"
+
+#: src/mvc/AdminRouter.php:39
+msgid "Loco, Translation Management"
+msgstr "Loco, Gerenciador de Tradução"
+
+#: tpl/admin/config/settings.php:98
+msgid "Look for non-standard names:"
+msgstr "Procure nomes não padronizados:"
+
+#: tpl/admin/config/settings.php:79
+msgid "Maximum line length (zero disables wrapping)"
+msgstr "Comprimento máximo da linha (zero desativa o encapsulamento)"
+
+#. Translators: where %s is the path to a POT file
+#: src/js/Strings.php:18
+#, javascript-format
+msgid "Merged from %s"
+msgstr "Combinado a partir de %s"
+
+#: src/js/Strings.php:21
+msgid "Merged from source code"
+msgstr "Combinado a partir do código fonte"
+
+#: tpl/admin/file/info-po.php:77
+msgid "Missing template"
+msgstr "Modelo faltando"
+
+#: src/ajax/MsginitController.php:60
+msgid "MO file exists for this language already. Delete it first"
+msgstr "O arquivo MO já existe para este idioma. Apague-o primeiro"
+
+#: tpl/admin/config/settings.php:120
+msgid "Modification of installed files"
+msgstr "Modificação de arquivos instalados"
+
+#: src/fs/FileWriter.php:258
+msgid "Modification of installed files is disallowed by the plugin settings"
+msgstr ""
+"A modificação dos arquivos instalados está desativada pelas configurações do "
+"plug-in"
+
+#: tpl/admin/file/view-pot.php:11 tpl/admin/file/edit-pot.php:12 
+#: tpl/admin/bundle/locale.php:14 tpl/admin/common/inc-po-header.php:8
+msgctxt "Modified time"
+msgid "Updated"
+msgstr "Atualizado"
+
+#: src/admin/init/InitPoController.php:16 
+#: src/admin/init/InitPoController.php:111 
+#: src/admin/file/BaseController.php:114 src/admin/bundle/ViewController.php:96
+msgid "New language"
+msgstr "Novo idioma"
+
+#: src/admin/init/InitPotController.php:16
+msgid "New template"
+msgstr "Novo modelo"
+
+#: src/admin/init/InitPotController.php:116
+msgid "New template file"
+msgstr "Novo arquivo de modelo"
+
+#: src/admin/init/InitPotController.php:117
+#, php-format
+msgid "New translations template for \"%s\""
+msgstr "Novo modelo de tradução para \"%s\""
+
+#: src/admin/bundle/LocaleController.php:128
+msgid "No core translation files are installed for this language"
+msgstr "Nenhum arquivo de tradução do núcleo está instalado para este idioma"
+
+#: tpl/admin/errors/no-locale.php:11
+msgid "No files found for this language"
+msgstr "Nenhum arquivo encontrado para este idioma"
+
+#: tpl/admin/init/init-po.php:63
+msgid "No language selected"
+msgstr "Nenhum idioma selecionado"
+
+#: tpl/admin/errors/no-backups.php:12
+msgid "No previous file revisions"
+msgstr "Não há revisões de arquivos anteriores"
+
+#: tpl/admin/bundle/inc-po-table.php:104
+#, php-format
+msgid "No translations found for \"%s\""
+msgstr "Nenhuma tradução encontrada para \"%s\""
+
+#: tpl/admin/bundle/conf.php:94 tpl/admin/bundle/conf.php:113 
+#: tpl/admin/bundle/conf.php:134
+msgid "no wildcards"
+msgstr "sem curingas"
+
+#: tpl/admin/config/settings.php:86 tpl/admin/config/settings.php:116
+msgid "Not recommended"
+msgstr "Não recomendado"
+
+#: tpl/admin/file/info.php:81
+msgid ""
+"Note that the file may not be deletable due to additional ownership "
+"permissions"
+msgstr ""
+"Observe que o arquivo pode não ser excluído devido a permissões de "
+"propriedade adicionais"
+
+#. When text filtering reduces to an empty view
+#: src/js/Strings.php:14
+msgid "Nothing matches the text filter"
+msgstr "Nada corresponde ao filtro do texto"
+
+#: src/js/Strings.php:73 src/error/Notice.php:20 
+#: tpl/admin/common/inc-fsconn.php:39
+msgid "Notice"
+msgstr "Aviso"
+
+#: tpl/admin/config/settings.php:73
+msgid "Number of backups to keep of each file:"
+msgstr "Número de backups para manter de cada arquivo:"
+
+#: tpl/admin/bundle/setup/author.php:11
+msgid "Official configuration"
+msgstr "Configuração oficial"
+
+#: tpl/admin/help/side-bar.php:9
+msgid "Official plugin page"
+msgstr "Página oficial do plug-in"
+
+#: src/js/Strings.php:76 src/error/Success.php:19
+msgid "OK"
+msgstr "OK"
+
+#: tpl/admin/bundle/setup/conf.php:34
+msgid "OK, Load this config"
+msgstr "Certo, carregar esta configuração"
+
+#: src/admin/file/DeleteController.php:98
+#, php-format
+msgid "One dependent file will also be deleted"
+msgid_plural "%u dependent files will also be deleted"
+msgstr[0] "Um arquivo dependente também será excluído"
+msgstr[1] "%u arquivos dependentes também serão excluídos"
+
+#: src/admin/bundle/SetupController.php:114
+#, php-format
+msgid "One file can't be matched to a known set of strings"
+msgid_plural "%s files can't be matched to a known set of strings"
+msgstr[0] ""
+"Um arquivo não pode ser combinado com um conjunto conhecido de strings"
+msgstr[1] ""
+"%s arquivos não podem ser combinados com um conjunto conhecido de strings"
+
+#. Where %2$s is the maximum size of a file that will be included and %3$s is the largest encountered
+#: src/ajax/SyncController.php:63
+#, php-format
+msgid ""
+"One file has been skipped because it's %3$s. (Max is %2$s). Check all "
+"strings are present before saving."
+msgid_plural ""
+"%s files over %2$s have been skipped. (Largest is %3$s). Check all strings "
+"are present before saving."
+msgstr[0] ""
+"Um arquivo foi ignorado porque é %3$s. (O máximo é %2$s). Verifique se todas "
+"as strings estão presentes antes de salvar."
+msgstr[1] ""
+"%s arquivos sobre %2$s foram ignorados. (O maior é %3$s). Verifique se todas "
+"as strings estão presentes antes de salvar."
+
+#: src/package/Debugger.php:186
+#, php-format
+msgid "One string extracted from source code for \"%2$s\""
+msgid_plural "%s strings extracted from source code for \"%s\""
+msgstr[0] "Uma string extraída do código fonte para \"%2$s\""
+msgstr[1] "%s strings extraídas do código fonte para \"%s\""
+
+#: src/admin/init/InitPoController.php:193
+#, php-format
+msgid "One string found in %2$s"
+msgid_plural "%s strings found in %s"
+msgstr[0] "Uma string encontrada em %2$s"
+msgstr[1] "%s strings encontradas em %s"
+
+#: tpl/admin/file/info-po.php:64
+msgid "Out of sync with template"
+msgstr "Sem sincronia com o modelo"
+
+#: src/admin/bundle/BaseController.php:95
+msgid "Overview"
+msgstr "Visão geral"
+
+#: src/mvc/AdminRouter.php:235
+msgid "Page not found"
+msgstr "Página não encontrada"
+
+#: src/fs/FileWriter.php:205
+msgid "Parent directory doesn't exist"
+msgstr "Diretório pai não existe"
+
+#: tpl/admin/bundle/conf.php:144
+msgid "Parent theme"
+msgstr "Tema pai"
+
+#: tpl/admin/bundle/setup/partial.php:11
+msgid "Partially configured bundle"
+msgstr "Pacote parcialmente configurado"
+
+#: tpl/admin/bundle/inc-po-table.php:17 tpl/admin/bundle/locale.php:39
+msgid "Pending"
+msgstr "Pendente"
+
+#: src/error/WriteException.php:13
+msgid "Permission denied"
+msgstr "Permissão negada"
+
+#: src/fs/FileWriter.php:199
+msgid "Permission denied to update file"
+msgstr "Permissão negada ao atualizar o arquivo"
+
+#: src/package/Plugin.php:203
+#, php-format
+msgid "Plugin not found: %s"
+msgstr "Plug-in não encontrado: %s"
+
+#: src/mvc/AdminRouter.php:66 src/admin/config/PrefsController.php:48 
+#: src/admin/config/VersionController.php:22 
+#: src/admin/config/SettingsController.php:77 tpl/admin/help/tab-settings.php:2
+msgid "Plugin settings"
+msgstr "Configurações do plug-in"
+
+#. Page title for plugin translations
+#: src/mvc/AdminRouter.php:51
+msgid "Plugin translations &lsaquo; Loco"
+msgstr "Tradução de plug-ins &lsaquo; Loco"
+
+#: src/mvc/AdminRouter.php:49 src/admin/Navigation.php:44 
+#: src/admin/bundle/LocaleController.php:145
+msgid "Plugins"
+msgstr "Plug-ins"
+
+#. Plural category for languages that have no plurals
+#: src/Locale.php:375
+msgctxt "Plural category"
+msgid "All forms"
+msgstr "Todos os formulários"
+
+#. Plural category used in some multi-plural languages
+#: src/Locale.php:389
+msgctxt "Plural category"
+msgid "Few"
+msgstr "Poucos"
+
+#. Plural category used in some multi-plural languages
+#: src/Locale.php:391
+msgctxt "Plural category"
+msgid "Many"
+msgstr "Muitos"
+
+#. Plural category for singular quantity
+#: src/Locale.php:385
+msgctxt "Plural category"
+msgid "One"
+msgstr "Um"
+
+#. General plural category not covered by other forms
+#: src/Locale.php:393
+msgctxt "Plural category"
+msgid "Other"
+msgstr "Outros"
+
+#. Plural category used in some multi-plural languages
+#: src/Locale.php:387
+msgctxt "Plural category"
+msgid "Two"
+msgstr "Dois"
+
+#. Plural category for zero quantity
+#: src/Locale.php:383
+msgctxt "Plural category"
+msgid "Zero"
+msgstr "Zero"
+
+#. Where %s is the name of a template file
+#: tpl/admin/file/info-po.php:68
+#, php-format
+msgid ""
+"PO file has different source strings to \"%s\". Try running Sync before "
+"making any changes."
+msgstr ""
+"O arquivo PO possui diferentes strings de origem para \"%s\". Tente executar "
+"a sincronização antes de fazer qualquer alteração."
+
+#. Where %s is the name of a template file
+#: tpl/admin/file/info-po.php:57
+#, php-format
+msgid "PO file has the same source strings as \"%s\""
+msgstr "O arquivo PO possui as mesmas strings de origem que o \"%s\""
+
+#: tpl/admin/file/info-mo.php:38
+msgid "PO file missing"
+msgstr "Arquivo PO faltando"
+
+#: src/ajax/SaveController.php:100
+msgid "PO file saved and MO file compiled"
+msgstr "Arquivo PO salvo e arquivo MO compilado"
+
+#: src/ajax/SaveController.php:105
+msgid "PO file saved, but MO file compilation failed"
+msgstr "Arquivo PO salvo, mas falha na compilação do arquivo MO"
+
+#: src/ajax/SaveController.php:112
+msgid "POT file saved"
+msgstr "Arquivo POT salvo"
+
+#: tpl/admin/config/settings.php:93
+msgid "POT template files"
+msgstr "Arquivos de modelo POT"
+
+#: tpl/admin/bundle/conf.php:29
+msgid "Project name"
+msgstr "Nome do projeto"
+
+#: src/js/Strings.php:61
+msgid "Provide the following text when reporting a problem"
+msgstr "Forneça o seguinte texto ao relatar um problema"
+
+#: tpl/admin/common/inc-fsconn.php:27
+msgid "Read only"
+msgstr "Somente leitura"
+
+#: tpl/admin/root.php:23
+msgid "Recently updated:"
+msgstr "Recentemente atualizado:"
+
+#: src/fs/FileWriter.php:149
+msgid "Refusing to copy over an existing file"
+msgstr "Recusando-se a copiar um arquivo existente"
+
+#. Help tip for "Template file" field in advanced bundle config
+#: tpl/admin/bundle/conf.php:75
+msgid "Relative path from bundle root to the official POT file"
+msgstr "Caminho relativo à raiz do pacote para o arquivo POT oficial"
+
+#: tpl/admin/bundle/conf.php:159 tpl/admin/bundle/setup/saved.php:18
+msgid "Reset config"
+msgstr "Restaurar configurações"
+
+#: src/admin/file/BaseController.php:97 tpl/admin/file/diff.php:30
+msgid "Restore"
+msgstr "Restaurar"
+
+#: src/admin/file/DiffController.php:74 src/admin/file/DiffController.php:92
+#, php-format
+msgid "Restore %s"
+msgstr "Restaurar %s"
+
+#: tpl/admin/file/diff.php:57
+msgid "Revision saved"
+msgstr "Revisão salva"
+
+#. Where %s is a file name
+#: src/ajax/DiffController.php:47
+#, php-format
+msgid "Revisions are identical, you can delete %s"
+msgstr "As revisões são idênticas, você pode excluir %s"
+
+#: tpl/admin/root.php:47
+msgid "Running plugins:"
+msgstr "Executando plug-ins:"
+
+#: tpl/admin/bundle/conf.php:141
+msgid "Save config"
+msgstr "Salvar configurações"
+
+#: tpl/admin/config/settings.php:115
+msgid "Save credentials in session"
+msgstr "Salvar credenciais na sessão"
+
+#: tpl/admin/config/settings.php:164 tpl/admin/config/prefs.php:28
+msgid "Save settings"
+msgstr "Configurações de salvamento"
+
+#: tpl/admin/config/settings.php:65 tpl/admin/config/settings.php:69
+msgid "Saving PO/POT files"
+msgstr "Salvando arquivos PO/POT"
+
+#: src/admin/bundle/BaseController.php:150
+msgid "Saving this file requires permission"
+msgstr "Salvar este arquivo requer permissão"
+
+#: tpl/admin/config/settings.php:57
+msgid "Scan JavaScript files with extensions:"
+msgstr "Analise arquivos JavaScript com extensões:"
+
+#: tpl/admin/config/settings.php:51
+msgid "Scan PHP files with extensions:"
+msgstr "Digitalize arquivos PHP com extensões:"
+
+#: src/admin/bundle/LocaleController.php:136
+msgid "See all core translations"
+msgstr "Veja todas as traduções do núcleo"
+
+#: tpl/admin/root.php:54 src/admin/bundle/LocaleController.php:146
+msgid "See all plugins"
+msgstr "Ver todos os plug-ins"
+
+#: tpl/admin/root.php:39 src/admin/bundle/LocaleController.php:141
+msgid "See all themes"
+msgstr "Veja todos os temas"
+
+#: src/js/Strings.php:55
+msgid "Server returned invalid data"
+msgstr "O servidor retornou dados inválidos"
+
+#. where %s is a plugin or theme
+#: src/admin/bundle/SetupController.php:15
+#, php-format
+msgid "Set up %s"
+msgstr "Configurar %s"
+
+#: tpl/admin/list/inc-table.php:20
+msgid "Sets"
+msgstr "Conjuntos"
+
+#: src/mvc/AdminRouter.php:67 src/mvc/AdminRouter.php:72 
+#: tpl/admin/common/inc-fsconn.php:18 tpl/admin/common/inc-fsconn.php:45 
+#: tpl/admin/errors/no-backups.php:24
 msgid "Settings"
-msgstr "Configurações de Logotipo"
-
-#: init.php:86
-msgid "Get Pro"
-msgstr "Get Pro"
-
-#: init.php:229
-msgid "Find Us On Social Media"
-msgstr "Encontre-nos nas Mídias Sociais"
-
-#: init.php:526
-msgid "Please upload a valid .json file"
-msgstr "Por favor, envie um arquivo .json válido"
-
-#: init.php:532
-msgid "Please upload a file to import"
-msgstr "Por favor, envie um arquivo para importar"
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Type Username or Email"
-#~ msgstr "Por favor, classifique-nos "
-
-#, fuzzy
-#~| msgid "Password"
-#~ msgid "Type Password"
-#~ msgstr "Senha"
-
-#, fuzzy
-#~| msgid "Admin Custom Login"
-#~ msgid "Custom Login"
-#~ msgstr "Personalizar Login de Administrador"
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Username or Email"
-#~ msgstr "Por favor, classifique-nos "
-
-#~ msgid "Password"
-#~ msgstr "Senha"
-
-#~ msgid "Type Username or Email Address"
-#~ msgstr "Por favor, classifique-nos"
-
-#~ msgid "Powered By"
-#~ msgstr "Criado Por"
-
-#~ msgid "Weblizar"
-#~ msgstr "Weblizar"
-
-#~ msgid "User Name"
-#~ msgstr "Nome de Usuário"
-
-#~ msgid "Export / Import Your Data"
-#~ msgstr "Exportar / Importar Seus Dados"
-
-#~ msgid "Please rate us"
-#~ msgstr "Por favor, classifique-nos"
-
-#~ msgid "Logo Width"
-#~ msgstr "Largura do Logotipo"
-
-#~ msgid "Logo Height"
-#~ msgstr "Altura do Logotipo"
-
-#~ msgid "Logo URL Title"
-#~ msgstr "Título da URL do Logotipo"
-
-#~ msgid "VKontakte"
-#~ msgstr "VKontakte"
-
-#, fuzzy
-#~| msgid "Select Background"
-#~ msgid "Select Nackground"
-#~ msgstr "Escolha um fundo"
-
-#~ msgid "No Repeat "
-#~ msgstr "Não Repetir"
-
-#~ msgid "Background Position "
-#~ msgstr "Posição do Fundo "
-
-#~ msgid "Enable form shadow?"
-#~ msgstr "Habilitar sobra do formulário?"
-
-#~ msgid "Login "
-#~ msgstr "Entrar "
-
-#~ msgid "Please rate us "
-#~ msgstr "Por favor, classifique-nos "
-
-#~ msgid "Dashboard "
-#~ msgstr "Painel de Controle "
-
-#~ msgid "Top Background "
-#~ msgstr "Fundo do Topo "
-
-#~ msgid "Text and Color "
-#~ msgstr "Texto e Cores "
-
-#~ msgid "Language Contribution "
-#~ msgstr "Contribuição de Idioma "
-
-#~ msgid " Translate this plugin into your language"
-#~ msgstr " Traduzir este plug-in para o seu idioma"
-
-#~ msgid "Question : How to convert Plguin into My Language ?"
-#~ msgstr "Pergunta: Como converter o Plugin para Meu Idioma?"
-
-#~ msgid "Export Custom Login Data "
-#~ msgstr "Exportar Dados de Entrada Personalizados "
-
-#~ msgid "Import Custom Login Data "
-#~ msgstr "Importar Dados de Entrada Personalizados "
-
-#~ msgid "Plugin Recommendation"
-#~ msgstr "Recomendações do Plugin"
-
-#~ msgid "Get More Free Wordpress Plguins From Weblizar"
-#~ msgstr "Obter Mais Plugins Wordpress Gratuitos de Weblizar"
-
-#~ msgid "More Details"
-#~ msgstr "Mais Detalhes"
-
-#~ msgid "Install Now"
-#~ msgstr "Instalar Agora"
-
-#~ msgid "Update Now"
-#~ msgstr "Atualizar Agora"
-
-#~ msgid "By "
-#~ msgstr "Por "
-
-#~ msgid "Premium Editions"
-#~ msgstr "Edições Premium"
-
-#~ msgid "Visit Website"
-#~ msgstr "Visite o Site"
-
-#~ msgid "Last Updated:"
-#~ msgstr "Última Atualização:"
-
-#~ msgid "<strong>Untested</strong> with your version of WordPress"
-#~ msgstr "<strong>Não testada</strong> com a sua versão do WordPress"
-
-#~ msgid "Incompatible with your version of WordPress"
-#~ msgstr "Incompatível com a sua versão do WordPress"
-
-#~ msgid "Compatible with your version of WordPress"
-#~ msgstr "Compatível com a sua versão do WordPress"
-
-#~ msgid "Logo "
-#~ msgstr "Logotipo "
-
-#~ msgid "google plus"
-#~ msgstr "Google Plus"
-
-#~ msgid "Social "
-#~ msgstr "Social "
-
-#, fuzzy
-#~| msgid "By "
-#~ msgid "By"
-#~ msgstr "Por "
-
-#, fuzzy
-#~| msgid "Remove"
-#~ msgid "URL removed"
-#~ msgstr "Remover"
-
-#, fuzzy
-#~| msgid "preview"
-#~ msgid "Overview"
-#~ msgstr "pré-visualizar"
-
-#, fuzzy
-#~| msgid "Save Changes"
-#~ msgid "Change"
-#~ msgstr "Salvar Configurações"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Appearance Saved Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom Css Saved"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid " General Setting"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid " Details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom Css"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "General Setting"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Select Background"
-#~ msgid "Select color:"
-#~ msgstr "Escolha um fundo"
-
-#, fuzzy
-#~| msgid "Upload"
-#~ msgid "Upload logo:"
-#~ msgstr "Enviar"
-
-#, fuzzy
-#~| msgid "Logo Width"
-#~ msgid "Logo width"
-#~ msgstr "Largura do Logotipo"
-
-#, fuzzy
-#~| msgid "Logo Height"
-#~ msgid "Logo height"
-#~ msgstr "Altura do Logotipo"
-
-#, fuzzy
-#~| msgid "Select Background"
-#~ msgid "Select Icon"
-#~ msgstr "Escolha um fundo"
-
-#, fuzzy
-#~| msgid "Social "
-#~ msgid "Social Link:"
-#~ msgstr "Social "
-
-#, fuzzy
-#~| msgid "Social "
-#~ msgid "Social Link 1"
-#~ msgstr "Social "
-
-#, fuzzy
-#~| msgid "Social "
-#~ msgid "Social Link 2"
-#~ msgstr "Social "
-
-#, fuzzy
-#~| msgid "Social "
-#~ msgid "Social Link 3"
-#~ msgstr "Social "
-
-#, fuzzy
-#~| msgid "Social "
-#~ msgid "Social Link 4"
-#~ msgstr "Social "
-
-#, fuzzy
-#~| msgid "Social "
-#~ msgid "Social Link 5"
-#~ msgstr "Social "
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Service Name:"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Customer:"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Contact Us:"
-#~ msgid "Contact No.:"
-#~ msgstr "Contate-nos:"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Appointment Created Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Floating"
-#~ msgid "Updating"
-#~ msgstr "Flutuando"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Appointment Updated Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Appointment Delete Successfully"
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Floating"
-#~ msgid "Deleting"
-#~ msgstr "Flutuando"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Mail Sent Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Status Updated Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Please select/create one"
-#~ msgstr "Por favor, classifique-nos "
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Customer Name"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "Contact Us:"
-#~ msgid "Contact No"
-#~ msgstr "Contate-nos:"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Appointment Booked Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Customer"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Contact Us:"
-#~ msgid "Contact No."
-#~ msgstr "Contate-nos:"
-
-#, fuzzy
-#~| msgid "Admin Custom Login Status"
-#~ msgid "Appointment Status"
-#~ msgstr "Estado do Admin Custom Login"
-
-#, fuzzy
-#~| msgid "Select Background"
-#~ msgid "Select Status"
-#~ msgstr "Escolha um fundo"
-
-#, fuzzy
-#~| msgid "Repeat"
-#~ msgid "Repeat:"
-#~ msgstr "Repetir"
-
-#, fuzzy
-#~| msgid "Select overlay effect"
-#~ msgid "Select Staff"
-#~ msgstr "Selecione efeito de sobreposição"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Customer Name:"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "Skype"
-#~ msgid "Skype Id:"
-#~ msgstr "Skype"
-
-#, fuzzy
-#~| msgid "Social Profiles"
-#~ msgid "Special Notes"
-#~ msgstr "Perfis Sociais"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Customer Created Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Customer Update Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Customer Delete Successfully"
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Admin Custom Login"
-#~ msgid "Add Customer"
-#~ msgstr "Personalizar Login de Administrador"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "First Name"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Last Name"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "Skype"
-#~ msgid "Skype Id"
-#~ msgstr "Skype"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Customers"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Data Inserted Successfully"
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Enable Social Icons"
-#~ msgid "Enable Email Checkbox"
-#~ msgstr "Habilitar Ícones Sociais"
-
-#, fuzzy
-#~| msgid "Disable"
-#~ msgid "Variables"
-#~ msgstr "Desabilitado"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Name"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "Repeat"
-#~ msgid "Repeat Day(s)"
-#~ msgstr "Repetir"
-
-#, fuzzy
-#~| msgid "Repeat"
-#~ msgid "Repeat Week(s)"
-#~ msgstr "Repetir"
-
-#, fuzzy
-#~| msgid "%s rating"
-#~ msgid "Creating"
-#~ msgstr "classificação %s"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Holiday Created Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update Holiday"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Holiday Update Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Delete Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Holiday Delete Successfully"
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Solid"
-#~ msgid "Holiday"
-#~ msgstr "Sólida"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Plugin Details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Select Background"
-#~ msgid "Select Icon:"
-#~ msgstr "Escolha um fundo"
-
-#, fuzzy
-#~| msgid "Headline Font Color"
-#~ msgid "Select Color:"
-#~ msgstr "Cor da Fonte do Título"
-
-#, fuzzy
-#~| msgid "Select Background"
-#~ msgid "Select Category"
-#~ msgstr "Escolha um fundo"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Category Created Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Category Deleted Successfully"
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Service Created Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Update Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Category Updated Successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Settings Saved"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Remove"
-#~ msgid "Removing"
-#~ msgstr "Remover"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Calendar Setting"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Remove"
-#~ msgid "Remove Plugin"
-#~ msgstr "Remover"
-
-#, fuzzy
-#~| msgid "Font Setting"
-#~ msgid "Currency Setting"
-#~ msgstr "Configurações de Fonte"
-
-#, fuzzy
-#~| msgid "Text and Color "
-#~ msgid "Theme Color"
-#~ msgstr "Texto e Cores "
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom Slots"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Bussiness Name"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "Text and Color "
-#~ msgid "Time off Color"
-#~ msgstr "Texto e Cores "
-
-#, fuzzy
-#~| msgid "Link Font Style"
-#~ msgid "Font Style"
-#~ msgstr "Estilo da Fonte do Link"
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Please Select date"
-#~ msgstr "Por favor, classifique-nos "
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Please Wait"
-#~ msgstr "Por favor, classifique-nos "
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "3. Details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Please Enter Username"
-#~ msgstr "Por favor, classifique-nos "
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Please Enter First Name"
-#~ msgstr "Por favor, classifique-nos "
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Please Enter Last Name"
-#~ msgstr "Por favor, classifique-nos "
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Please Enter Password"
-#~ msgstr "Por favor, classifique-nos "
-
-#, fuzzy
-#~| msgid "None"
-#~ msgid "on"
-#~ msgstr "Nenhum"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Username :"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Enter User Name"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Enter Name"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "Last Updated:"
-#~ msgid "Last Name :"
-#~ msgstr "Última Atualização:"
-
-#, fuzzy
-#~| msgid "Password"
-#~ msgid "Password :"
-#~ msgstr "Senha"
-
-#, fuzzy
-#~| msgid "Password"
-#~ msgid "Enter Password"
-#~ msgstr "Senha"
-
-#, fuzzy
-#~| msgid "Skype"
-#~ msgid "Skype Id :"
-#~ msgstr "Skype"
-
-#, fuzzy
-#~| msgid "Pinterest"
-#~ msgid "Enter Notes"
-#~ msgstr "Pinterest"
-
-#, fuzzy
-#~| msgid "Rate Us"
-#~ msgid "Date :"
-#~ msgstr "Classifique-nos"
-
-#, fuzzy
-#~| msgid "Skype"
-#~ msgid "Skype Id.:"
-#~ msgstr "Skype"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Service Detail"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "User Detail"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Password"
-#~ msgid "Invalid Password"
-#~ msgstr "Senha"
-
-#, fuzzy
-#~| msgid "Rate Us"
-#~ msgid "Rate it"
-#~ msgstr "Classifique-nos"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Less Details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Shortcode settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Right Center"
-#~ msgid "Visit Help Center"
-#~ msgstr "Direita Centro"
-
-#, fuzzy
-#~| msgid "Recommendations"
-#~ msgid "Documentation"
-#~ msgstr "Recomendações"
-
-#, fuzzy
-#~| msgid "Logo URL"
-#~ msgid "Home URL"
-#~ msgstr "URL do Logotipo"
-
-#, fuzzy
-#~| msgid "Upload"
-#~ msgid "Upload Plugin"
-#~ msgstr "Enviar"
-
-#, fuzzy
-#~| msgid "Install Now"
-#~ msgid "Installed"
-#~ msgstr "Instalar Agora"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update to v %s"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Help And Support"
-#~ msgid "Send to support"
-#~ msgstr "Ajuda e Suporte"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom Code"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Login Settings"
-#~ msgid "Miscellaneous Settings"
-#~ msgstr "Configurações de Login"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Default Settings"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Restore Settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Export / Import"
-#~ msgid "Import / Export"
-#~ msgstr "Exportar / Importar"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Settings page"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Login Settings"
-#~ msgid "Manage License Settings"
-#~ msgstr "Configurações de Login"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Restore settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "File %s edited successfully."
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Recommendations"
-#~ msgid "Recommended"
-#~ msgstr "Recomendações"
-
-#, fuzzy
-#~| msgid "None"
-#~ msgid "one"
-#~ msgstr "Nenhum"
-
-#, fuzzy
-#~| msgid "Right"
-#~ msgid "eighteen"
-#~ msgstr "Direita"
-
-#, fuzzy
-#~| msgid "Logo Height"
-#~ msgid "forty eight"
-#~ msgstr "Altura do Logotipo"
-
-#, fuzzy
-#~| msgid "Right"
-#~ msgid "eighty"
-#~ msgstr "Direita"
-
-#, fuzzy
-#~| msgid "Right Center"
-#~ msgid "eighty one"
-#~ msgstr "Direita Centro"
-
-#, fuzzy
-#~| msgid "Right Bottom"
-#~ msgid "eighty two"
-#~ msgstr "Direita Inferior"
-
-#, fuzzy
-#~| msgid "Right Top"
-#~ msgid "eighty four"
-#~ msgstr "Direita Topo"
-
-#, fuzzy
-#~| msgid "Logo Height"
-#~ msgid "eighty eight"
-#~ msgstr "Altura do Logotipo"
-
-#, fuzzy
-#~| msgid "Right Center"
-#~ msgid "eighty nine"
-#~ msgstr "Direita Centro"
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Please enter the value."
-#~ msgstr "Por favor, classifique-nos "
-
-#, fuzzy
-#~| msgid "Top Background "
-#~ msgid "No packages found"
-#~ msgstr "Fundo do Topo "
-
-#, fuzzy
-#~| msgid "Login "
-#~ msgid "Login form"
-#~ msgstr "Entrar "
-
-#, fuzzy
-#~| msgid "Reset Default"
-#~ msgid "WordPress default"
-#~ msgstr "Restaurar Padrões"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Messages Settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Enable Custom Login"
-#~ msgid "Enable time limit"
-#~ msgstr "Habilitar Personalização de Login"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "update"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Install Now"
-#~ msgid "install"
-#~ msgstr "Instalar Agora"
-
-#, fuzzy
-#~| msgid "Save Changes"
-#~ msgid "Save changes"
-#~ msgstr "Salvar Configurações"
-
-#, fuzzy
-#~| msgid "Solid"
-#~ msgid "Holidays"
-#~ msgstr "Sólida"
-
-#, fuzzy
-#~| msgid "Link Color"
-#~ msgid "Color"
-#~ msgstr "Cor do Link"
-
-#, fuzzy
-#~| msgid "Button Color"
-#~ msgid "Designation Color"
-#~ msgstr "Cor do Botão"
-
-#, fuzzy
-#~| msgid "Disable"
-#~ msgid "Available"
-#~ msgstr "Desabilitado"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Holiday Details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Holiday added successfully."
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Username"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Staff Details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Request added successfully."
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Facebook"
-#~ msgid "Facebook Page URL"
-#~ msgstr "Facebook"
-
-#, fuzzy
-#~| msgid "Logo Width"
-#~ msgid "Widget Width"
-#~ msgstr "Largura do Logotipo"
-
-#, fuzzy
-#~| msgid "Logo Height"
-#~ msgid "Widget Height"
-#~ msgstr "Altura do Logotipo"
-
-#, fuzzy
-#~| msgid "Facebook"
-#~ msgid "Facebook App ID"
-#~ msgstr "Facebook"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Shortcode Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Incompatible with your version of WordPress"
-#~ msgid "Untested with your version of WordPress"
-#~ msgstr "Incompatível com a sua versão do WordPress"
-
-#, fuzzy
-#~| msgid "Premium Editions"
-#~ msgid "Premium Themes"
-#~ msgstr "Edições Premium"
-
-#, fuzzy
-#~| msgid "Premium Editions"
-#~ msgid "Premium Plugins"
-#~ msgstr "Edições Premium"
-
-#, fuzzy
-#~| msgid "Save Changes"
-#~ msgid "View Changelog"
-#~ msgstr "Salvar Configurações"
-
-#, fuzzy
-#~| msgid "Preview"
-#~ msgid "Previous"
-#~ msgstr "Pré-visualizar"
-
-#, fuzzy
-#~| msgid "Logo URL Title"
-#~ msgid "No Title"
-#~ msgstr "Título da URL do Logotipo"
-
-#, fuzzy
-#~| msgid "Enter any custom css you want to apply on login panel."
-#~ msgid "Enter any custom css you want to apply."
-#~ msgstr ""
-#~ "Digite qualquer css personalizado que você deseja aplicar no painel de "
-#~ "entrada."
-
-#, fuzzy
-#~| msgid "Note: Please Do Not Use"
-#~ msgid "Please Do Not Use"
-#~ msgstr "Nota: Por favor não usar"
-
-#, fuzzy
-#~| msgid "Background Color"
-#~ msgid "Image Background Color"
-#~ msgstr "Cor de Fundo"
-
-#, fuzzy
-#~| msgid "Input Font Color"
-#~ msgid "Description Font Color"
-#~ msgstr "Cor da Fonte de Entrada"
-
-#, fuzzy
-#~| msgid "Button Color"
-#~ msgid "Button Font Color"
-#~ msgstr "Cor do Botão"
-
-#, fuzzy
-#~| msgid "Button Font Style"
-#~ msgid "Button Title"
-#~ msgstr "Estilo da Fonte do Botão"
-
-#, fuzzy
-#~| msgid "Link Font Style"
-#~ msgid "Light Box Styles"
-#~ msgstr "Estilo da Fonte do Link"
-
-#, fuzzy
-#~| msgid "Enter any custom css you want to apply on login panel."
-#~ msgid "Enter any custom css you want to apply on this gallery"
-#~ msgstr ""
-#~ "Digite qualquer css personalizado que você deseja aplicar no painel de "
-#~ "entrada."
-
-#, fuzzy
-#~| msgid "Linkedin"
-#~ msgid "Link"
-#~ msgstr "Linkedin"
-
-#, fuzzy
-#~| msgid "preview"
-#~ msgid "%s reviews"
-#~ msgstr "pré-visualizar"
-
-#, fuzzy
-#~| msgid "Contact Us:"
-#~ msgid "Contact Support"
-#~ msgstr "Contate-nos:"
-
-#, fuzzy
-#~| msgid "Contate-nos:"
-#~ msgid "Content"
-#~ msgstr "Contate-nos:"
-
-#, fuzzy
-#~| msgid "Login Settings"
-#~ msgid "plugin setting page"
-#~ msgstr "Configurações de Login"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom Forms"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Instagram"
-#~ msgid "Instagram Feed"
-#~ msgstr "Instagram"
-
-#, fuzzy
-#~| msgid "Instagram"
-#~ msgid "Follow on Instagram"
-#~ msgstr "Instagram"
-
-#, fuzzy
-#~| msgid "Button Color"
-#~ msgid "Button not working?"
-#~ msgstr "Cor do Botão"
-
-#, fuzzy
-#~| msgid "Background Image"
-#~ msgid "Padding around Images"
-#~ msgstr "Imagem de Fundo"
-
-#, fuzzy
-#~| msgid "here is solution"
-#~ msgid "Image Resolution"
-#~ msgstr "aqui está a solução"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Photo Hover Style"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Background Color"
-#~ msgid "Hover Background Color"
-#~ msgstr "Cor de Fundo"
-
-#, fuzzy
-#~| msgid "Text and Color "
-#~ msgid "Hover Text Color"
-#~ msgstr "Texto e Cores "
-
-#, fuzzy
-#~| msgid "Instagram"
-#~ msgid "Instagram Icon/Link"
-#~ msgstr "Instagram"
-
-#, fuzzy
-#~| msgid "Recommendations"
-#~ msgid "Like/Comment Icons"
-#~ msgstr "Recomendações"
-
-#, fuzzy
-#~| msgid "Headline Font Color"
-#~ msgid "Header Text Color"
-#~ msgstr "Cor da Fonte do Título"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Header Style"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Primary Color"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Secondary Color"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Text and Color "
-#~ msgid "Text Color"
-#~ msgstr "Texto e Cores "
-
-#, fuzzy
-#~| msgid "No Icon"
-#~ msgid "Show Icons"
-#~ msgstr "Sem Ícones"
-
-#, fuzzy
-#~| msgid "Button Color"
-#~ msgid "Icon Color"
-#~ msgstr "Cor do Botão"
-
-#, fuzzy
-#~| msgid "Input Font Size"
-#~ msgid "Icon Size"
-#~ msgstr "Tamanho da Fonte de Entrada"
-
-#, fuzzy
-#~| msgid "Right Center"
-#~ msgid "Lightbox Comments"
-#~ msgstr "Direita Centro"
-
-#, fuzzy
-#~| msgid "Button Color"
-#~ msgid "Button Text Color"
-#~ msgstr "Cor do Botão"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Moderation"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Customize Logo Settings here"
-#~ msgid "Customize Options"
-#~ msgstr "Personalize as Configurações de Logotipo aqui"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Image Hover Animation"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Hover Color"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Button Font Style"
-#~ msgid "Caption Font Style"
-#~ msgstr "Estilo da Fonte do Botão"
-
-#, fuzzy
-#~| msgid "Link Font Style"
-#~ msgid "Lightbox Style"
-#~ msgstr "Estilo da Fonte do Link"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Data Save Successfully."
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Data Reset Successfully."
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Selected Data Remove Successfully."
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "All Data Removed Successfully."
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Mail sent Successfully."
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "General Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Social Media Icon Size"
-#~ msgid "Social Media Options"
-#~ msgstr "Tamanho do Ícone Social"
-
-#, fuzzy
-#~| msgid "Premium Editions"
-#~ msgid "Get Premium Version"
-#~ msgstr "Edições Premium"
-
-#, fuzzy
-#~| msgid "  Login Preview"
-#~ msgid " Live Preview"
-#~ msgstr "  Pré-visualizar Login"
-
-#, fuzzy
-#~| msgid "Background Settings"
-#~ msgid "Appearance Settings"
-#~ msgstr "Configurações de Fundo"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "SEO Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Font Setting"
-#~ msgid "Access Control Settings"
-#~ msgstr "Configurações de Fonte"
-
-#, fuzzy
-#~| msgid "Logo "
-#~ msgid "Logo Text"
-#~ msgstr "Logotipo "
-
-#, fuzzy
-#~| msgid "Logo Height"
-#~ msgid "Logo Text "
-#~ msgstr "Altura do Logotipo"
-
-#, fuzzy
-#~| msgid "Logo Width"
-#~ msgid "Logo Width "
-#~ msgstr "Largura do Logotipo"
-
-#, fuzzy
-#~| msgid "Logo Height"
-#~ msgid "Logo Height "
-#~ msgstr "Altura do Logotipo"
-
-#, fuzzy
-#~| msgid "Upload"
-#~ msgid "Upload Image"
-#~ msgstr "Enviar"
-
-#, fuzzy
-#~| msgid "Background Color"
-#~ msgid "Change Background Color"
-#~ msgstr "Cor de Fundo"
-
-#, fuzzy
-#~| msgid "Button Color"
-#~ msgid "Button Link"
-#~ msgstr "Cor do Botão"
-
-#, fuzzy
-#~| msgid "Linkedin"
-#~ msgid "Link to Admin"
-#~ msgstr "Linkedin"
-
-#, fuzzy
-#~| msgid "Reset Default"
-#~ msgid "Restore Defaults"
-#~ msgstr "Restaurar Padrões"
-
-#, fuzzy
-#~| msgid "Enable Social Icons"
-#~ msgid "Enable Search Robots"
-#~ msgstr "Habilitar Ícones Sociais"
-
-#~ msgid "Disabled"
-#~ msgstr "Desabilitado"
-
-#, fuzzy
-#~| msgid "Enable"
-#~ msgid "Enabled"
-#~ msgstr "Habilitado"
-
-#, fuzzy
-#~| msgid "Text And Color Settings"
-#~ msgid "Skin Color Settings"
-#~ msgstr "Configurações de Texto e Cores"
-
-#, fuzzy
-#~| msgid "Text And Color Settings"
-#~ msgid "Skin Color Selection Settings"
-#~ msgstr "Configurações de Texto e Cores"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Social Link And Icon Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Social "
-#~ msgid "Social Icon "
-#~ msgstr "Social "
-
-#, fuzzy
-#~| msgid "Login form Setting"
-#~ msgid "Subscriber Form Settings"
-#~ msgstr "Configurações do formulário de Login"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Subscriber Email Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Data Delete SuccessFully"
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Your Selected Data Removed SuccessFully"
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Center Top"
-#~ msgid "Counter Clock"
-#~ msgstr "Centro Topo"
-
-#, fuzzy
-#~| msgid "No Icon"
-#~ msgid "Icon"
-#~ msgstr "Sem Ícones"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Footer Settings"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Background Settings"
-#~ msgid "Advance Options Settings"
-#~ msgstr "Configurações de Fundo"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom CSS Editor"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "All Data restored Successfully."
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Theme Activate Successfully."
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Connect with your social profile"
-#~ msgid "Connect your visitors"
-#~ msgstr "Conectar com seu perfil social"
-
-#, fuzzy
-#~| msgid " Translate this plugin into your language"
-#~ msgid "Multilingual Translate Plugin In Any Language"
-#~ msgstr " Traduzir este plug-in para o seu idioma"
-
-#, fuzzy
-#~| msgid "Compatible with your version of WordPress"
-#~ msgid "Compatible With Most WordPress Theme"
-#~ msgstr "Compatível com a sua versão do WordPress"
-
-#, fuzzy
-#~| msgid "Plugin Recommendation"
-#~ msgid "Complete Plugin Documentation"
-#~ msgstr "Recomendações do Plugin"
-
-#, fuzzy
-#~| msgid "Flickr"
-#~ msgid "Click Here"
-#~ msgstr "Flickr"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Check Detail"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Subscriber Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Reset Default"
-#~ msgid "Restore Defaults : "
-#~ msgstr "Restaurar Padrões"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Restored all settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Button Color"
-#~ msgid "Custom Color"
-#~ msgstr "Cor do Botão"
-
-#, fuzzy
-#~| msgid "Default"
-#~ msgid "Default Color"
-#~ msgstr "Padrão"
-
-#, fuzzy
-#~| msgid "Pinterest"
-#~ msgid "Litered"
-#~ msgstr "Pinterest"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "All Section Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Headline Font size"
-#~ msgid "Headings Font Size ( H2 )"
-#~ msgstr "Tamanho da Fonte do Título"
-
-#, fuzzy
-#~| msgid "Headline Font size"
-#~ msgid "Sub Headings Font Size ( H4 )"
-#~ msgstr "Tamanho da Fonte do Título"
-
-#, fuzzy
-#~| msgid "Button Font Size"
-#~ msgid "description Font Size ( P )"
-#~ msgstr "Tamanho da Fonte do Botão"
-
-#, fuzzy
-#~| msgid "Social "
-#~ msgid "Social Media"
-#~ msgstr "Social "
-
-#, fuzzy
-#~| msgid "Enable Social Icons"
-#~ msgid "Social Icons"
-#~ msgstr "Habilitar Ícones Sociais"
-
-#, fuzzy
-#~| msgid "Social "
-#~ msgid "Social Icon"
-#~ msgstr "Social "
-
-#, fuzzy
-#~| msgid "Flickr"
-#~ msgid "click here"
-#~ msgstr "Flickr"
-
-#, fuzzy
-#~| msgid "Social Media Icon Background Color"
-#~ msgid "Enter Social Icon and Background Color Here"
-#~ msgstr "Cor de Fundo do Ícone Social"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Subscribers Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Button Color"
-#~ msgid "Button Hover Text Color"
-#~ msgstr "Cor do Botão"
-
-#, fuzzy
-#~| msgid "Static Background Color"
-#~ msgid "Button Hover Background Color"
-#~ msgstr "Cor de fundo estática"
-
-#, fuzzy
-#~| msgid "Login Settings"
-#~ msgid "Mad Mimi Settings"
-#~ msgstr "Configurações de Login"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "MailChimp Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom Color Schemes"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Premium Editions"
-#~ msgid "Premium Version"
-#~ msgstr "Edições Premium"
-
-#, fuzzy
-#~| msgid "Floating With Customization Settings"
-#~ msgid "Page Animations Settings"
-#~ msgstr "Flutuando com Configurações de Personalização"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Page In Animations"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Page Out Animations"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Page Animations"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Login Settings"
-#~ msgid "Page Animation Settings"
-#~ msgstr "Configurações de Login"
-
-#, fuzzy
-#~| msgid "Overlay Effect 1"
-#~ msgid "Effect 1"
-#~ msgstr "Efeito de Sobreposição 1"
-
-#, fuzzy
-#~| msgid "Overlay Effect 2"
-#~ msgid "Effect 2"
-#~ msgstr "Efeito de Sobreposição 2"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Animation"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Right Center"
-#~ msgid "Right to Left"
-#~ msgstr "Direita Centro"
-
-#, fuzzy
-#~| msgid "Left Bottom"
-#~ msgid "Top to Bottom"
-#~ msgstr "Esquerda Inferior"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Image Hover Color"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Enter any custom css you want to apply on login panel."
-#~ msgid "Enter any custom css you want to apply on this gallery."
-#~ msgstr ""
-#~ "Digite qualquer css personalizado que você deseja aplicar no painel de "
-#~ "entrada."
-
-#, fuzzy
-#~| msgid "Help And Support"
-#~ msgid "Help and Support"
-#~ msgstr "Ajuda e Suporte"
-
-#, fuzzy
-#~| msgid "Show Us Some Love (Rate Us)"
-#~ msgid "Show us some love, Rate Us"
-#~ msgstr "Mostre-nos Algum Amor (Avalie-nos)"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Image Border Size"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Image Border Color"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Customize Logo Settings here"
-#~ msgid "Configure Plugin Settings Here"
-#~ msgstr "Personalize as Configurações de Logotipo aqui"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Settings Tab"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Product Color"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Logo Width"
-#~ msgid "Width"
-#~ msgstr "Largura do Logotipo"
-
-#, fuzzy
-#~| msgid "Right"
-#~ msgid "Height"
-#~ msgstr "Direita"
-
-#, fuzzy
-#~| msgid "Right"
-#~ msgid "Weight"
-#~ msgstr "Direita"
-
-#, fuzzy
-#~| msgid "2"
-#~ msgid "2G"
-#~ msgstr "2"
-
-#, fuzzy
-#~| msgid "3"
-#~ msgid "3G"
-#~ msgstr "3"
-
-#, fuzzy
-#~| msgid "4"
-#~ msgid "4G"
-#~ msgstr "4"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update Product"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Product Settings"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Products Settings"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Instagram"
-#~ msgid "Instagram Gallery"
-#~ msgstr "Instagram"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Page/Post settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Display Settings"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Link Font Size"
-#~ msgid "Font size"
-#~ msgstr "Tamanho da Fonte do Link"
-
-#, fuzzy
-#~| msgid "Input Font Color"
-#~ msgid "Font Color"
-#~ msgstr "Cor da Fonte de Entrada"
-
-#, fuzzy
-#~| msgid "Select overlay effect"
-#~ msgid "Select Template"
-#~ msgstr "Selecione efeito de sobreposição"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Add settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Note: Please Do Not Use"
-#~ msgid "Note: Please Select Post Type ."
-#~ msgstr "Nota: Por favor não usar"
-
-#, fuzzy
-#~| msgid "Note: Please Do Not Use"
-#~ msgid "Note: Please Select atleast one ."
-#~ msgstr "Nota: Por favor não usar"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Order By"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Slider Display Options"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Link Shadow Color"
-#~ msgid "Sliding Arrow Color"
-#~ msgstr "Cor da Sombra do Link"
-
-#, fuzzy
-#~| msgid "Text and Color "
-#~ msgid "Font Text Color"
-#~ msgstr "Texto e Cores "
-
-#, fuzzy
-#~| msgid "Link Font Size"
-#~ msgid "Font Size"
-#~ msgstr "Tamanho da Fonte do Link"
-
-#, fuzzy
-#~| msgid "Link Color"
-#~ msgid "Link option"
-#~ msgstr "Cor do Link"
-
-#, fuzzy
-#~| msgid "Social Media Background Color On Hover"
-#~ msgid "BackgroundColor On Hover"
-#~ msgstr "Cor de Fundo do Ícone Social Sobreposto"
-
-#, fuzzy
-#~| msgid "Social Media Icon Color On Hover"
-#~ msgid "Font Text Color On Hover"
-#~ msgstr "Cor do Ícone Social Sobreposto"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Border Size"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Featured Images Border Style"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Featured Images Border Color"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Circle"
-#~ msgid "In Circle"
-#~ msgstr "Círculo"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Coming Soon Mode Settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "SEO Selection Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Layout Settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Responsive Gallery Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Login Form Opacity"
-#~ msgid "Hover Color Opacity"
-#~ msgstr "Opacidade do Formulário de Login"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Gallery Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Image Zoom Animation"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update Portfolio"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Instagram"
-#~ msgid "Instagram Gallery Pro"
-#~ msgstr "Instagram"
-
-#, fuzzy
-#~| msgid "Background Color"
-#~ msgid "Text Background Color"
-#~ msgstr "Cor de Fundo"
-
-#, fuzzy
-#~| msgid "Static Background Color"
-#~ msgid "Select Text Background Color"
-#~ msgstr "Cor de fundo estática"
-
-#, fuzzy
-#~| msgid "Text and Color "
-#~ msgid "Select Text Color"
-#~ msgstr "Texto e Cores "
-
-#, fuzzy
-#~| msgid "Last Updated:"
-#~ msgid "Automatic Updates"
-#~ msgstr "Última Atualização:"
-
-#, fuzzy
-#~| msgid "Last Updated:"
-#~ msgid "Translation Updates"
-#~ msgstr "Última Atualização:"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Core E-mails"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Updates Options"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Enable"
-#~ msgid "Enable Logs"
-#~ msgstr "Habilitado"
-
-#, fuzzy
-#~| msgid "Disable"
-#~ msgid "Disable Logging"
-#~ msgstr "Desabilitado"
-
-#, fuzzy
-#~| msgid "Disable"
-#~ msgid "Disable Tracking"
-#~ msgstr "Desabilitado"
-
-#, fuzzy
-#~| msgid "Reset Default"
-#~ msgid "Reset to Defaults"
-#~ msgstr "Restaurar Padrões"
-
-#, fuzzy
-#~| msgid "Select background"
-#~ msgid "Select bulk action"
-#~ msgstr "Selecione um fundo"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Show more details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Recommendations"
-#~ msgid "No comments"
-#~ msgstr "Recomendações"
-
-#, fuzzy
-#~| msgid "Preview"
-#~ msgid "Previous page"
-#~ msgstr "Pré-visualizar"
-
-#, fuzzy
-#~| msgid "Last Updated:"
-#~ msgid "Last page"
-#~ msgstr "Última Atualização:"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "View details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Visit Website"
-#~ msgid "Visit plugin site"
-#~ msgstr "Visite o Site"
-
-#, fuzzy
-#~| msgid "Visit Website"
-#~ msgid "Visit Theme Site"
-#~ msgstr "Visite o Site"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Slider Width"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Slider Height"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Slide Distance"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Headline Font Color"
-#~ msgid "Slide Title Color"
-#~ msgstr "Cor da Fonte do Título"
-
-#, fuzzy
-#~| msgid "Static Background Color"
-#~ msgid "Slide Title Background Color"
-#~ msgstr "Cor de fundo estática"
-
-#, fuzzy
-#~| msgid "Social Media Icon Background Color"
-#~ msgid "Slide Description Background Color"
-#~ msgstr "Cor de Fundo do Ícone Social"
-
-#, fuzzy
-#~| msgid "Button Color"
-#~ msgid "Navigation Color"
-#~ msgstr "Cor do Botão"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Slide Transition"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Enter any custom css you want to apply on login panel."
-#~ msgid "Select a transition effect you want to apply on slides"
-#~ msgstr ""
-#~ "Digite qualquer css personalizado que você deseja aplicar no painel de "
-#~ "entrada."
-
-#, fuzzy
-#~| msgid "Enter any custom css you want to apply on login panel."
-#~ msgid "Select a slide order you want to apply on slides"
-#~ msgstr ""
-#~ "Digite qualquer css personalizado que você deseja aplicar no painel de "
-#~ "entrada."
-
-#, fuzzy
-#~| msgid "Left Bottom"
-#~ msgid "Bottom"
-#~ msgstr "Esquerda Inferior"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Border"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Pinterest"
-#~ msgid "Pointer"
-#~ msgstr "Pinterest"
-
-#, fuzzy
-#~| msgid "Logo Width"
-#~ msgid "100% Width"
-#~ msgstr "Largura do Logotipo"
-
-#, fuzzy
-#~| msgid "Logo Width"
-#~ msgid "Full Width"
-#~ msgstr "Largura do Logotipo"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Logo Height"
-#~ msgid "Auto Height"
-#~ msgstr "Altura do Logotipo"
-
-#, fuzzy
-#~| msgid "Contate-nos:"
-#~ msgid "Contain"
-#~ msgstr "Contate-nos:"
-
-#, fuzzy
-#~| msgid "Headline Font Color"
-#~ msgid "Navigation Pointer Color"
-#~ msgstr "Cor da Fonte do Título"
-
-#, fuzzy
-#~| msgid "Background SlideShow"
-#~ msgid "Full Screen Slide Show"
-#~ msgstr "Fundo em SlideShow"
-
-#, fuzzy
-#~| msgid "Enter any custom css you want to apply on login panel."
-#~ msgid ""
-#~ "Enter any custom css you want to apply on this slider into textarea filed"
-#~ msgstr ""
-#~ "Digite qualquer css personalizado que você deseja aplicar no painel de "
-#~ "entrada."
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Slide Descriptions"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Slide Description"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Language Contribution "
-#~ msgid "Contributor"
-#~ msgstr "Contribuição de Idioma "
-
-#, fuzzy
-#~| msgid "Language Contribution "
-#~ msgid "Manage options"
-#~ msgstr "Contribuição de Idioma "
-
-#, fuzzy
-#~| msgid "Upload"
-#~ msgid "Upload files"
-#~ msgstr "Enviar"
-
-#, fuzzy
-#~| msgid "Dashboard"
-#~ msgid "Edit dashboard"
-#~ msgstr "Painel de Controle"
-
-#, fuzzy
-#~| msgid "Install Now"
-#~ msgid "Install plugins"
-#~ msgstr "Instalar Agora"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update themes"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Install Now"
-#~ msgid "Install themes"
-#~ msgstr "Instalar Agora"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update core"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Remove"
-#~ msgid "Remove users"
-#~ msgstr "Remover"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "User ID"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "User Profile Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Login Settings"
-#~ msgid "Pin Settings"
-#~ msgstr "Configurações de Login"
-
-#, fuzzy
-#~| msgid "  Login Preview"
-#~ msgid "Live Preview off"
-#~ msgstr "  Pré-visualizar Login"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Widget Settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Pinterest"
-#~ msgid "[pinterest_feed]"
-#~ msgstr "Pinterest"
-
-#, fuzzy
-#~| msgid "Pinterest"
-#~ msgid "[pinterest_board]"
-#~ msgstr "Pinterest"
-
-#, fuzzy
-#~| msgid "Pinterest"
-#~ msgid "[pinterest_pins]"
-#~ msgstr "Pinterest"
-
-#, fuzzy
-#~| msgid "Pinterest"
-#~ msgid "Pinterest Feed Widget"
-#~ msgstr "Pinterest"
-
-#, fuzzy
-#~| msgid "Social Profiles"
-#~ msgid "Profile"
-#~ msgstr "Perfis Sociais"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Profile Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Profile Stat Settings"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Login Settings"
-#~ msgid "Pins Settings"
-#~ msgstr "Configurações de Login"
-
-#, fuzzy
-#~| msgid "Plugin Recommendation"
-#~ msgid "Pins Section"
-#~ msgstr "Recomendações do Plugin"
-
-#, fuzzy
-#~| msgid "Disable"
-#~ msgid "Enable/Disable"
-#~ msgstr "Desabilitado"
-
-#, fuzzy
-#~| msgid "Font Setting"
-#~ msgid "Account Settings"
-#~ msgstr "Configurações de Fonte"
-
-#, fuzzy
-#~| msgid "Password"
-#~ msgid "Live API Password"
-#~ msgstr "Senha"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Brand Name"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "Button Font Size"
-#~ msgid "Button Size"
-#~ msgstr "Tamanho da Fonte do Botão"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Page Style"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Background Settings"
-#~ msgid "Advanced Settings"
-#~ msgstr "Configurações de Fundo"
-
-#, fuzzy
-#~| msgid "Enable Custom Login"
-#~ msgid "Enable Logging"
-#~ msgstr "Habilitar Personalização de Login"
-
-#, fuzzy
-#~| msgid "Powered By"
-#~ msgid "Powered by Jetpack"
-#~ msgstr "Criado Por"
-
-#, fuzzy
-#~| msgid "Rate Us"
-#~ msgid "Rate %"
-#~ msgstr "Classifique-nos"
-
-#, fuzzy
-#~| msgid "Select Background"
-#~ msgid "Select one..."
-#~ msgstr "Escolha um fundo"
-
-#, fuzzy
-#~| msgid "Rate Us"
-#~ msgid "Rates"
-#~ msgstr "Classifique-nos"
-
-#, fuzzy
-#~| msgid "Logo Height"
-#~ msgid "Total Weight"
-#~ msgstr "Altura do Logotipo"
-
-#, fuzzy
-#~| msgid "Recommendations"
-#~ msgid "Item Dimensions"
-#~ msgstr "Recomendações"
-
-#, fuzzy
-#~| msgid "Right Center"
-#~ msgid "Weight not entered"
-#~ msgstr "Direita Centro"
-
-#, fuzzy
-#~| msgid "No background Selected"
-#~ msgid "No packages selected"
-#~ msgstr "Nenhum fundo Selecionado"
-
-#, fuzzy
-#~| msgid "By "
-#~ msgid "Buy"
-#~ msgstr "Por "
-
-#, fuzzy
-#~| msgid "No media selected!"
-#~ msgid "All services selected"
-#~ msgstr "Nenhuma mídia selecionada!"
-
-#, fuzzy
-#~| msgid "Save Changes"
-#~ msgid "Saved Packages"
-#~ msgstr "Salvar Configurações"
-
-#, fuzzy
-#~| msgid "No background Selected"
-#~ msgid "All packages selected"
-#~ msgstr "Nenhum fundo Selecionado"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Save Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Twitter"
-#~ msgid "Letter"
-#~ msgstr "Twitter"
-
-#, fuzzy
-#~| msgid "4"
-#~ msgid "A4"
-#~ msgstr "4"
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Please choose a rate"
-#~ msgstr "Por favor, classifique-nos "
-
-#, fuzzy
-#~| msgid "Dotted"
-#~ msgid "Mayotte"
-#~ msgstr "Pontilhada"
-
-#, fuzzy
-#~| msgid "Center"
-#~ msgid "Corrientes"
-#~ msgstr "Centro"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Morelos"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Inherit"
-#~ msgid "Bheri"
-#~ msgstr "Herdar"
-
-#, fuzzy
-#~| msgid "Center"
-#~ msgid "Canterbury"
-#~ msgstr "Centro"
-
-#, fuzzy
-#~| msgid "Tumblr"
-#~ msgid "Tumbes"
-#~ msgstr "Tumblr"
-
-#, fuzzy
-#~| msgid "Telegram"
-#~ msgid "Teleorman"
-#~ msgstr "Telegram"
-
-#, fuzzy
-#~| msgid "Select Background"
-#~ msgid "Select none"
-#~ msgstr "Escolha um fundo"
-
-#, fuzzy
-#~| msgid "Install Now"
-#~ msgid "Free - Install now"
-#~ msgstr "Instalar Agora"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "User"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "Enable"
-#~ msgid "Enable reviews"
-#~ msgstr "Habilitado"
-
-#, fuzzy
-#~| msgid "Enter any custom css you want to apply on login panel."
-#~ msgid "Enter a coupon code to apply to this order."
-#~ msgstr ""
-#~ "Digite qualquer css personalizado que você deseja aplicar no painel de "
-#~ "entrada."
-
-#, fuzzy
-#~| msgid "Setting Save Successfully"
-#~ msgid "Attribute updated successfully"
-#~ msgstr "Configurações Salvas com Sucesso"
-
-#, fuzzy
-#~| msgid "Admin Custom Login"
-#~ msgid "Custom ordering"
-#~ msgstr "Personalizar Login de Administrador"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Order by"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Password"
-#~ msgid "Lost password"
-#~ msgstr "Senha"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Tax Settings"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Background Settings"
-#~ msgid "Checkout Settings"
-#~ msgstr "Configurações de Fundo"
-
-#, fuzzy
-#~| msgid "Social Settings"
-#~ msgid "Email Settings"
-#~ msgstr "Configurações Sociais"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "API Settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Help And Support"
-#~ msgid "Help &amp; Support"
-#~ msgstr "Ajuda e Suporte"
-
-#, fuzzy
-#~| msgid "Export / Import"
-#~ msgid "Product Import"
-#~ msgstr "Exportar / Importar"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "WooCommerce settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Visit Website"
-#~ msgid "Visit Store"
-#~ msgstr "Visite o Site"
-
-#, fuzzy
-#~| msgid "preview"
-#~ msgid "Reviews"
-#~ msgstr "pré-visualizar"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom base"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Floating"
-#~ msgid "Sorting"
-#~ msgstr "Flutuando"
-
-#, fuzzy
-#~| msgid "Last Updated:"
-#~ msgid "Last name"
-#~ msgstr "Última Atualização:"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Customer list"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Remove"
-#~ msgid "Remove image"
-#~ msgstr "Remover"
-
-#, fuzzy
-#~| msgid "Enable Custom Login"
-#~ msgid "Enable auto-renew"
-#~ msgstr "Habilitar Personalização de Login"
-
-#, fuzzy
-#~| msgid "Please upload a valid .json file"
-#~ msgid "Please upload or provide the link to a valid CSV file."
-#~ msgstr "Por favor, envie um arquivo .json válido"
-
-#, fuzzy
-#~| msgid "Button Font Size"
-#~ msgid "Button text"
-#~ msgstr "Tamanho da Fonte do Botão"
-
-#, fuzzy
-#~| msgid "Logo URL"
-#~ msgid "Download URL"
-#~ msgstr "URL do Logotipo"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "General Details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Order date:"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Border Radius"
-#~ msgid "Order status:"
-#~ msgstr "Borda Arredondada"
-
-#, fuzzy
-#~| msgid "Rate Us"
-#~ msgid "Rate name"
-#~ msgstr "Classifique-nos"
-
-#, fuzzy
-#~| msgid "Rate Us"
-#~ msgid "Rate code"
-#~ msgstr "Classifique-nos"
-
-#, fuzzy
-#~| msgid "Enable"
-#~ msgid "Taxable"
-#~ msgstr "Habilitado"
-
-#, fuzzy
-#~| msgid "Select Background"
-#~ msgid "Select Page"
-#~ msgstr "Escolha um fundo"
-
-#, fuzzy
-#~| msgid "Last Updated:"
-#~ msgid "Last order"
-#~ msgstr "Última Atualização:"
-
-#, fuzzy
-#~| msgid "Border Radius"
-#~ msgid "orders"
-#~ msgstr "Borda Arredondada"
-
-#, fuzzy
-#~| msgid "Rate Us"
-#~ msgid "Rate"
-#~ msgstr "Classifique-nos"
-
-#, fuzzy
-#~| msgid "Logo"
-#~ msgid "Logout"
-#~ msgstr "Logotipo"
-
-#, fuzzy
-#~| msgid "Enable Custom Login"
-#~ msgid "Enable guest checkout"
-#~ msgstr "Habilitar Personalização de Login"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Base color"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Background Color"
-#~ msgid "Background color"
-#~ msgstr "Cor de Fundo"
-
-#, fuzzy
-#~| msgid "Background Color"
-#~ msgid "Body background color"
-#~ msgstr "Cor de Fundo"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Body text color"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Enable"
-#~ msgid "Enable taxes"
-#~ msgstr "Habilitado"
-
-#, fuzzy
-#~| msgid "%s rating"
-#~ msgid "Average rating"
-#~ msgstr "classificação %s"
-
-#, fuzzy
-#~| msgid "Enable Custom Login"
-#~ msgid "Enable stock management"
-#~ msgstr "Habilitar Personalização de Login"
-
-#, fuzzy
-#~| msgid "Right Center"
-#~ msgid "Weight unit"
-#~ msgstr "Direita Centro"
-
-#, fuzzy
-#~| msgid "%s rating"
-#~ msgid "%s rates"
-#~ msgstr "classificação %s"
-
-#, fuzzy
-#~| msgid "No media selected!"
-#~ msgid "No row(s) selected"
-#~ msgstr "Nenhuma mídia selecionada!"
-
-#, fuzzy
-#~| msgid "Save Changes"
-#~ msgid "Cancel changes"
-#~ msgstr "Salvar Configurações"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Key details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Last Updated:"
-#~ msgid "Customer updated"
-#~ msgstr "Última Atualização:"
-
-#, fuzzy
-#~| msgid "Application overview"
-#~ msgid "Action event"
-#~ msgstr "Resumo de aplicações"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom topic"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Updated at"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Remove"
-#~ msgid "Remote get"
-#~ msgstr "Remover"
-
-#, fuzzy
-#~| msgid "Visit Website"
-#~ msgid "Visibility"
-#~ msgstr "Visite o Site"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom:"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "File details."
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Admin Custom login Status"
-#~ msgid "Customer login name."
-#~ msgstr "Personalizar Status de Login do Administrador"
-
-#, fuzzy
-#~| msgid "Last Updated:"
-#~ msgid "Last name."
-#~ msgstr "Última Atualização:"
-
-#, fuzzy
-#~| msgid "Border Radius"
-#~ msgid "Order status."
-#~ msgstr "Borda Arredondada"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Settings."
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Roles successfully reset"
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Sessions successfully cleared"
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Setting Reset Successfully"
-#~ msgid "Usage tracking settings successfully reset."
-#~ msgstr "Configurações Restauradas com Sucesso"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Order note."
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Disabled"
-#~ msgid "API disabled!"
-#~ msgstr "Desabilitado"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Order notes"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Please rate us "
-#~ msgid "Please rate the product."
-#~ msgstr "Por favor, classifique-nos "
-
-#, fuzzy
-#~| msgid "Last Updated:"
-#~ msgid "Cart updated."
-#~ msgstr "Última Atualização:"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "Backordered"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update category"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update tag"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update %s"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "Orders navigation"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Dashed"
-#~ msgid "Trashed"
-#~ msgstr "Tracejada"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Updated"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Customer ID."
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Your order details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Customer note"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Password"
-#~ msgid "Reset password"
-#~ msgstr "Senha"
-
-#, fuzzy
-#~| msgid "Enable form shadow?"
-#~ msgid "Enable for shipping methods"
-#~ msgstr "Habilitar sobra do formulário?"
-
-#, fuzzy
-#~| msgid "Enable form shadow?"
-#~ msgid "Enable PayPal sandbox"
-#~ msgstr "Habilitar sobra do formulário?"
-
-#, fuzzy
-#~| msgid "Enable Custom Login"
-#~ msgid "Enable logging"
-#~ msgstr "Habilitar Personalização de Login"
-
-#, fuzzy
-#~| msgid "Password"
-#~ msgid "API password"
-#~ msgstr "Senha"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Modal color"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Select Background"
-#~ msgid "Selected countries"
-#~ msgstr "Escolha um fundo"
-
-#, fuzzy
-#~| msgid "Default"
-#~ msgid "Default sorting"
-#~ msgstr "Padrão"
-
-#, fuzzy
-#~| msgid "Select Background"
-#~ msgid "Select a category"
-#~ msgstr "Escolha um fundo"
-
-#, fuzzy
-#~| msgid "Select Number of Slide Show"
-#~ msgid "Number of reviews to show"
-#~ msgstr "Selecione o Número de Slides"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update totals"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Username: %s"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Customer details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Password"
-#~ msgid "Password change"
-#~ msgstr "Senha"
-
-#, fuzzy
-#~| msgid "Password"
-#~ msgid "New password"
-#~ msgstr "Senha"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Order details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "preview"
-#~ msgid "Add a review"
-#~ msgstr "pré-visualizar"
-
-#, fuzzy
-#~| msgid "Background Attachment"
-#~ msgid "Import Attachments"
-#~ msgstr "Fundo Anexado"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "WP Editor Settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "No media selected!"
-#~ msgid "No File Selected"
-#~ msgstr "Nenhuma mídia selecionada!"
-
-#, fuzzy
-#~| msgid "Text And Color Settings"
-#~ msgid "Theme Editor Settings"
-#~ msgstr "Configurações de Texto e Cores"
-
-#, fuzzy
-#~| msgid "Login form Setting"
-#~ msgid "Plugin Editor Settings"
-#~ msgstr "Configurações do formulário de Login"
-
-#, fuzzy
-#~| msgid "Text And Color Settings"
-#~ msgid "Page/Post Editor Settings"
-#~ msgstr "Configurações de Texto e Cores"
-
-#, fuzzy
-#~| msgid "Login Settings"
-#~ msgid "Main Settings"
-#~ msgstr "Configurações de Login"
-
-#, fuzzy
-#~| msgid "Premium Editions"
-#~ msgid "Plugin Edit Links"
-#~ msgstr "Edições Premium"
-
-#, fuzzy
-#~| msgid "Enable Custom Login"
-#~ msgid "Enable Logging:"
-#~ msgstr "Habilitar Personalização de Login"
-
-#, fuzzy
-#~| msgid "Dashboard"
-#~ msgid "Blackboard"
-#~ msgstr "Painel de Controle"
-
-#, fuzzy
-#~| msgid "Right"
-#~ msgid "Night"
-#~ msgstr "Direita"
-
-#, fuzzy
-#~| msgid "Enable Link shadow?"
-#~ msgid "Enable Line Numbers:"
-#~ msgstr "Habilitar sombra nos Links?"
-
-#, fuzzy
-#~| msgid "Enable Link shadow?"
-#~ msgid "Enable Line Wrapping:"
-#~ msgstr "Habilitar sombra nos Links?"
-
-#, fuzzy
-#~| msgid "Input Font Size"
-#~ msgid "Indent Size"
-#~ msgstr "Tamanho da Fonte de Entrada"
-
-#, fuzzy
-#~| msgid "Input Font Size"
-#~ msgid "Indent Size:"
-#~ msgstr "Tamanho da Fonte de Entrada"
-
-#, fuzzy
-#~| msgid "Logo Height"
-#~ msgid "Editor Height"
-#~ msgstr "Altura do Logotipo"
-
-#, fuzzy
-#~| msgid "Logo Height"
-#~ msgid "Editor Height:"
-#~ msgstr "Altura do Logotipo"
-
-#, fuzzy
-#~| msgid "Upload"
-#~ msgid "File Upload"
-#~ msgstr "Enviar"
-
-#, fuzzy
-#~| msgid "Enable Custom Login"
-#~ msgid "Enable Creating Plugins:"
-#~ msgstr "Habilitar Personalização de Login"
-
-#, fuzzy
-#~| msgid "Upload"
-#~ msgid "Upload Files"
-#~ msgstr "Enviar"
-
-#, fuzzy
-#~| msgid "Upload"
-#~ msgid "Upload File"
-#~ msgstr "Enviar"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update File"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "Theme Name"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Customer Details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "Order Details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Last Updated:"
-#~ msgid "Last Status Update"
-#~ msgstr "Última Atualização:"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "order deleted"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Right"
-#~ msgid "right"
-#~ msgstr "Direita"
-
-#, fuzzy
-#~| msgid "Border Style"
-#~ msgid "order page"
-#~ msgstr "Estilo da Borda"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "order history"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Password"
-#~ msgid "Lost Password"
-#~ msgstr "Senha"
-
-#, fuzzy
-#~| msgid "Logo Settings"
-#~ msgid "Order Settings"
-#~ msgstr "Configurações de Logotipo"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Order Form Settings"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "Update Category"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Enable"
-#~ msgid "Main Table"
-#~ msgstr "Habilitado"
-
-#, fuzzy
-#~| msgid "Enable"
-#~ msgid "Table"
-#~ msgstr "Habilitado"
-
-#, fuzzy
-#~| msgid "Center Center"
-#~ msgid "Center Column All"
-#~ msgstr "Centro Centro"
-
-#, fuzzy
-#~| msgid "Default"
-#~ msgid "Default Prices"
-#~ msgstr "Padrão"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Gateways Settings"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Login Settings"
-#~ msgid "Localization Settings"
-#~ msgstr "Configurações de Login"
-
-#, fuzzy
-#~| msgid "Border Color"
-#~ msgid "Orders Form"
-#~ msgstr "Cor da Borda"
-
-#, fuzzy
-#~| msgid "Font Setting"
-#~ msgid "Orders Setting"
-#~ msgstr "Configurações de Fonte"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom Range"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Custom CSS"
-#~ msgid "Custom range"
-#~ msgstr "Personalizar CSS"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Global Settings"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Float Settings"
-#~ msgid "Manage Global Settings"
-#~ msgstr "Configurações de Flutuação"
-
-#, fuzzy
-#~| msgid "Background Settings"
-#~ msgid "Manage Order Settings"
-#~ msgstr "Configurações de Fundo"
-
-#, fuzzy
-#~| msgid "Logo Height"
-#~ msgid "on right"
-#~ msgstr "Altura do Logotipo"
-
-#, fuzzy
-#~| msgid "Slider Animation"
-#~ msgid "no animation"
-#~ msgstr "Animação do Slide"
-
-#, fuzzy
-#~| msgid "Plugin Recommendation"
-#~ msgid "Plugin Version:"
-#~ msgstr "Recomendações do Plugin"
-
-#, fuzzy
-#~| msgid "User Name"
-#~ msgid "SMTP Username"
-#~ msgstr "Nome de Usuário"
-
-#, fuzzy
-#~| msgid "Close"
-#~ msgid "Close Shop:"
-#~ msgstr "Fechar"
-
-#, fuzzy
-#~| msgid "Save Changes"
-#~ msgid "Delivery Charges:"
-#~ msgstr "Salvar Configurações"
-
-#, fuzzy
-#~| msgid "Border Radius"
-#~ msgid "order status"
-#~ msgstr "Borda Arredondada"
-
-#, fuzzy
-#~| msgid "Small"
-#~ msgid "small"
-#~ msgstr "Pequeno"
-
-#, fuzzy
-#~| msgid "Large"
-#~ msgid "large"
-#~ msgstr "Grande"
-
-#, fuzzy
-#~| msgid "Medium"
-#~ msgid "medium"
-#~ msgstr "Médio"
-
-#, fuzzy
-#~| msgid "Social Profiles"
-#~ msgid "Special Offers"
-#~ msgstr "Perfis Sociais"
-
-#, fuzzy
-#~| msgid "Social "
-#~ msgid "Special Pizza"
-#~ msgstr "Social "
-
-#, fuzzy
-#~| msgid "More Details"
-#~ msgid "order details"
-#~ msgstr "Mais Detalhes"
-
-#, fuzzy
-#~| msgid "Update Now"
-#~ msgid "update order"
-#~ msgstr "Atualizar Agora"
-
-#, fuzzy
-#~| msgid "Save Changes"
-#~ msgid "Delivery Charges"
-#~ msgstr "Salvar Configurações"
-
-#, fuzzy
-#~| msgid "Close"
-#~ msgid "closed"
-#~ msgstr "Fechar"
-
-#, fuzzy
-#~| msgid "Pinterest"
-#~ msgid "Plaintext"
-#~ msgstr "Pinterest"
-
-#, fuzzy
-#~| msgid "Right Center"
-#~ msgid "Height [Integer]"
-#~ msgstr "Direita Centro"
-
-#~ msgid "Nome de Usuário"
-#~ msgstr "Nome de Usuário"
-
-#~ msgid "nome de usuário"
-#~ msgstr "nome de usuário"
-
-#~ msgid "Senha"
-#~ msgstr "Senha"
-
-#~ msgid "senha"
-#~ msgstr "senha"
-
-#~ msgid "Login from Floating"
-#~ msgstr "Login Flutuante"
-
-#~ msgid "Open Your WP Login Page in a New Tab"
-#~ msgstr "Abrir Sua Página de WP Login em uma Nova Aba"
+msgstr "Configurações"
+
+#: src/admin/config/PrefsController.php:32 
+#: src/admin/config/SettingsController.php:31
+msgid "Settings saved"
+msgstr "Configurações salvas"
+
+#: src/admin/bundle/BaseController.php:96
+msgid "Setup"
+msgstr "Configurar"
+
+#: src/admin/bundle/SetupController.php:25
+msgid "Setup tab"
+msgstr "Aba configure"
+
+#: tpl/admin/list/locales.php:25
+msgid "Site language"
+msgstr "Idioma do site"
+
+#: src/admin/config/BaseController.php:18
+msgid "Site options"
+msgstr "Opções do site"
+
+#: tpl/admin/help/tab-settings.php:5
+msgid ""
+"Site options apply to all users of Loco Translate across the current site"
+msgstr ""
+"As opções do site se aplicam a todos os usuários do Tradutor Loco no site "
+"atual"
+
+#: tpl/admin/config/settings.php:45
+msgid "Skip PHP files larger than:"
+msgstr "Pule arquivos PHP maiores do que:"
+
+#: src/admin/init/InitPoController.php:227
+msgid "Skip template"
+msgstr "Pular modelo"
+
+#: src/admin/file/BaseController.php:95
+msgid "Source"
+msgstr "Origem"
+
+#: tpl/admin/bundle/conf.php:100
+msgid "Source file paths"
+msgstr "Caminhos dos arquivo de origem"
+
+#: tpl/admin/init/init-pot.php:12
+msgid "Source files to scan:"
+msgstr "Arquivos de origem para digitalizar:"
+
+#: tpl/admin/file/info-pot.php:21
+msgid "Source text"
+msgstr "Texto de origem"
+
+#: tpl/admin/init/init-po.php:178
+msgid "Start translating"
+msgstr "Iniciar tradução "
+
+#: tpl/admin/init/init-pot.php:30
+msgid "Strings will be extracted to:"
+msgstr "As strings serão extraídas para:"
+
+#: src/admin/config/DebugController.php:47
+msgid "System diagnostics"
+msgstr "Diagnostico do sistema"
+
+#: tpl/admin/file/view-pot.php:9 tpl/admin/file/edit-pot.php:10 
+#: tpl/admin/file/info-pot.php:10 tpl/admin/bundle/inc-po-table.php:41 
+#: tpl/admin/bundle/conf.php:65
+msgid "Template file"
+msgstr "Arquivo modelo"
+
+#: src/admin/init/InitPotController.php:68
+msgid "Template file already exists"
+msgstr "O arquivo de modelo já existe"
+
+#: src/ajax/XgettextController.php:63
+msgid "Template file created"
+msgstr "Modelo de arquivo criado"
+
+#: tpl/admin/init/init-prompt.php:10
+msgid "Template missing"
+msgstr "Modelo faltando"
+
+#: tpl/admin/init/init-po.php:141
+msgid "Template options"
+msgstr "Opções de modelo"
+
+#: tpl/admin/bundle/conf.php:41 tpl/admin/list/inc-table.php:14
+msgid "Text domain"
+msgstr "Texto de domínio"
+
+#: src/config/FormModel.php:146
+msgid "Text Domain cannot be empty"
+msgstr "O texto de domínio não pode estar vazio"
+
+#. "either" meaning that the file itself can't exist without a containing directory
+#: tpl/admin/file/info.php:59
+msgid "The containing directory for this file doesn't exist either"
+msgstr "O diretório contendo esse arquivo também não existe"
+
+#. Where %s is the name (or number) of an operating system user
+#: tpl/admin/file/info.php:73
+#, php-format
+msgid ""
+"The containing directory is writeable by %s, so you can add new files in the "
+"same location"
+msgstr ""
+"O diretório contendo %s é gravável, assim você pode adicionar novos arquivos "
+"no mesmo local"
+
+#: tpl/admin/root.php:12
+#, php-format
+msgid "The language of this site is %s."
+msgstr "O idioma deste site é %s."
+
+#. Help tip for "Text domain" field in advanced bundle config
+#: tpl/admin/bundle/conf.php:47
+msgid "The namespace into which WordPress will load translated strings"
+msgstr ""
+"O nome do espaço no qual o WordPress irá carregar as strings traduzidas"
+
+#. used when user name of web server process is unknown
+#: src/compat/PosixExtension.php:109
+msgid "the web server"
+msgstr "o servidor web"
+
+#. Page title for theme translations
+#: src/mvc/AdminRouter.php:46
+msgid "Theme translations &lsaquo; Loco"
+msgstr "Tradução de temas &lsaquo; Loco"
+
+#: src/mvc/AdminRouter.php:44 src/admin/Navigation.php:41 
+#: src/admin/bundle/LocaleController.php:140
+msgid "Themes"
+msgstr "Temas"
+
+#: tpl/admin/root.php:50
+msgid ""
+"These plugins have recently loaded translation files into the admin area"
+msgstr ""
+"Esses plug-ins enviaram arquivos de tradução recentemente carregados na área "
+"de administração"
+
+#: tpl/admin/file/info-po.php:81
+msgid ""
+"These translations are not linked to a POT file. Sync operations will "
+"extract strings directly from source code."
+msgstr ""
+"Essas traduções não estão vinculadas a um arquivo POT. As operações de "
+"sincronização extrairão strings diretamente do código-fonte."
+
+#: tpl/admin/init/init-prompt.php:18
+msgid "This bundle doesn't define a translations template file"
+msgstr "Este pacote não define um arquivo de modelo de tradução"
+
+#: tpl/admin/bundle/view.php:50
+msgid ""
+"This bundle isn't automatically compatible and requires configuring before "
+"you can use all the functions of Loco Translate"
+msgstr ""
+"Este pacote não é automaticamente compatível e requer a configuração antes "
+"de poder usar todas as funções do Tradutor Loco"
+
+#: tpl/admin/bundle/view.php:31
+msgid ""
+"This bundle isn't fully configured, so we don't know what the following "
+"files are for"
+msgstr ""
+"Este pacote não está totalmente configurado, portanto, não sabemos quais são "
+"os seguintes arquivos para"
+
+#: tpl/admin/bundle/setup/none.php:14
+msgid "This bundle isn't set up for translation in a way we understand"
+msgstr ""
+"Este pacote não está configurado para tradução de uma maneira que entendemos"
+
+#: tpl/admin/bundle/setup/meta.php:14
+msgid ""
+"This bundle's configuration has been automatically detected and seems to be "
+"fully compatible"
+msgstr ""
+"A configuração deste pacote foi detectada automaticamente e parece ser "
+"totalmente compatível"
+
+#: tpl/admin/bundle/setup/partial.php:14
+msgid ""
+"This bundle's configuration has been automatically detected, but isn't fully "
+"complete"
+msgstr ""
+"A configuração deste pacote foi detectada automaticamente, mas não está "
+"totalmente completa"
+
+#: tpl/admin/bundle/setup/core.php:13
+msgid "This bundle's configuration is built into Loco"
+msgstr "A configuração deste pacote está integrada no Loco"
+
+#: tpl/admin/bundle/setup/author.php:14
+msgid "This bundle's configuration is provided by the author"
+msgstr "A configuração deste pacote é fornecida pelo autor"
+
+#: tpl/admin/bundle/setup/saved.php:14
+msgid "This bundle's configuration is saved in the WordPress database"
+msgstr "A configuração deste pacote está salva no banco de dados do WordPress"
+
+#: tpl/admin/init/init-prompt.php:14
+msgid ""
+"This bundle's template file doesn't exist yet. We recommend you create it "
+"before adding languages"
+msgstr ""
+"O arquivo de modelo deste pacote ainda não existe. Recomendamos que você "
+"crie um antes de adicionar idiomas"
+
+#: tpl/admin/file/info.php:92
+msgid "This directory can't be written to directly by the web server"
+msgstr "Este diretório não pode ser gravado diretamente pelo servidor web"
+
+#: src/admin/bundle/BaseController.php:167
+msgid "This directory is managed by WordPress, be careful what you delete"
+msgstr ""
+"Este diretório é gerenciado pelo WordPress, tenha cuidado com o que você "
+"exclui"
+
+#: tpl/admin/file/info.php:39
+msgid "This file can't be updated directly by the web server"
+msgstr "Este arquivo não pode ser atualizado diretamente pelo servidor Web"
+
+#: src/admin/bundle/BaseController.php:164
+msgid "This file may be overwritten or deleted when you update WordPress"
+msgstr ""
+"Este arquivo pode ser substituído ou excluído quando você atualiza o "
+"WordPress"
+
+#: tpl/admin/bundle/debug.php:8
+msgid "This information is for developers to find problems in the bundle setup"
+msgstr ""
+"Esta informação é para os desenvolvedores encontrarem problemas na "
+"configuração do pacote"
+
+#: tpl/admin/errors/file-isdir.php:14
+msgid "This page was expecting a file, but the path is actually a directory"
+msgstr ""
+"Esta página esperava um arquivo, mas o caminho é realmente um diretório"
+
+#: src/hooks/AdminHooks.php:68
+msgid "This plugin doesn't collect any data from public website visitors."
+msgstr "Este plug-in não coleta dados de visitantes públicos do site."
+
+#: tpl/admin/bundle/alias.php:14
+msgid ""
+"This plugin doesn't have its own translation files, but its metadata can be "
+"translated in the core Admin bundle"
+msgstr ""
+"Este plug-in não tem seus próprios arquivos de tradução, mas seus metadados "
+"podem ser traduzidos no pacote principal da administração"
+
+#. Author of the plugin/theme
+msgid "Tim Whitlock"
+msgstr "Tim Whitlock"
+
+#. Where %s is the name (or number) of an operating system user
+#: tpl/admin/file/info.php:96
+#, php-format
+msgid ""
+"To create new files here you'll have to connect to the remote file system, "
+"or make the directory writeable by %s"
+msgstr ""
+"Para criar novos arquivos aqui você terá que se conectar ao sistema de "
+"arquivos remoto, ou fazer o diretório gravável por %s"
+
+#. Where %s is the name (or number) of an operating system user
+#: tpl/admin/file/info.php:43
+#, php-format
+msgid ""
+"To make changes you'll have to connect to the remote file system, or make "
+"the file writeable by %s"
+msgstr ""
+"Para fazer alterações, você terá que se conectar ao sistema de arquivos "
+"remoto, ou tornar o arquivo gravável por %s"
+
+#: src/hooks/AdminHooks.php:102
+msgid "Translate"
+msgstr "Tradutor"
+
+#: src/admin/list/PluginsController.php:12
+msgid "Translate plugins"
+msgstr "Traduzir plug-ins"
+
+#: src/admin/list/ThemesController.php:14
+msgid "Translate themes"
+msgstr "Traduzir temas"
+
+#. Description of the plugin
+msgid "Translate themes and plugins directly in WordPress"
+msgstr "Traduzir temas e plug-ins diretamente do WordPress"
+
+#: tpl/admin/file/info-po.php:26 tpl/admin/bundle/inc-po-table.php:14 
+#: tpl/admin/bundle/locale.php:36
+msgid "Translation progress"
+msgstr "Progresso da tradução"
+
+#. Where %s is the name of the invalid POT file
+#: src/ajax/SyncController.php:48 src/admin/file/EditController.php:100
+#, php-format
+msgid "Translation template is invalid (%s)"
+msgstr "O modelo de tradução é inválido (%s)"
+
+#: src/admin/file/EditController.php:104
+#, php-format
+msgid "Translations don't match template. Run sync to update from %s"
+msgstr ""
+"As traduções não correspondem ao modelo. Execute a sincronização para "
+"atualizar a partir de %s"
+
+#: tpl/admin/root.php:26
+msgid "Translations have been recently modified in the following bundles"
+msgstr "As traduções foram recentemente modificadas nos seguintes pacotes"
+
+#: tpl/admin/config/prefs.php:13 tpl/admin/config/prefs.php:17
+msgid "Translator credit"
+msgstr "Crédito da tradução"
+
+#: tpl/admin/bundle/view.php:47
+msgid "unconfigured"
+msgstr "não configurado"
+
+#: tpl/admin/bundle/setup/none.php:11
+msgid "Unconfigured bundle"
+msgstr "Pacote não configurado"
+
+#: tpl/admin/file/info-other.php:11
+msgid "Unexpected file type"
+msgstr "Tipo de arquivo inesperado"
+
+#: src/package/Header.php:77 src/admin/file/InfoController.php:130
+msgid "Unknown author"
+msgstr "Autor desconhecido"
+
+#: src/js/Strings.php:64
+msgid "Unknown error"
+msgstr "Erro desconhecido"
+
+#: tpl/admin/config/version.php:17
+#, php-format
+msgid "Upgrade to %s"
+msgstr "Atualize para %s"
+
+#: tpl/admin/init/init-po.php:168
+#, php-format
+msgid "Use \"%s\" as template when running Sync"
+msgstr "Usar \"%s\" como modelo ao executar a sincronização"
+
+#: src/mvc/AdminRouter.php:71 src/admin/config/PrefsController.php:13 
+#: src/admin/config/BaseController.php:19
+msgid "User options"
+msgstr "Opções do usuário"
+
+#: tpl/admin/help/tab-settings.php:6
+msgid "User options apply to your WordPress login, across all sites"
+msgstr ""
+"As opções do usuário se aplicam ao seu acesso do WordPress, em todos os sites"
+
+#: src/data/Permissions.php:156
+msgctxt "User role"
+msgid "Translator"
+msgstr "Tradutor"
+
+#. Help tip for "File prefix" field in advanced bundle config
+#: tpl/admin/bundle/conf.php:59
+msgid ""
+"Usually the same as the text domain, but don't leave blank unless you mean to"
+msgstr ""
+"Normalmente, o mesmo que o texto de domínio, mas não o deixe em branco a "
+"menos que você queira"
+
+#: src/admin/config/VersionController.php:13 
+#: src/admin/config/BaseController.php:20
+msgid "Version"
+msgstr "Versão"
+
+#: tpl/admin/config/version.php:11 tpl/admin/config/version.php:25 
+#: tpl/admin/config/version.php:35
+#, php-format
+msgid "Version %s"
+msgstr "Versão %s"
+
+#: tpl/admin/bundle/inc-po-table.php:50 tpl/admin/bundle/locale.php:66
+msgid "View"
+msgstr "Ver"
+
+#: src/admin/bundle/ViewController.php:108
+msgid "View template"
+msgstr "Ver modelo"
+
+#: src/package/Header.php:83
+msgid "Visit official site"
+msgstr "Visite o site oficial"
+
+#: src/js/Strings.php:70 src/error/Warning.php:19
+msgid "Warning"
+msgstr "Atenção"
+
+#: tpl/admin/file/info-po.php:43
+msgid "We can't find the binary MO file that belongs with these translations"
+msgstr ""
+"Não podemos encontrar o arquivo binário MO que pertence a essas traduções"
+
+#: tpl/admin/file/info-mo.php:41
+msgid "We can't find the original PO file from which this was compiled"
+msgstr "Não encontramos o arquivo PO original do qual este foi compilado"
+
+#: tpl/admin/bundle/setup/conf.php:16
+msgid ""
+"We have a database of non-standard bundle configurations.\n"
+"If we know your bundle, we'll configure it for you automatically"
+msgstr "Se conhecermos o seu pacote, nós o configuraremos automaticamente"
+
+#: src/admin/RootController.php:84
+msgid "Welcome to Loco Translate"
+msgstr "Bem vindo ao Tradutor Loco"
+
+#: src/admin/init/InitPoController.php:325 tpl/admin/file/info.php:113
+msgid "What's this?"
+msgstr "O que é isso?"
+
+#: src/mvc/AdminRouter.php:54
+msgid "WordPress"
+msgstr "WordPress"
+
+#: src/package/Core.php:79 src/admin/bundle/LocaleController.php:135
+msgid "WordPress Core"
+msgstr "Núcleo WordPress"
+
+#: src/package/Core.php:26
+msgid "WordPress core"
+msgstr "Núcleo wordpress"
+
+#: tpl/admin/init/init-po.php:58
+msgid "WordPress language"
+msgstr "Idioma do WordPress"
+
+#: tpl/admin/file/info.php:107
+msgid "WordPress updates"
+msgstr "Atualizações do wordpress"
+
+#: tpl/admin/file/info.php:36 tpl/admin/file/info.php:89 
+#: tpl/admin/common/inc-fsconn.php:54
+msgid "Write protected"
+msgstr "Protegido contra gravação"
+
+#: tpl/admin/bundle/conf.php:146
+msgid "XML"
+msgstr "XML"
+
+#: src/error/XmlParseException.php:8
+msgid "XML parse error"
+msgstr "Erro de análise XML"
+
+#: tpl/admin/bundle/setup/conf.php:46
+msgid "XML setup"
+msgstr "Configurar XML"
+
+#: src/config/XMLModel.php:42
+msgid "XML supplied is empty"
+msgstr "O XML fornecido está vazio"
+
+#: tpl/admin/bundle/setup/meta.php:15 tpl/admin/bundle/setup/author.php:15 
+#: tpl/admin/bundle/setup/core.php:14
+msgid ""
+"You can make changes in the Advanced tab if you need to override the current "
+"settings"
+msgstr ""
+"Você pode fazer alterações na aba Avançado se precisar substituir as "
+"configurações atuais"
+
+#: tpl/admin/errors/no-tokenizer.php:19
+#, php-format
+msgid ""
+"You can still translate any bundle that has a <a href=\"%s\" "
+"target=\"_blank\">template</a>"
+msgstr ""
+"Você ainda pode traduzir qualquer pacote que tenha um <a href=\"%s\" "
+"target=\"_blank\">modelo</a>"
+
+#: tpl/admin/file/info.php:27
+msgid ""
+"You can update these translations directly from the editor to the file system"
+msgstr ""
+"Você pode atualizar essas traduções diretamente do editor para o sistema de "
+"arquivos"
+
+#: tpl/admin/init/init-po.php:12
+msgid "You're creating translations directly from source code"
+msgstr "Você está criando traduções diretamente do código-fonte"
+
+#: tpl/admin/config/version.php:28
+msgid "You're running a development snapshot of Loco Translate"
+msgstr "Você está executando um desenvolvimento instantâneo do Tradutor Loco"
+
+#: tpl/admin/config/version.php:38
+msgid "You're running the latest version of Loco Translate"
+msgstr "Você está executando a versão mais recente do Tradutor Loco"
+
+#: tpl/admin/root.php:14
+#, php-format
+msgid "Your admin language is %s."
+msgstr "Sua idioma de administrador é %s."
+
+#: src/js/Strings.php:37
+msgid "Your changes will be lost if you continue without saving"
+msgstr "Suas alterações serão perdidas se você continuar sem salvar"

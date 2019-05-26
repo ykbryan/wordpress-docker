@@ -2,6 +2,7 @@
 $Social_page = unserialize(get_option('Admin_custome_login_Social'));
 $social_icon_size=$Social_page['social_icon_size'];
 $social_icon_layout=$Social_page['social_icon_layout'];
+// $social_link_new_window = $Social_page['social_link_new_window'];
 $social_icon_color=$Social_page['social_icon_color'];
 $social_icon_color_onhover=$Social_page['social_icon_color_onhover'];
 $social_icon_bg=$Social_page['social_icon_bg'];

@@ -158,6 +158,22 @@ jQuery(document).ready(function(){
 			</table>
 		</div>
 	</div>
+    <!-- login button font color -->
+	<div class="panel panel-primary panel-default content-panel">
+		<div class="panel-body">
+			<table class="form-table">
+				<tr>
+					<th scope="row" ><?php _e('Login Button font Color', WEBLIZAR_ACL)?></th>
+					<td></td>
+				</tr>
+				<tr  style="border-bottom:none;">
+					<td id="td-login-button-font-color">
+						<input id="login-button-text-color" name="login-button-font-color" type="text" value="<?php echo $login_button_font_color; ?>" class="my-color-field" data-default-color="#ffffff" />
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 
 	<div class="panel panel-primary panel-default content-panel">
 		<div class="panel-body">
@@ -645,7 +661,7 @@ function Custom_login_text(Action, id){
 		var input_font_color = jQuery("#input-font-color").val();
 		var link_color = jQuery("#link-color").val();
 		var button_color = jQuery("#button-color").val();
-		
+		var login_button_font_color = jQuery("#login-button-text-color").val();
 		var heading_font_size = jQuery("#headline-size-text-box").val();
 		var input_font_size = jQuery("#input-size-text-box").val();
 		var link_size = jQuery("#link-size-text-box").val();
@@ -670,7 +686,7 @@ function Custom_login_text(Action, id){
 		}
 		var user_input_icon = jQuery("#user-input-icon").val();
 		var password_input_icon = jQuery("#password-input-icon").val();
-		var PostData = "Action=" + Action + "&heading_font_color=" + heading_font_color + "&input_font_color=" + input_font_color + "&link_color=" + link_color + "&button_color=" + button_color  + "&heading_font_size=" + heading_font_size + "&input_font_size=" + input_font_size + "&link_size=" + link_size + "&button_font_size=" + button_font_size + "&enable_link_shadow=" + enable_link_shadow + "&link_shadow_color=" + link_shadow_color + "&heading_font_style=" + heading_font_style + "&input_font_style=" + input_font_style + "&link_font_style=" + link_font_style + "&button_font_style=" + button_font_style + "&enable_inputbox_icon=" + enable_inputbox_icon + "&user_input_icon=" + user_input_icon + "&password_input_icon=" + password_input_icon;
+		var PostData = "Action=" + Action + "&heading_font_color=" + heading_font_color + "&input_font_color=" + input_font_color + "&link_color=" + link_color + "&button_color=" + button_color + "&login_button_font_color=" + login_button_font_color  + "&heading_font_size=" + heading_font_size + "&input_font_size=" + input_font_size + "&link_size=" + link_size + "&button_font_size=" + button_font_size + "&enable_link_shadow=" + enable_link_shadow + "&link_shadow_color=" + link_shadow_color + "&heading_font_style=" + heading_font_style + "&input_font_style=" + input_font_style + "&link_font_style=" + link_font_style + "&button_font_style=" + button_font_style + "&enable_inputbox_icon=" + enable_inputbox_icon + "&user_input_icon=" + user_input_icon + "&password_input_icon=" + password_input_icon;
 		jQuery.ajax({
 			dataType : 'html',
 			type: 'POST',
@@ -754,6 +770,7 @@ function Custom_login_text(Action, id){
 				jQuery("#td-link-font-color a.wp-color-result").closest("a").css({"background-color": "#ffffff"});
 				//	Button Font Color
 				jQuery("#td-button-font-color a.wp-color-result").closest("a").css({"background-color": "#dd3333"});
+				jQuery("#td-login-button-font-color a.wp-color-result").closest("a").css({"background-color": "#ffffff"});
 
 				jQuery( "#button-size-slider" ).slider("value",14 );
 				jQuery( "#headline-size-text-box" ).val( jQuery( "#button-size-slider" ).slider( "value") );
@@ -789,6 +806,7 @@ if(isset($_POST['Action'])) {
 		$input_font_color = sanitize_option('input_font_color', $_POST['input_font_color']);
 		$link_color = sanitize_option('link_color', $_POST['link_color']);
 		$button_color = sanitize_option('button_color', $_POST['button_color']);
+		$login_button_font_color = sanitize_option('login_button_font_color', $_POST['login_button_font_color']);
 		$heading_font_size = sanitize_option('heading_font_size', $_POST['heading_font_size']);
 		$input_font_size = sanitize_option('input_font_size', $_POST['input_font_size']);
 		$link_size = sanitize_option('link_size', $_POST['link_size']);
@@ -810,6 +828,7 @@ if(isset($_POST['Action'])) {
 			'input_font_color'=>$input_font_color,
 			'link_color'=>$link_color,
 			'button_color'=>$button_color,
+			'login_button_font_color'=>$login_button_font_color,
 			'heading_font_size'=>$heading_font_size,
 			'input_font_size'=>$input_font_size,
 			'link_size'=>$link_size,
@@ -833,6 +852,7 @@ if(isset($_POST['Action'])) {
 			'input_font_color'=>'#000000',
 			'link_color'=>'#ffffff',
 			'button_color'=>'#dd3333',
+			'login_button_font_color'=>'#ffffff',
 			'heading_font_size'=>'14',
 			'input_font_size'=>'18',
 			'link_size'=>'14',

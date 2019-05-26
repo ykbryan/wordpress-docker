@@ -39,6 +39,22 @@ jQuery(function() {
 	jQuery( "#logo-height-text-box" ).val( jQuery( "#logo-height-slider" ).slider( "value") );
 });
 </script>
+<style type="text/css">
+	
+	.radio-span{
+		border-bottom:none;
+
+	}
+	.size-slider{
+		width: 25%;display:inline-block;
+	}
+	.dialog-button4, .dialog-button10{
+			display:none;
+		}
+	.dialog{
+        position: fixed; z-index: 9999;
+	}
+</style>
 <div class="row">
 	<div class="post-social-wrapper clearfix">
 		<div class="col-md-12 post-social-item">
@@ -62,7 +78,7 @@ jQuery(function() {
 					<th scope="row" ><?php _e('Logo Image',WEBLIZAR_ACL)?></th>
 					<td></td>
 				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
+				<tr class="radio-span">
 					<td>
 						<input type="text" class="pro_text" id="logo-image" placeholder="<?php _e('No media selected!',WEBLIZAR_ACL)?>" name="upload_image" disabled="disabled"  value="<?php echo $logo_image; ?>"/>
 						<input type="button" value="<?php _e('Upload',WEBLIZAR_ACL)?>" id="upload-logo" class="button-primary rcsp_media_upload"/>
@@ -98,9 +114,9 @@ jQuery(function() {
 					<th scope="row" ><?php _e('Logo Image Width',WEBLIZAR_ACL)?></th>
 					<td></td>
 				</tr>
-				<tr  style="border-bottom:none;">
+				<tr  class="radio-span">
 					<td>
-						<div id="logo-width-slider" class="size-slider" style="width: 25%;display:inline-block"></div>
+						<div id="logo-width-slider" class="size-slider"></div>
 						<input type="text" class="slider-text" id="logo-width-text-box" name="headline-size-text-box"  readonly="readonly">
 						<span class="slider-text-span">Px</span>
 					</td>
@@ -115,9 +131,9 @@ jQuery(function() {
 					<th scope="row" ><?php _e('Logo Image Height',WEBLIZAR_ACL)?></th>
 					<td></td>
 				</tr>
-				<tr  style="border-bottom:none;">
+				<tr class="radio-span">
 					<td>
-						<div id="logo-height-slider" class="size-slider" style="width: 25%;display:inline-block"></div>
+						<div id="logo-height-slider" class="size-slider"></div>
 						<input type="text" class="slider-text" id="logo-height-text-box" name="input-size-text-box"  readonly="readonly">
 						<span class="slider-text-span">Px</span>
 					</td>
@@ -132,7 +148,7 @@ jQuery(function() {
 					<th scope="row" ><?php _e('Logo Link URL',WEBLIZAR_ACL)?></th>
 					<td></td>
 				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
+				<tr class="radio-span">
 					<td>
 						<input type="text" class="pro_text" id="log-url" name="log-url" placeholder="<?php _e('Logo Link URL',WEBLIZAR_ACL); ?>" size="56" value="<?php echo $logo_url; ?>"/>
 					</td>
@@ -147,7 +163,7 @@ jQuery(function() {
 					<th scope="row" ><?php _e('Logo Image Title',WEBLIZAR_ACL)?></th>
 					<td></td>
 				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
+				<tr class="radio-span">
 					<td>
 						<input type="text" class="pro_text" id="log-url-title" name="log-url-title" placeholder="<?php _e('Logo Image Title', WEBLIZAR_ACL); ?>" size="56" value="<?php echo $logo_url_title; ?>"/>
 					</td>
@@ -155,8 +171,8 @@ jQuery(function() {
 			</table>
 		</div>
 	</div>
-	<button data-dialog4="somedialog4" class="dialog-button4" style="display:none">Open Dialog</button>
-	<div id="somedialog4" class="dialog" style="position: fixed; z-index: 9999;">
+	<button data-dialog4="somedialog4" class="dialog-button4">Open Dialog</button>
+	<div id="somedialog4" class="dialog">
 		<div class="dialog__overlay"></div>
 		<div class="dialog__content">
 			<div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
@@ -169,8 +185,8 @@ jQuery(function() {
 			</div>
 		</div>
 	</div>
-	<button data-dialog10="somedialog10" class="dialog-button10" style="display:none">Open Dialog</button>
-	<div id="somedialog10" class="dialog" style="position: fixed; z-index: 9999;">
+	<button data-dialog10="somedialog10" class="dialog-button10"">Open Dialog</button>
+	<div id="somedialog10" class="dialog">
 		<div class="dialog__overlay"></div>
 		<div class="dialog__content">
 			<div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">

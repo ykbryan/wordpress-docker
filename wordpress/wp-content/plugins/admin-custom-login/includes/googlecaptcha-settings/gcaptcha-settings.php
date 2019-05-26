@@ -1,4 +1,4 @@
-<!-- Dashboard Settings panel content --->
+<!-- Dashboard Settings panel content -->
 <?php
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -36,45 +36,24 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		    font-size: 13px;
 		    font-style: italic;
 		}
+		.radio-span{
+			border-bottom:none;
+		}
+		.dialog-button49, .dialog-button109{
+			display:none;
+		}
+		.dialog{
+            position: fixed; z-index: 9999;
+		}
 	</style>
 	<div class="panel panel-primary panel-default content-panel">
 		<div class="panel-body">
 			<table class="form-table">
 				<tr>
-					<th scope="row" ><?php _e('Google Captcha Settings',WEBLIZAR_ACL)?></th>
-					<td></td>
-				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
-					<td>
-						Need Help?<a href="http://www.weblizar.com" target="_blank"> Visit Help Center</a>
-						<div class="acl_gcaptcha_sub_label">Authentication</div>
-						<div class="acl_gcaptcha_info">Register your website with Google to get required API keys and enter them below. <a target="_blank" href="https://weblizar.com/blog/how-to-generate-recaptcha-keys-for-your-domain/">Get the API Keys</a></div>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row" ><?php _e('Site Key',WEBLIZAR_ACL)?></th>
-					<td></td>
-				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
-					<td>
-						<input type="text" class="pro_text" id="site-key" name="site-key" placeholder="<?php _e('Site Key',WEBLIZAR_ACL)?>" size="56" value="<?php echo $site_key; ?>"/>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row" ><?php _e('Secret Key',WEBLIZAR_ACL)?></th>
-					<td></td>
-				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
-					<td>
-						<input type="text" class="pro_text" id="secret-key" name="secret-key" placeholder="<?php _e('Secret Key',WEBLIZAR_ACL)?>" size="56" value="<?php echo $secret_key; ?>"/>
-					</td>
-				</tr>
-
-				<tr>
 					<th scope="row" ><?php _e('Captcha Display',WEBLIZAR_ACL)?></th>
 					<td></td>
 				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
+				<tr class="radio-span">
 					<td>
 						<span>
 							<input type="radio" name="enable_gacptcha" value="yes" id="login_enable_gcaptcha1" <?php if($login_enable_gcaptcha=="yes")echo "checked"; ?> />&nbsp;<?php _e('Enable', WEBLIZAR_ACL)?><br>
@@ -87,10 +66,56 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				</tr>
 
 				<tr>
+					<th scope="row" ><?php _e('Google Captcha v2 and v3 Settings',WEBLIZAR_ACL)?></th>
+					<td></td>
+				</tr>
+				<tr class="radio-span">
+					<td>
+						Need Help?<a href="http://www.weblizar.com" target="_blank"> Visit Help Center</a>
+						<div class="acl_gcaptcha_sub_label">Authentication</div>
+						<div class="acl_gcaptcha_info">Register your website with Google to get required API keys and enter them below. <a target="_blank" href="https://weblizar.com/blog/how-to-generate-recaptcha-keys-for-your-domain/">Get the API Keys</a></div>
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row" ><?php _e('Choose Google Captcha Version',WEBLIZAR_ACL)?></th>
+					<td></td>
+				</tr>
+				<tr class="radio-span">
+					<td>
+						<span>
+							<input type="radio" name="v_gacptcha" value="v2" id="login_v_gcaptcha1" <?php if($login_v_gcaptcha=="v2")echo "checked"; ?> />&nbsp;<?php _e('v2', WEBLIZAR_ACL)?><br>
+						</span>
+						<span>
+							<input type="radio" name="v_gacptcha" value="v3" id="login_v_gcaptcha2" <?php if($login_v_gcaptcha=="v3")echo "checked"; ?> />&nbsp;<?php _e('v3', WEBLIZAR_ACL)?><br>
+						</span>
+						<div class="acl_gcaptcha_info"><strong>Note : </strong> After select google captcha version please insert site key & secret key.</div>
+					</td>
+				</tr>
+
+				<tr class="recaptcha_keys_v2">
+					<th scope="row" ><?php _e('Site Key',WEBLIZAR_ACL)?></th>
+					<td></td>
+				</tr>
+				<tr class="radio-span recaptcha_keys_v2">
+					<td>
+						<input type="text" class="pro_text" id="site-key" name="site-key" placeholder="<?php _e('Site Key',WEBLIZAR_ACL)?>" size="56" value="<?php echo $site_key; ?>"/>
+					</td>
+				</tr>
+				<tr class="recaptcha_keys_v2">
+					<th scope="row" ><?php _e('Secret Key',WEBLIZAR_ACL)?></th>
+					<td></td>
+				</tr>
+				<tr class="radio-span recaptcha_keys_v2">
+					<td>
+						<input type="text" class="pro_text" id="secret-key" name="secret-key" placeholder="<?php _e('Secret Key',WEBLIZAR_ACL)?>" size="56" value="<?php echo $secret_key; ?>"/>
+					</td>
+				</tr>
+				<tr class="recaptcha_keys_v2">
 					<th scope="row" ><?php _e('Captcha Theme',WEBLIZAR_ACL)?></th>
 					<td></td>
 				</tr>
-				<tr class="radio-span" style="border-bottom:none;">
+				<tr class="radio-span recaptcha_keys_v2">
 					<td>
 						<span>
 							<input type="radio" name="acl_gcaptcha_theme" value="yes" id="acl_gcaptcha_theme1" <?php if($acl_gcaptcha_theme=="yes")echo "checked"; ?> />&nbsp;<?php _e('Light', WEBLIZAR_ACL)?><br>
@@ -99,13 +124,33 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 							<input type="radio" name="acl_gcaptcha_theme" value="no" id="acl_gcaptcha_theme2" <?php if($acl_gcaptcha_theme=="no")echo "checked"; ?> />&nbsp;<?php _e('Dark', WEBLIZAR_ACL)?><br>
 						</span>
 					</td>
+				</tr> 
+
+				<tr class="recaptcha_keys_v3">
+					<th scope="row" ><?php _e('Site Key',WEBLIZAR_ACL)?></th>
+					<td></td>
 				</tr>
+				<tr class="radio-span recaptcha_keys_v3">
+					<td>
+						<input type="text" class="pro_text" id="site-key-v3" name="site-key-v3" placeholder="<?php _e('Site Key',WEBLIZAR_ACL)?>" size="56" value="<?php echo $site_key_v3; ?>"/>
+					</td>
+				</tr>
+				<tr class="recaptcha_keys_v3">
+					<th scope="row" ><?php _e('Secret Key',WEBLIZAR_ACL)?></th>
+					<td></td>
+				</tr>
+				<tr class="radio-span recaptcha_keys_v3">
+					<td>
+						<input type="text" class="pro_text" id="secret-key-v3" name="secret-key-v3" placeholder="<?php _e('Secret Key',WEBLIZAR_ACL)?>" size="56" value="<?php echo $secret_key_v3; ?>"/>
+					</td>
+				</tr>
+
 			</table>
 		</div>
 	</div>
 	
-	<button data-dialog49="somedialog49" class="dialog-button49" style="display:none">Open Dialog</button>
-	<div id="somedialog49" class="dialog" style="position: fixed; z-index: 9999;">
+	<button data-dialog49="somedialog49" class="dialog-button49">Open Dialog</button>
+	<div id="somedialog49" class="dialog">
 		<div class="dialog__overlay"></div>
 		<div class="dialog__content">
 			<div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
@@ -118,8 +163,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			</div>
 		</div>
 	</div>
-	<button data-dialog109="somedialog109" class="dialog-button109" style="display:none">Open Dialog</button>
-	<div id="somedialog109" class="dialog" style="position: fixed; z-index: 9999;">
+	<button data-dialog109="somedialog109" class="dialog-button109">Open Dialog</button>
+	<div id="somedialog109" class="dialog">
 		<div class="dialog__overlay"></div>
 		<div class="dialog__content">
 			<div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
@@ -145,6 +190,28 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 </div>
 <!-- /row -->
 <script>
+
+var recaptcha_keys_v2 = jQuery('.recaptcha_keys_v2');
+var recaptcha_keys_v3 = jQuery('.recaptcha_keys_v3');
+
+recaptcha_keys_v2.hide();
+recaptcha_keys_v3.hide();
+
+var current_recaptcha_v = '<?php echo $login_v_gcaptcha; ?>';
+if('v2' == current_recaptcha_v) {
+	recaptcha_keys_v2.show();
+} else {
+	recaptcha_keys_v3.show();
+}
+jQuery(document).on('change', 'input[name="v_gacptcha"]', function() {
+	if('v3' === this.value) {
+		recaptcha_keys_v2.hide();
+		recaptcha_keys_v3.show();
+	} else {
+		recaptcha_keys_v3.hide();
+		recaptcha_keys_v2.show();
+	}
+});
 function Custom_gcaptcha(Action, id){
 	if(Action == "googleSave") {
 		(function(){
@@ -175,6 +242,13 @@ function Custom_gcaptcha(Action, id){
 
 		var site_key = jQuery("#site-key").val();
 		var secret_key = jQuery("#secret-key").val();
+		var site_key_v3 = jQuery("#site-key-v3").val();
+		var secret_key_v3 = jQuery("#secret-key-v3").val();
+		if (document.getElementById('login_v_gcaptcha1').checked) {
+			var login_v_gcaptcha = document.getElementById('login_v_gcaptcha1').value;
+		} else {
+			var login_v_gcaptcha = document.getElementById('login_v_gcaptcha2').value;
+		}
 		if (document.getElementById('login_enable_gcaptcha1').checked) {
 			var login_enable_gcaptcha = document.getElementById('login_enable_gcaptcha1').value;
 		} else {
@@ -187,7 +261,7 @@ function Custom_gcaptcha(Action, id){
 			var acl_gcaptcha_theme = document.getElementById('acl_gcaptcha_theme2').value;
 		}
 		
-		var PostData = "Action=" + Action + "&site_key=" + site_key + "&secret_key=" + secret_key + "&login_enable_gcaptcha=" + login_enable_gcaptcha + "&acl_gcaptcha_theme=" + acl_gcaptcha_theme;
+		var PostData = "Action=" + Action + "&site_key=" + site_key + "&secret_key=" + secret_key + "&site_key_v3=" + site_key_v3 + "&secret_key_v3=" + secret_key_v3 + "&login_v_gcaptcha=" + login_v_gcaptcha + "&login_enable_gcaptcha=" + login_enable_gcaptcha + "&acl_gcaptcha_theme=" + acl_gcaptcha_theme;
 		jQuery.ajax({
 			dataType : 'html',
 			type: 'POST',
@@ -259,6 +333,8 @@ function Custom_gcaptcha(Action, id){
 				
 				document.getElementById("site-key").value ="";
 				document.getElementById("secret-key").value ="";
+				document.getElementById("site-key-v3").value ="";
+				document.getElementById("secret-key-v3").value ="";
 				jQuery(document).ready( function() {
 					jQuery('input[name=enable_gcaptcha]').val(['yes']);
 				});
@@ -284,17 +360,21 @@ if(isset($_POST['Action'])) {
 	if($Action == "googleSave") {
 		$site_key = sanitize_text_field($_POST['site_key']);
 		$secret_key = sanitize_text_field( $_POST['secret_key']);
+		$site_key_v3 = sanitize_text_field($_POST['site_key_v3']);
+		$secret_key_v3 = sanitize_text_field( $_POST['secret_key_v3']);
+		$login_v_gcaptcha = sanitize_text_field( $_POST['login_v_gcaptcha']);
 		$login_enable_gcaptcha = sanitize_text_field( $_POST['login_enable_gcaptcha']);
 		$acl_gcaptcha_theme = sanitize_text_field( $_POST['acl_gcaptcha_theme']);
-
 	
 		// save values in option table
 		$g_page= serialize(array(
 			'site_key' => $site_key,
 			'secret_key'=> $secret_key,
+			'site_key_v3' => $site_key_v3,
+			'secret_key_v3'=> $secret_key_v3,
+			'login_v_gcaptcha'=> $login_v_gcaptcha,
 			'login_enable_gcaptcha'=> $login_enable_gcaptcha,
 			'acl_gcaptcha_theme'=>$acl_gcaptcha_theme,
-			
 		));
 		update_option('Admin_custome_login_gcaptcha', $g_page);
 	}
@@ -305,6 +385,9 @@ if(isset($_POST['Action'])) {
 			
 			'site_key'=>'',
 			'secret_key'=>'',
+			'site_key_v3' => '',
+			'secret_key_v3'=> '',
+			'login_v_gcaptcha'=> 'v2',
 			'login_enable_gcaptcha'=>'no',
 			'acl_gcaptcha_theme'=>'yes',
 			
