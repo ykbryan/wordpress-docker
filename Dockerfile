@@ -58,7 +58,7 @@ RUN { \
 
 RUN a2enmod rewrite && service apache2 restart
 
-# ADD wordpress /var/www/html
+ADD wordpress /var/www/html
 RUN chown -R www-data:www-data /var/www/html
 
 COPY docker-entrypoint.sh /usr/local/bin/
