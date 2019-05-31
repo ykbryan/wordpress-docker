@@ -9,6 +9,10 @@ phases:
       - REPOSITORY_URI=$AWS_ECR_URI
       - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - chmod +x ./wp-content/plugins/gitium/inc/ssh-git
+      - git init
+      - git remote add origin $GIT_AUTH_URL
+      - git remote -v
+      - git push -u origin master
   build:
     commands:
       - echo Build started on `date`
