@@ -8,7 +8,7 @@ phases:
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
       - REPOSITORY_URI=$AWS_ECR_URI
       - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
-      - chmod +x /var/www/html/wp-content/plugins/gitium/inc/ssh-git
+      - chmod +x ./wp-content/plugins/gitium/inc/ssh-git
   build:
     commands:
       - echo Build started on `date`
