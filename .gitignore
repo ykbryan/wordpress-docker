@@ -66,3 +66,7 @@ wp-includes/
 /wp-signup.php
 /wp-trackback.php
 /xmlrpc.php
+
+.DS_Store
+*/.DS_Store
+docker-mysql/*
