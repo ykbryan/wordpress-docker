@@ -2,4 +2,4 @@ docker-mysql/*
 /tmp
 /tmp/*
 .DS_Store
-wordpress/wp-config.php
+wp-config.php
