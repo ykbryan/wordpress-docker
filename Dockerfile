@@ -1,7 +1,7 @@
 FROM php:7.3.1-apache
 
 # to be replaced by environment variable from buildspec
-ENV REDIS_URL redis
+ENV REDIS_URL wordpress-redis-4.yhzcrt.0001.apse1.cache.amazonaws.com
 
 # update
 RUN apt-get update
