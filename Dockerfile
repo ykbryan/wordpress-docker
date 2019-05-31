@@ -3,12 +3,17 @@ FROM php:7.3.1-apache
 # to be replaced by environment variable from buildspec
 ENV REDIS_URL redis
 
+# update
+RUN apt-get update
+
+# git
+RUN apt-get install -y git
+
 # install the PHP extensions we need
 RUN set -ex; \
   \
   savedAptMark="$(apt-mark showmanual)"; \
   \
-  apt-get update; \
   apt-get install -y --no-install-recommends \
   libjpeg-dev \
   libpng-dev \
