@@ -12,6 +12,7 @@ phases:
       - git init
       - git remote add origin $GIT_AUTH_URL
       - git remote -v
+      - git status
   build:
     commands:
       - echo Build started on `date`
