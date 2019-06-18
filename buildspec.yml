@@ -18,6 +18,7 @@ phases:
       - echo Replacing REDIS_URL via environment variable
       - sed -i "s/REDIS_URL redis/REDIS_URL $REDIS_URL/" Dockerfile
       - echo Building the Docker image...
+      - rm wp-config.php
       - docker build -t $REPOSITORY_URI:latest .
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
   post_build:
